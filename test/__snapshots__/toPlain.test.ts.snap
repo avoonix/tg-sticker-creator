@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toPlain returns valid lottie animation 1`] = `
+Object {
+  "_author": undefined,
+  "assets": Array [],
+  "ddd": 0,
+  "fr": 60,
+  "h": 512,
+  "ip": 0,
+  "layers": Array [],
+  "nm": "animation",
+  "op": 180,
+  "tgs": 1,
+  "v": "5.0.0",
+  "w": 512,
+}
+`;

@@ -1,0 +1,55 @@
+{
+  "name": "tgslib",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/tgslib.cjs.js",
+  "module": "lib/tgslib.esm.js",
+  "typings": "lib/tgslib.d.ts",
+  "scripts": {
+    "build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "test:watch": "jest --maxWorkers=75% --watch"
+  },
+  "bugs": {
+    "url": "https://github.com/avoonix/tgslib/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avoonix/tgslib.git"
+  },
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "keywords": [
+    "lottie"
+  ],
+  "author": "Avoonix",
+  "license": "AGPL-3.0-only",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.2",
+    "@types/jest": "^27.4.1",
+    "@types/lodash.clonedeep": "^4.5.6",
+    "@types/node": "^17.0.24",
+    "@types/tinycolor2": "^1.4.3",
+    "jest": "^27.5.1",
+    "rollup": "^2.70.1",
+    "rollup-plugin-dts": "^4.2.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "snapshot-diff": "^0.9.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  },
+  "dependencies": {
+    "lodash.clonedeep": "^4.5.0",
+    "tinycolor2": "^1.4.2",
+    "ts-jest": "^27.1.4",
+    "ts-mixer": "^6.0.1"
+  }
+}

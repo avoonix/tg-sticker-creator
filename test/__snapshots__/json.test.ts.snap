@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`json can parse sticker multiple times 1`] = `
+"Snapshot Diff:
+Compared values have no visual difference."
+`;
+
+exports[`json can stringify and parse sticker multiple times 1`] = `
+"Snapshot Diff:
+Compared values have no visual difference."
+`;
+
+exports[`json can stringify sticker multiple times 1`] = `
+"Snapshot Diff:
+Compared values have no visual difference."
+`;
+
+exports[`json imports correctly 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -46,11 +46,10 @@
+          },
+          \\"sk\\": Object {
+            \\"a\\": 0,
+            \\"k\\": 0,
+          },
+-         \\"ty\\": \\"tr\\",
+        },
+        \\"op\\": 180,
+        \\"shapes\\": Array [
+          Object {
+            \\"bm\\": 0,
+@@ -12685,11 +12684,10 @@
+          },
+          \\"sk\\": Object {
+            \\"a\\": 0,
+            \\"k\\": 0,
+          },
+-         \\"ty\\": \\"tr\\",
+        },
+        \\"op\\": 180,
+        \\"shapes\\": Array [
+          Object {
+            \\"bm\\": 0,
+@@ -25353,11 +25351,10 @@
+          },
+          \\"sk\\": Object {
+            \\"a\\": 0,
+            \\"k\\": 0,
+          },
+-         \\"ty\\": \\"tr\\",
+        },
+        \\"op\\": 180,
+        \\"shapes\\": Array [
+          Object {
+            \\"bm\\": 0,
+@@ -37992,11 +37989,10 @@
+          },
+          \\"sk\\": Object {
+            \\"a\\": 0,
+            \\"k\\": 0,
+          },
+-         \\"ty\\": \\"tr\\",
+        },
+        \\"op\\": 180,
+        \\"shapes\\": Array [
+          Object {
+            \\"bm\\": 0,"
+`;

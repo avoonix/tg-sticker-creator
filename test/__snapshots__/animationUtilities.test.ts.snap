@@ -1,0 +1,1445 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`blink works 1`] = `
+AnimatableColor {
+  "animated": true,
+  "value": Array [
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 0,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 5,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 10,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 15,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 20,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 25,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 30,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 35,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 40,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 45,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 50,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 55,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 60,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 65,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 70,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 75,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 80,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 85,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 90,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 95,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 100,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 105,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 110,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 115,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 120,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 125,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 130,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 135,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 140,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 145,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 150,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 155,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 160,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 165,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": BezierValues {
+        "bezierXAxis": 0.58,
+        "bezierYAxis": 1,
+      },
+      "bezierOut": BezierValues {
+        "bezierXAxis": 0.42,
+        "bezierYAxis": 0,
+      },
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 170,
+      "startValue": RgbaValue {
+        "_values": Array [
+          1,
+          0,
+          0,
+          1,
+        ],
+      },
+    },
+    ColorKeyframe {
+      "bezierIn": undefined,
+      "bezierOut": undefined,
+      "endValue": undefined,
+      "jumpToEnd": false,
+      "startTime": 175,
+      "startValue": RgbaValue {
+        "_values": Array [
+          0,
+          0,
+          1,
+          1,
+        ],
+      },
+    },
+  ],
+}
+`;
+
+exports[`blink works 2`] = `
+Object {
+  "a": 1,
+  "k": Array [
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 0,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 5,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 10,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 15,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 20,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 25,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 30,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 35,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 40,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 45,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 50,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 55,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 60,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 65,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 70,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 75,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 80,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 85,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 90,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 95,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 100,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 105,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 110,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 115,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 120,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 125,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 130,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 135,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 140,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 145,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 150,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 155,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 160,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 165,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": Object {
+        "x": 0.58,
+        "y": 1,
+      },
+      "o": Object {
+        "x": 0.42,
+        "y": 0,
+      },
+      "s": Array [
+        1,
+        0,
+        0,
+        1,
+      ],
+      "t": 170,
+    },
+    Object {
+      "e": undefined,
+      "h": 0,
+      "i": undefined,
+      "o": undefined,
+      "s": Array [
+        0,
+        0,
+        1,
+        1,
+      ],
+      "t": 175,
+    },
+  ],
+}
+`;
