@@ -3,7 +3,7 @@
 > Alpha Version
 
 [![CI](https://github.com/avoonix/tg-sticker-creator/actions/workflows/main.yml/badge.svg?branch=alpha)](https://github.com/avoonix/tg-sticker-creator/actions/workflows/main.yml)
-[![Coverage](https://github.io/avoonix/tg-sticker-creator/coverage/badge.png)](https://github.io/avoonix/tg-sticker-creator/coverage/index.html)
+[![Coverage](https://avoonix.github.io/tg-sticker-creator/coverage/badge.png)](https://avoonix.github.io/tg-sticker-creator/coverage/jest-report.html)
 
 ## Full Example
 
