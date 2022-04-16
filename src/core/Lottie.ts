@@ -24,12 +24,7 @@ export class Lottie extends LottieItem implements Resolvable {
   /**
    * @internal
    */
-  resolveKeyPath(
-    keyPath: string[],
-    depth: number,
-    currentPartialKeyPath: (string | undefined)[],
-    options: FindOptions
-  ) {
+  resolveKeyPath(keyPath: string[], depth: number, currentPartialKeyPath: (string | undefined)[], options: FindOptions) {
     const layers = this.layers;
     const assets = this.assets;
     return resolveChildren(
@@ -55,15 +50,15 @@ export class Lottie extends LottieItem implements Resolvable {
 
   tgsFlag = true;
 
-  version: string = "5.0.0";
+  version = "5.0.0";
 
-  frameRate: number = 60;
+  frameRate = 60;
 
-  initialFrame: number = 0;
+  initialFrame = 0;
 
-  finalFrame: number = 60 * 3;
+  finalFrame = 60 * 3;
 
-  name?: string = "animation";
+  name? = "animation";
 
   has3dLayers = false;
 
@@ -87,16 +82,18 @@ export class Lottie extends LottieItem implements Resolvable {
     return this;
   }
 
+  setAuthor(author: string | undefined) {
+    this.author = author;
+    return this;
+  }
+
   assets: PreComp[] = [];
 
   /**
    * also iterate `PreComp` layers
    * @param callback
    */
-  eachChildLayer(
-    callback: CancellableCallback<Layer>,
-    { parents = [] }: EachOptions = {}
-  ) {
+  eachChildLayer(callback: CancellableCallback<Layer>, { parents = [] }: EachOptions = {}) {
     let cancel = false;
     const cb = (item: Layer, cancelFn: () => void, parents: LottieItem[]) => {
       callback(
@@ -117,10 +114,7 @@ export class Lottie extends LottieItem implements Resolvable {
     return this;
   }
 
-  eachChildShape(
-    callback: CancellableCallback<Shape>,
-    { parents = [] }: EachOptions = {}
-  ) {
+  eachChildShape(callback: CancellableCallback<Shape>, { parents = [] }: EachOptions = {}) {
     let cancel = false;
     const cb = (item: Shape, cancelFn: () => void, parents: LottieItem[]) => {
       callback(
@@ -166,9 +160,7 @@ export class Lottie extends LottieItem implements Resolvable {
    * precision - decimal places to round to
    * @returns
    */
-  toTgsString(
-    options: ToPlainOptions & { spaces?: number } = { precision: 4 }
-  ) {
+  toTgsString(options: ToPlainOptions & { spaces?: number } = { precision: 4 }) {
     return JSON.stringify(this.toPlain(options), null, options.spaces);
   }
 
