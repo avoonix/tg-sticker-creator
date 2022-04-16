@@ -8,7 +8,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: ['14.x', '16.x', 'lts/*', 'node']
+        node: ['14.x', '16.x', 'lts/*', 'latest']
         os: [ubuntu-latest]
     steps:
       - name: Checkout
