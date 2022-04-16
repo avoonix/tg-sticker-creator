@@ -46,3 +46,10 @@ I took a few ideas (and code) from these projects:
 - https://gitlab.com/mattbas/python-lottie
 - https://github.com/airbnb/lottie-android
 - https://github.com/airbnb/lottie-web
+
+## Developing
+
+```bash
+pnpm i
+pnpm test:watch
+```
