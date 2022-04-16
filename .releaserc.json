@@ -1,8 +1,8 @@
 {
   "branches": [
-    "next",
+    "master",
     {
-      "name": "master",
+      "name": "alpha",
       "channel": "alpha",
       "prerelease": true
     }
