@@ -52,4 +52,5 @@ I took a few ideas (and code) from these projects:
 ```bash
 pnpm i
 pnpm test:watch
+pnpm commit
 ```
