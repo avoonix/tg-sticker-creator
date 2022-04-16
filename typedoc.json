@@ -1,0 +1,11 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "exclude": ["**/*+(.test).ts", "**/rollup.config.ts"],
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeInternal": true,
+  "out": "docs",
+  "name": "TgsLib Documentation",
+  "hideGenerator": false,
+  "sort": ["enum-value-ascending","visibility", "instance-first", "kind", "alphabetical"]
+}

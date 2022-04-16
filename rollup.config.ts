@@ -1,7 +1,19 @@
+import commonjs from "@rollup/plugin-commonjs";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import { defineConfig } from "rollup";
 import dts from "rollup-plugin-dts";
 import { terser } from "rollup-plugin-terser";
+
+/** @type {import("rollup-plugin-terser").Options} */
+const terserOptions = {
+  format: {
+    comments: false,
+  },
+  mangle: true,
+  keep_classnames: true,
+  toplevel: true,
+};
 
 const rollupConfig = defineConfig([
   {
@@ -16,7 +28,7 @@ const rollupConfig = defineConfig([
   {
     input: "src/index.ts",
     external: (id) => !/^[./]/.test(id),
-    plugins: [typescript({ sourceMap: true }), terser()],
+    plugins: [typescript({ sourceMap: true }), terser(terserOptions)],
     output: [
       {
         sourcemap: true,
@@ -35,7 +47,7 @@ const rollupConfig = defineConfig([
   {
     input: "src/index.ts",
     external: [],
-    plugins: [typescript({ sourceMap: true }), terser()],
+    plugins: [nodeResolve(), commonjs(), typescript({ sourceMap: true }), terser(terserOptions)],
     output: [
       {
         sourcemap: true,

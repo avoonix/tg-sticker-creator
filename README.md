@@ -1,5 +1,7 @@
 # TgsLib - A Library for Creating Telegram Stickers
 
+> Alpha Version
+
 [![CI](https://github.com/avoonix/tgslib/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/avoonix/tgslib/actions/workflows/main.yml)
 [![Coverage](https://github.io/avoonix/tgslib/coverage/badge.png)](https://github.io/avoonix/tgslib/coverage/index.html)
 

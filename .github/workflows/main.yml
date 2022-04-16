@@ -1,0 +1,72 @@
+name: CI
+on: 
+  push:
+  workflow_dispatch:
+jobs:
+  build:
+    name: Build, lint, and test on Node ${{ matrix.node }} and ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node: ['14.x', '16.x']
+        os: [ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 7.0.0-rc.5
+      - name: Use Node ${{ matrix.node }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Build
+        run: pnpm build
+      - name: Test
+        run: |
+          coverage_percentage=$(pnpm test:ci | awk '$1 == "Statements" {print $3}')
+          curl "https://raster.shields.io/static/v1?label=coverage&message=$coverage_percentage&color=informational" > coverage/badge.png
+        env:
+          JEST_HTML_REPORTERS_PUBLIC_PATH: coverage
+          JEST_HTML_REPORTERS_FILE_NAME: jest-report.html
+          JEST_HTML_REPORTERS_HIDE_ICON: true
+          JEST_HTML_REPORTERS_PAGE_TITLE: TgsLib Test Report
+      - name: Archive coverage
+        uses: actions/upload-artifact@v2
+        with:
+          name: code-coverage-report
+          path: coverage
+  docs:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 7.0.0-rc.5
+      - name: Use Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Build
+        run: pnpm docs:build
+      - uses: actions/download-artifact@v2
+        with:
+          name: code-coverage-report
+          path: coverage
+      - run: |
+          mkdir pages
+          cp -r docs pages
+          cp -r coverage pages/coverage
+      - name: GitHub Pages action
+        uses: peaceiris/actions-gh-pages@v3.7.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./pages
