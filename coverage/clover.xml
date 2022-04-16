@@ -1,0 +1,1794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1650093804230" clover="3.2.0">
+  <project timestamp="1650093804230" name="All files">
+    <metrics statements="1554" coveredstatements="1098" conditionals="224" coveredconditionals="127" methods="530" coveredmethods="297" elements="2308" coveredelements="1522" complexity="0" loc="1554" ncloc="1554" packages="10" files="68" classes="68"/>
+    <package name="src">
+      <metrics statements="61" coveredstatements="61" conditionals="0" coveredconditionals="0" methods="59" coveredmethods="12"/>
+      <file name="index.ts" path="/home/runner/work/tgslib/tgslib/src/index.ts">
+        <metrics statements="61" coveredstatements="61" conditionals="0" coveredconditionals="0" methods="59" coveredmethods="12"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="5" count="13" type="stmt"/>
+        <line num="6" count="13" type="stmt"/>
+        <line num="7" count="13" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="9" count="13" type="stmt"/>
+        <line num="10" count="13" type="stmt"/>
+        <line num="11" count="13" type="stmt"/>
+        <line num="13" count="15" type="stmt"/>
+        <line num="14" count="13" type="stmt"/>
+        <line num="15" count="13" type="stmt"/>
+        <line num="21" count="13" type="stmt"/>
+        <line num="22" count="13" type="stmt"/>
+        <line num="23" count="13" type="stmt"/>
+        <line num="24" count="15" type="stmt"/>
+        <line num="26" count="13" type="stmt"/>
+        <line num="27" count="13" type="stmt"/>
+        <line num="28" count="13" type="stmt"/>
+        <line num="29" count="13" type="stmt"/>
+        <line num="30" count="13" type="stmt"/>
+        <line num="31" count="13" type="stmt"/>
+        <line num="35" count="17" type="stmt"/>
+        <line num="36" count="13" type="stmt"/>
+        <line num="37" count="14" type="stmt"/>
+        <line num="38" count="13" type="stmt"/>
+        <line num="39" count="13" type="stmt"/>
+        <line num="40" count="13" type="stmt"/>
+        <line num="41" count="15" type="stmt"/>
+        <line num="42" count="16" type="stmt"/>
+        <line num="43" count="13" type="stmt"/>
+        <line num="44" count="13" type="stmt"/>
+        <line num="45" count="13" type="stmt"/>
+        <line num="46" count="13" type="stmt"/>
+        <line num="47" count="13" type="stmt"/>
+        <line num="48" count="13" type="stmt"/>
+        <line num="49" count="16" type="stmt"/>
+        <line num="50" count="13" type="stmt"/>
+        <line num="51" count="14" type="stmt"/>
+        <line num="52" count="13" type="stmt"/>
+        <line num="53" count="13" type="stmt"/>
+        <line num="54" count="14" type="stmt"/>
+        <line num="55" count="13" type="stmt"/>
+        <line num="57" count="13" type="stmt"/>
+        <line num="58" count="14" type="stmt"/>
+        <line num="59" count="13" type="stmt"/>
+        <line num="60" count="13" type="stmt"/>
+        <line num="61" count="15" type="stmt"/>
+        <line num="62" count="13" type="stmt"/>
+        <line num="63" count="13" type="stmt"/>
+        <line num="64" count="13" type="stmt"/>
+        <line num="65" count="13" type="stmt"/>
+        <line num="66" count="13" type="stmt"/>
+        <line num="67" count="13" type="stmt"/>
+        <line num="68" count="13" type="stmt"/>
+        <line num="70" count="14" type="stmt"/>
+        <line num="71" count="13" type="stmt"/>
+        <line num="72" count="13" type="stmt"/>
+        <line num="74" count="13" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.core">
+      <metrics statements="470" coveredstatements="402" conditionals="106" coveredconditionals="86" methods="111" coveredmethods="86"/>
+      <file name="LayerTransform.ts" path="/home/runner/work/tgslib/tgslib/src/core/LayerTransform.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="9" count="96" type="stmt"/>
+        <line num="15" count="36" type="stmt"/>
+        <line num="22" count="36" type="stmt"/>
+        <line num="23" count="36" type="stmt"/>
+        <line num="24" count="36" type="stmt"/>
+        <line num="32" count="36" type="stmt"/>
+        <line num="46" count="36" type="stmt"/>
+        <line num="47" count="36" type="stmt"/>
+      </file>
+      <file name="Lottie.ts" path="/home/runner/work/tgslib/tgslib/src/core/Lottie.ts">
+        <metrics statements="66" coveredstatements="49" conditionals="9" coveredconditionals="3" methods="18" coveredmethods="11"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="23" count="13" type="stmt"/>
+        <line num="33" count="15" type="stmt"/>
+        <line num="34" count="15" type="stmt"/>
+        <line num="35" count="15" type="stmt"/>
+        <line num="41" count="15" type="stmt"/>
+        <line num="42" count="15" type="stmt"/>
+        <line num="44" count="15" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="56" count="26" type="stmt"/>
+        <line num="58" count="26" type="stmt"/>
+        <line num="60" count="26" type="stmt"/>
+        <line num="62" count="26" type="stmt"/>
+        <line num="64" count="26" type="stmt"/>
+        <line num="66" count="26" type="stmt"/>
+        <line num="68" count="26" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="86" count="0" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="90" count="26" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="101" count="1" type="stmt"/>
+        <line num="102" count="1" type="stmt"/>
+        <line num="105" count="0" type="stmt"/>
+        <line num="106" count="0" type="stmt"/>
+        <line num="111" count="1" type="stmt"/>
+        <line num="112" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="113" count="1" type="stmt"/>
+        <line num="114" count="0" type="stmt"/>
+        <line num="115" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="117" count="1" type="stmt"/>
+        <line num="124" count="1" type="stmt"/>
+        <line num="125" count="1" type="stmt"/>
+        <line num="126" count="5" type="stmt"/>
+        <line num="129" count="0" type="stmt"/>
+        <line num="130" count="0" type="stmt"/>
+        <line num="135" count="1" type="stmt"/>
+        <line num="137" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="138" count="1" type="stmt"/>
+        <line num="140" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="144" count="1" type="stmt"/>
+        <line num="172" count="3" type="stmt"/>
+        <line num="179" count="0" type="stmt"/>
+        <line num="186" count="12" type="stmt"/>
+        <line num="187" count="12" type="stmt"/>
+        <line num="188" count="12" type="stmt"/>
+        <line num="196" count="14" type="stmt"/>
+        <line num="216" count="12" type="stmt"/>
+        <line num="217" count="12" type="stmt"/>
+        <line num="218" count="12" type="stmt"/>
+        <line num="219" count="12" type="stmt"/>
+        <line num="220" count="12" type="stmt"/>
+        <line num="221" count="12" type="stmt"/>
+        <line num="222" count="12" type="stmt"/>
+        <line num="223" count="12" type="stmt"/>
+        <line num="224" count="12" type="stmt"/>
+        <line num="225" count="12" type="stmt"/>
+        <line num="226" count="12" type="stmt"/>
+        <line num="227" count="12" type="stmt"/>
+      </file>
+      <file name="LottieItem.ts" path="/home/runner/work/tgslib/tgslib/src/core/LottieItem.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="5"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="14" count="13" type="stmt"/>
+        <line num="50" count="36" type="cond" truecount="1" falsecount="0"/>
+        <line num="51" count="26" type="stmt"/>
+        <line num="53" count="10" type="stmt"/>
+        <line num="79" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="84" count="3" type="stmt"/>
+        <line num="95" count="28552" type="stmt"/>
+        <line num="102" count="1" type="stmt"/>
+      </file>
+      <file name="Mask.ts" path="/home/runner/work/tgslib/tgslib/src/core/Mask.ts">
+        <metrics statements="27" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="18" count="13" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="103" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="105" count="0" type="stmt"/>
+        <line num="106" count="0" type="stmt"/>
+        <line num="107" count="0" type="stmt"/>
+      </file>
+      <file name="Resolvable.ts" path="/home/runner/work/tgslib/tgslib/src/core/Resolvable.ts">
+        <metrics statements="25" coveredstatements="24" conditionals="9" coveredconditionals="9" methods="6" coveredmethods="5"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="22" count="13" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="38" count="15" type="stmt"/>
+        <line num="39" count="15" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="15" type="stmt"/>
+        <line num="43" count="22" type="stmt"/>
+        <line num="50" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="73" count="13" type="stmt"/>
+        <line num="80" count="102" type="cond" truecount="1" falsecount="0"/>
+        <line num="89" count="16" type="stmt"/>
+        <line num="91" count="86" type="stmt"/>
+        <line num="95" count="13" type="stmt"/>
+        <line num="106" count="57" type="stmt"/>
+        <line num="107" count="57" type="cond" truecount="1" falsecount="0"/>
+        <line num="108" count="6" type="stmt"/>
+        <line num="110" count="51" type="stmt"/>
+        <line num="111" count="51" type="cond" truecount="1" falsecount="0"/>
+        <line num="120" count="6" type="stmt"/>
+        <line num="123" count="51" type="cond" truecount="1" falsecount="0"/>
+        <line num="124" count="51" type="stmt"/>
+        <line num="130" count="63" type="stmt"/>
+        <line num="131" count="63" type="stmt"/>
+        <line num="132" count="144" type="stmt"/>
+        <line num="143" count="51" type="stmt"/>
+      </file>
+      <file name="TransformMixin.ts" path="/home/runner/work/tgslib/tgslib/src/core/TransformMixin.ts">
+        <metrics statements="30" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="2"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="11" count="13" type="stmt"/>
+        <line num="12" count="3356" type="stmt"/>
+        <line num="14" count="3356" type="stmt"/>
+        <line num="16" count="3356" type="stmt"/>
+        <line num="18" count="3356" type="stmt"/>
+        <line num="20" count="3356" type="stmt"/>
+        <line num="22" count="3356" type="stmt"/>
+        <line num="24" count="3356" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="57" count="1887" type="stmt"/>
+        <line num="73" count="3271" type="stmt"/>
+        <line num="74" count="3271" type="stmt"/>
+        <line num="75" count="3271" type="stmt"/>
+        <line num="76" count="3271" type="stmt"/>
+        <line num="77" count="3271" type="stmt"/>
+        <line num="78" count="3271" type="stmt"/>
+        <line num="79" count="3271" type="stmt"/>
+      </file>
+      <file name="classes.ts" path="/home/runner/work/tgslib/tgslib/src/core/classes.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="36" count="13" type="stmt"/>
+      </file>
+      <file name="constants.ts" path="/home/runner/work/tgslib/tgslib/src/core/constants.ts">
+        <metrics statements="79" coveredstatements="79" conditionals="24" coveredconditionals="24" methods="12" coveredmethods="12"/>
+        <line num="1" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="7" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="9" count="13" type="stmt"/>
+        <line num="10" count="13" type="stmt"/>
+        <line num="11" count="13" type="stmt"/>
+        <line num="12" count="13" type="stmt"/>
+        <line num="13" count="13" type="stmt"/>
+        <line num="16" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="13" type="stmt"/>
+        <line num="18" count="13" type="stmt"/>
+        <line num="19" count="13" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="21" count="13" type="stmt"/>
+        <line num="22" count="13" type="stmt"/>
+        <line num="23" count="13" type="stmt"/>
+        <line num="24" count="13" type="stmt"/>
+        <line num="25" count="13" type="stmt"/>
+        <line num="26" count="13" type="stmt"/>
+        <line num="27" count="13" type="stmt"/>
+        <line num="28" count="13" type="stmt"/>
+        <line num="29" count="13" type="stmt"/>
+        <line num="30" count="13" type="stmt"/>
+        <line num="31" count="13" type="stmt"/>
+        <line num="32" count="13" type="stmt"/>
+        <line num="35" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="13" type="stmt"/>
+        <line num="37" count="13" type="stmt"/>
+        <line num="40" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="13" type="stmt"/>
+        <line num="42" count="13" type="stmt"/>
+        <line num="43" count="13" type="stmt"/>
+        <line num="44" count="13" type="stmt"/>
+        <line num="45" count="13" type="stmt"/>
+        <line num="48" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="13" type="stmt"/>
+        <line num="50" count="13" type="stmt"/>
+        <line num="51" count="13" type="stmt"/>
+        <line num="52" count="13" type="stmt"/>
+        <line num="53" count="13" type="stmt"/>
+        <line num="54" count="13" type="stmt"/>
+        <line num="55" count="13" type="stmt"/>
+        <line num="56" count="13" type="stmt"/>
+        <line num="57" count="13" type="stmt"/>
+        <line num="58" count="13" type="stmt"/>
+        <line num="59" count="13" type="stmt"/>
+        <line num="60" count="13" type="stmt"/>
+        <line num="61" count="13" type="stmt"/>
+        <line num="62" count="13" type="stmt"/>
+        <line num="65" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="13" type="stmt"/>
+        <line num="67" count="13" type="stmt"/>
+        <line num="70" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="71" count="13" type="stmt"/>
+        <line num="72" count="13" type="stmt"/>
+        <line num="75" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="76" count="13" type="stmt"/>
+        <line num="77" count="13" type="stmt"/>
+        <line num="78" count="13" type="stmt"/>
+        <line num="81" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="82" count="13" type="stmt"/>
+        <line num="83" count="13" type="stmt"/>
+        <line num="84" count="13" type="stmt"/>
+        <line num="85" count="13" type="stmt"/>
+        <line num="86" count="13" type="stmt"/>
+        <line num="87" count="13" type="stmt"/>
+        <line num="88" count="13" type="stmt"/>
+        <line num="91" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="92" count="13" type="stmt"/>
+        <line num="93" count="13" type="stmt"/>
+        <line num="96" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="97" count="13" type="stmt"/>
+        <line num="98" count="13" type="stmt"/>
+        <line num="99" count="13" type="stmt"/>
+        <line num="100" count="13" type="stmt"/>
+        <line num="101" count="13" type="stmt"/>
+      </file>
+      <file name="internal.ts" path="/home/runner/work/tgslib/tgslib/src/core/internal.ts">
+        <metrics statements="60" coveredstatements="60" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
+        <line num="5" count="13" type="stmt"/>
+        <line num="6" count="13" type="stmt"/>
+        <line num="7" count="13" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="9" count="13" type="stmt"/>
+        <line num="10" count="13" type="stmt"/>
+        <line num="11" count="13" type="stmt"/>
+        <line num="12" count="13" type="stmt"/>
+        <line num="13" count="13" type="stmt"/>
+        <line num="14" count="13" type="stmt"/>
+        <line num="15" count="13" type="stmt"/>
+        <line num="16" count="13" type="stmt"/>
+        <line num="17" count="13" type="stmt"/>
+        <line num="18" count="13" type="stmt"/>
+        <line num="19" count="13" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="21" count="13" type="stmt"/>
+        <line num="22" count="13" type="stmt"/>
+        <line num="23" count="13" type="stmt"/>
+        <line num="24" count="13" type="stmt"/>
+        <line num="25" count="13" type="stmt"/>
+        <line num="26" count="13" type="stmt"/>
+        <line num="27" count="13" type="stmt"/>
+        <line num="28" count="13" type="stmt"/>
+        <line num="29" count="13" type="stmt"/>
+        <line num="30" count="13" type="stmt"/>
+        <line num="31" count="13" type="stmt"/>
+        <line num="32" count="13" type="stmt"/>
+        <line num="33" count="13" type="stmt"/>
+        <line num="34" count="13" type="stmt"/>
+        <line num="35" count="13" type="stmt"/>
+        <line num="36" count="13" type="stmt"/>
+        <line num="37" count="13" type="stmt"/>
+        <line num="38" count="13" type="stmt"/>
+        <line num="39" count="13" type="stmt"/>
+        <line num="40" count="13" type="stmt"/>
+        <line num="41" count="13" type="stmt"/>
+        <line num="42" count="13" type="stmt"/>
+        <line num="43" count="13" type="stmt"/>
+        <line num="44" count="13" type="stmt"/>
+        <line num="45" count="13" type="stmt"/>
+        <line num="46" count="13" type="stmt"/>
+        <line num="47" count="13" type="stmt"/>
+        <line num="48" count="13" type="stmt"/>
+        <line num="49" count="13" type="stmt"/>
+        <line num="50" count="13" type="stmt"/>
+        <line num="51" count="13" type="stmt"/>
+        <line num="52" count="13" type="stmt"/>
+        <line num="53" count="13" type="stmt"/>
+        <line num="54" count="13" type="stmt"/>
+        <line num="55" count="13" type="stmt"/>
+        <line num="56" count="13" type="stmt"/>
+        <line num="57" count="13" type="stmt"/>
+        <line num="58" count="13" type="stmt"/>
+        <line num="59" count="13" type="stmt"/>
+        <line num="60" count="13" type="stmt"/>
+        <line num="61" count="13" type="stmt"/>
+        <line num="62" count="13" type="stmt"/>
+      </file>
+      <file name="matchKeys.ts" path="/home/runner/work/tgslib/tgslib/src/core/matchKeys.ts">
+        <metrics statements="54" coveredstatements="51" conditionals="38" coveredconditionals="34" methods="7" coveredmethods="7"/>
+        <line num="9" count="13" type="stmt"/>
+        <line num="10" count="21" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="9" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
+        <line num="18" count="20" type="cond" truecount="4" falsecount="0"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="18" type="cond" truecount="4" falsecount="0"/>
+        <line num="21" count="14" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="27" count="12" type="stmt"/>
+        <line num="33" count="13" type="stmt"/>
+        <line num="39" count="57" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="53" type="stmt"/>
+        <line num="41" count="53" type="cond" truecount="4" falsecount="0"/>
+        <line num="42" count="51" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="48" count="13" type="stmt"/>
+        <line num="54" count="51" type="cond" truecount="1" falsecount="0"/>
+        <line num="56" count="2" type="stmt"/>
+        <line num="58" count="49" type="cond" truecount="0" falsecount="1"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="62" count="49" type="cond" truecount="1" falsecount="0"/>
+        <line num="65" count="12" type="stmt"/>
+        <line num="67" count="37" type="stmt"/>
+        <line num="70" count="13" type="stmt"/>
+        <line num="71" count="8" type="stmt"/>
+        <line num="74" count="13" type="stmt"/>
+        <line num="79" count="265" type="cond" truecount="0" falsecount="1"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="82" count="265" type="cond" truecount="1" falsecount="0"/>
+        <line num="83" count="168" type="stmt"/>
+        <line num="85" count="97" type="stmt"/>
+        <line num="92" count="13" type="stmt"/>
+        <line num="99" count="153" type="cond" truecount="1" falsecount="0"/>
+        <line num="100" count="12" type="stmt"/>
+        <line num="102" count="141" type="stmt"/>
+        <line num="103" count="141" type="stmt"/>
+        <line num="104" count="141" type="stmt"/>
+        <line num="106" count="141" type="cond" truecount="1" falsecount="0"/>
+        <line num="107" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="108" count="22" type="stmt"/>
+        <line num="115" count="119" type="cond" truecount="2" falsecount="0"/>
+        <line num="116" count="119" type="cond" truecount="1" falsecount="0"/>
+        <line num="117" count="20" type="stmt"/>
+        <line num="123" count="99" type="cond" truecount="0" falsecount="1"/>
+        <line num="124" count="0" type="stmt"/>
+        <line num="126" count="99" type="cond" truecount="1" falsecount="0"/>
+        <line num="128" count="28" type="stmt"/>
+        <line num="132" count="71" type="stmt"/>
+        <line num="135" count="13" type="stmt"/>
+        <line num="136" count="51" type="cond" truecount="1" falsecount="1"/>
+      </file>
+      <file name="util.ts" path="/home/runner/work/tgslib/tgslib/src/core/util.ts">
+        <metrics statements="105" coveredstatements="96" conditionals="22" coveredconditionals="13" methods="43" coveredmethods="40"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="32" count="13" type="stmt"/>
+        <line num="37" count="37" type="stmt"/>
+        <line num="38" count="37" type="stmt"/>
+        <line num="39" count="37" type="stmt"/>
+        <line num="40" count="37" type="cond" truecount="1" falsecount="1"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="46" count="37" type="stmt"/>
+        <line num="47" count="37" type="stmt"/>
+        <line num="48" count="37" type="stmt"/>
+        <line num="49" count="37" type="stmt"/>
+        <line num="51" count="37" type="stmt"/>
+        <line num="60" count="21462" type="stmt"/>
+        <line num="65" count="13" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="118" count="13" type="stmt"/>
+        <line num="122" count="10162" type="stmt"/>
+        <line num="130" count="13" type="stmt"/>
+        <line num="134" count="19140" type="cond" truecount="1" falsecount="0"/>
+        <line num="135" count="9017" type="stmt"/>
+        <line num="137" count="10123" type="cond" truecount="1" falsecount="0"/>
+        <line num="138" count="1" type="stmt"/>
+        <line num="140" count="10122" type="stmt"/>
+        <line num="141" count="10124" type="cond" truecount="1" falsecount="0"/>
+        <line num="142" count="10121" type="stmt"/>
+        <line num="145" count="1" type="stmt"/>
+        <line num="148" count="13" type="stmt"/>
+        <line num="149" count="6649" type="stmt"/>
+        <line num="150" count="6649" type="stmt"/>
+        <line num="153" count="13" type="stmt"/>
+        <line num="154" count="6648" type="stmt"/>
+        <line num="157" count="13" type="stmt"/>
+        <line num="161" count="14" type="stmt"/>
+        <line num="162" count="14" type="stmt"/>
+        <line num="168" count="13" type="stmt"/>
+        <line num="169" count="14" type="stmt"/>
+        <line num="172" count="13" type="stmt"/>
+        <line num="177" count="196298" type="cond" truecount="1" falsecount="0"/>
+        <line num="178" count="153110" type="stmt"/>
+        <line num="181" count="13" type="stmt"/>
+        <line num="183" count="19208" type="cond" truecount="2" falsecount="0"/>
+        <line num="186" count="33219" type="stmt"/>
+        <line num="190" count="13" type="stmt"/>
+        <line num="192" count="74" type="stmt"/>
+        <line num="195" count="29" type="stmt"/>
+        <line num="199" count="13" type="stmt"/>
+        <line num="201" count="1192" type="stmt"/>
+        <line num="204" count="1960" type="stmt"/>
+        <line num="208" count="13" type="stmt"/>
+        <line num="210" count="19964" type="stmt"/>
+        <line num="213" count="18448" type="stmt"/>
+        <line num="217" count="30686" type="stmt"/>
+        <line num="219" count="11205" type="stmt"/>
+        <line num="222" count="19445" type="stmt"/>
+        <line num="226" count="13" type="stmt"/>
+        <line num="228" count="31534" type="stmt"/>
+        <line num="230" count="11859" type="cond" truecount="0" falsecount="1"/>
+        <line num="231" count="11859" type="stmt"/>
+        <line num="232" count="35236" type="stmt"/>
+        <line num="233" count="35236" type="stmt"/>
+        <line num="237" count="20156" type="stmt"/>
+        <line num="241" count="13" type="stmt"/>
+        <line num="243" count="7284" type="cond" truecount="1" falsecount="0"/>
+        <line num="244" count="0" type="stmt"/>
+        <line num="247" count="4312" type="cond" truecount="1" falsecount="0"/>
+        <line num="248" count="0" type="stmt"/>
+        <line num="252" count="13" type="stmt"/>
+        <line num="254" count="30271" type="stmt"/>
+        <line num="257" count="17361" type="cond" truecount="2" falsecount="1"/>
+        <line num="258" count="17361" type="stmt"/>
+        <line num="265" count="13" type="stmt"/>
+        <line num="267" count="110942" type="stmt"/>
+        <line num="269" count="27238" type="cond" truecount="0" falsecount="1"/>
+        <line num="270" count="27238" type="stmt"/>
+        <line num="273" count="40643" type="cond" truecount="1" falsecount="0"/>
+        <line num="274" count="15864" type="stmt"/>
+        <line num="278" count="13" type="stmt"/>
+        <line num="284" count="5124" type="stmt"/>
+        <line num="286" count="10624" type="stmt"/>
+        <line num="287" count="10624" type="cond" truecount="0" falsecount="1"/>
+        <line num="288" count="0" type="stmt"/>
+        <line num="289" count="10624" type="stmt"/>
+        <line num="290" count="10624" type="cond" truecount="0" falsecount="1"/>
+        <line num="291" count="10624" type="stmt"/>
+        <line num="294" count="6092" type="stmt"/>
+        <line num="295" count="6092" type="stmt"/>
+        <line num="296" count="6092" type="cond" truecount="0" falsecount="1"/>
+        <line num="297" count="6092" type="stmt"/>
+        <line num="301" count="13" type="stmt"/>
+        <line num="318" count="13" type="stmt"/>
+        <line num="323" count="113500" type="cond" truecount="0" falsecount="1"/>
+        <line num="324" count="0" type="stmt"/>
+        <line num="325" count="113500" type="stmt"/>
+        <line num="328" count="13" type="stmt"/>
+        <line num="329" count="5098" type="stmt"/>
+        <line num="355" count="13" type="stmt"/>
+        <line num="356" count="64278" type="cond" truecount="1" falsecount="1"/>
+        <line num="360" count="13" type="stmt"/>
+        <line num="363" count="5280" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.core.animatable">
+      <metrics statements="123" coveredstatements="108" conditionals="27" coveredconditionals="17" methods="44" coveredmethods="38"/>
+      <file name="AnimatableValueTransform.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/AnimatableValueTransform.ts">
+        <metrics statements="54" coveredstatements="50" conditionals="18" coveredconditionals="15" methods="30" coveredmethods="26"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="16" count="13" type="stmt"/>
+        <line num="18" count="13" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="22" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="35" count="3" type="stmt"/>
+        <line num="42" count="3080" type="stmt"/>
+        <line num="44" count="1960" type="cond" truecount="0" falsecount="1"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="1960" type="stmt"/>
+        <line num="50" count="1120" type="cond" truecount="0" falsecount="1"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="53" count="1120" type="stmt"/>
+        <line num="57" count="13" type="stmt"/>
+        <line num="60" count="15490" type="stmt"/>
+        <line num="62" count="9817" type="cond" truecount="1" falsecount="0"/>
+        <line num="63" count="980" type="stmt"/>
+        <line num="65" count="9355" type="stmt"/>
+        <line num="68" count="5673" type="cond" truecount="1" falsecount="0"/>
+        <line num="69" count="264" type="stmt"/>
+        <line num="70" count="560" type="stmt"/>
+        <line num="73" count="5409" type="stmt"/>
+        <line num="77" count="13" type="stmt"/>
+        <line num="80" count="25980" type="stmt"/>
+        <line num="82" count="16478" type="cond" truecount="3" falsecount="0"/>
+        <line num="83" count="1736" type="stmt"/>
+        <line num="85" count="16044" type="stmt"/>
+        <line num="88" count="9502" type="cond" truecount="3" falsecount="0"/>
+        <line num="89" count="248" type="stmt"/>
+        <line num="90" count="992" type="stmt"/>
+        <line num="93" count="9254" type="stmt"/>
+        <line num="97" count="13" type="stmt"/>
+        <line num="100" count="3433" type="stmt"/>
+        <line num="102" count="2184" type="cond" truecount="2" falsecount="1"/>
+        <line num="103" count="0" type="stmt"/>
+        <line num="105" count="2184" type="stmt"/>
+        <line num="108" count="1249" type="cond" truecount="3" falsecount="0"/>
+        <line num="109" count="1" type="stmt"/>
+        <line num="110" count="36" type="stmt"/>
+        <line num="113" count="1248" type="stmt"/>
+        <line num="117" count="13" type="stmt"/>
+        <line num="119" count="16" type="stmt"/>
+        <line num="121" count="2" type="stmt"/>
+        <line num="124" count="6" type="stmt"/>
+        <line num="131" count="13" type="stmt"/>
+        <line num="133" count="0" type="stmt"/>
+        <line num="136" count="36" type="stmt"/>
+        <line num="140" count="13" type="stmt"/>
+      </file>
+      <file name="BezierValues.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/BezierValues.ts">
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="17" count="13" type="stmt"/>
+        <line num="18" count="3716" type="stmt"/>
+        <line num="19" count="3716" type="stmt"/>
+        <line num="25" count="2156" type="stmt"/>
+        <line num="32" count="3642" type="stmt"/>
+        <line num="33" count="3642" type="stmt"/>
+        <line num="34" count="3642" type="stmt"/>
+        <line num="42" count="2156" type="stmt"/>
+        <line num="54" count="3642" type="stmt"/>
+        <line num="55" count="3642" type="stmt"/>
+        <line num="56" count="3642" type="stmt"/>
+      </file>
+      <file name="Path.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/Path.ts">
+        <metrics statements="31" coveredstatements="21" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="5"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="22" count="13" type="stmt"/>
+        <line num="29" count="5880" type="stmt"/>
+        <line num="30" count="5880" type="cond" truecount="0" falsecount="1"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="33" count="5880" type="cond" truecount="0" falsecount="1"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="5880" type="cond" truecount="0" falsecount="1"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="39" count="5880" type="cond" truecount="0" falsecount="1"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="44" count="5880" type="stmt"/>
+        <line num="46" count="5880" type="stmt"/>
+        <line num="48" count="5880" type="stmt"/>
+        <line num="50" count="5880" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="68" count="1120" type="stmt"/>
+        <line num="75" count="1960" type="stmt"/>
+        <line num="76" count="1960" type="stmt"/>
+        <line num="77" count="1960" type="stmt"/>
+        <line num="85" count="1120" type="stmt"/>
+        <line num="99" count="1960" type="stmt"/>
+        <line num="100" count="1960" type="stmt"/>
+        <line num="101" count="1960" type="stmt"/>
+        <line num="102" count="1960" type="stmt"/>
+        <line num="103" count="1960" type="stmt"/>
+      </file>
+      <file name="easing.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/easing.ts">
+        <metrics statements="6" coveredstatements="5" conditionals="3" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="45" count="13" type="stmt"/>
+        <line num="91" count="13" type="stmt"/>
+        <line num="92" count="37" type="cond" truecount="1" falsecount="1"/>
+        <line num="93" count="37" type="cond" truecount="0" falsecount="1"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="96" count="37" type="stmt"/>
+      </file>
+      <file name="stops.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/stops.ts">
+        <metrics statements="20" coveredstatements="20" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
+        <line num="4" count="9" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="7" count="24" type="stmt"/>
+        <line num="8" count="24" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="13" count="13" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="24" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="8" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.core.animatable.keyframes">
+      <metrics statements="78" coveredstatements="50" conditionals="4" coveredconditionals="0" methods="30" coveredmethods="17"/>
+      <file name="ColorKeyframe.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/keyframes/ColorKeyframe.ts">
+        <metrics statements="14" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="14" count="13" type="stmt"/>
+        <line num="20" count="37" type="stmt"/>
+        <line num="21" count="37" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="33" count="36" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="50" count="36" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+      </file>
+      <file name="GradientKeyframe.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/keyframes/GradientKeyframe.ts">
+        <metrics statements="14" coveredstatements="12" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="5"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="16" count="13" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="35" count="6" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="49" count="6" type="stmt"/>
+        <line num="61" count="2" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
+        <line num="63" count="2" type="stmt"/>
+      </file>
+      <file name="Keyframe.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/keyframes/Keyframe.ts">
+        <metrics statements="18" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="12" count="13" type="stmt"/>
+        <line num="13" count="2761" type="stmt"/>
+        <line num="16" count="39" type="stmt"/>
+        <line num="17" count="39" type="stmt"/>
+        <line num="20" count="2761" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="32" count="37" type="stmt"/>
+        <line num="33" count="37" type="stmt"/>
+        <line num="37" count="37" type="stmt"/>
+        <line num="38" count="37" type="stmt"/>
+        <line num="46" count="1594" type="stmt"/>
+        <line num="60" count="2718" type="stmt"/>
+        <line num="61" count="2718" type="stmt"/>
+        <line num="62" count="2718" type="stmt"/>
+        <line num="63" count="2718" type="stmt"/>
+        <line num="64" count="2718" type="stmt"/>
+      </file>
+      <file name="OffsetKeyframe.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/keyframes/OffsetKeyframe.ts">
+        <metrics statements="17" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="9" count="13" type="stmt"/>
+        <line num="10" count="2719" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="32" count="1552" type="stmt"/>
+        <line num="39" count="2716" type="stmt"/>
+        <line num="40" count="2716" type="stmt"/>
+        <line num="41" count="2716" type="stmt"/>
+        <line num="49" count="1552" type="stmt"/>
+        <line num="63" count="2716" type="stmt"/>
+        <line num="64" count="2716" type="stmt"/>
+        <line num="65" count="2716" type="stmt"/>
+        <line num="66" count="2716" type="stmt"/>
+        <line num="67" count="2716" type="stmt"/>
+      </file>
+      <file name="PathKeyframe.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/keyframes/PathKeyframe.ts">
+        <metrics statements="15" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="13" count="13" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.core.animatable.values">
+      <metrics statements="179" coveredstatements="133" conditionals="49" coveredconditionals="21" methods="63" coveredmethods="49"/>
+      <file name="Animatable1DValue.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/values/Animatable1DValue.ts">
+        <metrics statements="24" coveredstatements="15" conditionals="4" coveredconditionals="1" methods="9" coveredmethods="6"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="17" count="13" type="stmt"/>
+        <line num="18" count="33362" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="25" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="44" count="33362" type="stmt"/>
+        <line num="45" count="33362" type="cond" truecount="1" falsecount="0"/>
+        <line num="51" count="6802" type="stmt"/>
+        <line num="52" count="6802" type="stmt"/>
+        <line num="53" count="6802" type="stmt"/>
+        <line num="60" count="9502" type="stmt"/>
+        <line num="67" count="16478" type="stmt"/>
+        <line num="68" count="16478" type="stmt"/>
+        <line num="69" count="16478" type="stmt"/>
+        <line num="77" count="9502" type="stmt"/>
+        <line num="88" count="16478" type="stmt"/>
+        <line num="89" count="16478" type="stmt"/>
+      </file>
+      <file name="Animatable2DValue.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/values/Animatable2DValue.ts">
+        <metrics statements="24" coveredstatements="15" conditionals="4" coveredconditionals="1" methods="9" coveredmethods="6"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="24" count="19931" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="31" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="49" count="19931" type="stmt"/>
+        <line num="50" count="19931" type="cond" truecount="1" falsecount="0"/>
+        <line num="56" count="10114" type="stmt"/>
+        <line num="57" count="10114" type="stmt"/>
+        <line num="58" count="10114" type="stmt"/>
+        <line num="65" count="3786" type="stmt"/>
+        <line num="71" count="6546" type="stmt"/>
+        <line num="72" count="6546" type="stmt"/>
+        <line num="73" count="6546" type="stmt"/>
+        <line num="81" count="5673" type="stmt"/>
+        <line num="92" count="9817" type="stmt"/>
+        <line num="93" count="9817" type="stmt"/>
+      </file>
+      <file name="AnimatableColor.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/values/AnimatableColor.ts">
+        <metrics statements="24" coveredstatements="23" conditionals="8" coveredconditionals="6" methods="9" coveredmethods="9"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="19" count="13" type="stmt"/>
+        <line num="20" count="4398" type="stmt"/>
+        <line num="23" count="1" type="cond" truecount="2" falsecount="1"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="34" count="36" type="stmt"/>
+        <line num="35" count="36" type="stmt"/>
+        <line num="42" count="36" type="stmt"/>
+        <line num="46" count="4398" type="stmt"/>
+        <line num="47" count="4398" type="cond" truecount="1" falsecount="0"/>
+        <line num="51" count="2214" type="cond" truecount="2" falsecount="0"/>
+        <line num="52" count="2214" type="stmt"/>
+        <line num="53" count="2214" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="64" count="1248" type="stmt"/>
+        <line num="71" count="2184" type="stmt"/>
+        <line num="72" count="2184" type="stmt"/>
+        <line num="73" count="2184" type="stmt"/>
+        <line num="81" count="1249" type="stmt"/>
+        <line num="92" count="2184" type="stmt"/>
+        <line num="93" count="2184" type="stmt"/>
+      </file>
+      <file name="AnimatableGradient.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/values/AnimatableGradient.ts">
+        <metrics statements="34" coveredstatements="28" conditionals="11" coveredconditionals="5" methods="9" coveredmethods="8"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="21" count="13" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="27" count="7" type="stmt"/>
+        <line num="30" count="1" type="cond" truecount="2" falsecount="1"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="49" count="7" type="stmt"/>
+        <line num="50" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="54" count="5" type="stmt"/>
+        <line num="55" count="5" type="stmt"/>
+        <line num="56" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="57" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="58" count="5" type="stmt"/>
+        <line num="59" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="60" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="61" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="66" count="5" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="77" count="6" type="stmt"/>
+        <line num="84" count="2" type="stmt"/>
+        <line num="85" count="2" type="stmt"/>
+        <line num="86" count="2" type="stmt"/>
+        <line num="94" count="6" type="stmt"/>
+        <line num="108" count="2" type="stmt"/>
+        <line num="109" count="2" type="stmt"/>
+        <line num="110" count="2" type="stmt"/>
+        <line num="111" count="2" type="stmt"/>
+      </file>
+      <file name="AnimatablePath.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/values/AnimatablePath.ts">
+        <metrics statements="23" coveredstatements="12" conditionals="4" coveredconditionals="0" methods="9" coveredmethods="5"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="21" count="13" type="stmt"/>
+        <line num="23" count="3920" type="stmt"/>
+        <line num="24" count="3920" type="cond" truecount="0" falsecount="1"/>
+        <line num="27" count="3920" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="47" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="61" count="1120" type="stmt"/>
+        <line num="68" count="1960" type="stmt"/>
+        <line num="69" count="1960" type="stmt"/>
+        <line num="70" count="1960" type="stmt"/>
+        <line num="78" count="1120" type="stmt"/>
+        <line num="89" count="1960" type="stmt"/>
+        <line num="90" count="1960" type="stmt"/>
+      </file>
+      <file name="AnimatablePosition.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/values/AnimatablePosition.ts">
+        <metrics statements="18" coveredstatements="12" conditionals="6" coveredconditionals="2" methods="6" coveredmethods="4"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="18" count="13" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="43" count="1887" type="stmt"/>
+        <line num="50" count="3271" type="stmt"/>
+        <line num="51" count="3271" type="stmt"/>
+        <line num="52" count="3271" type="stmt"/>
+        <line num="60" count="1887" type="stmt"/>
+        <line num="61" count="1887" type="stmt"/>
+        <line num="76" count="3271" type="stmt"/>
+        <line num="77" count="3271" type="stmt"/>
+        <line num="78" count="3271" type="stmt"/>
+        <line num="79" count="3271" type="stmt"/>
+      </file>
+      <file name="AnimatableValue.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/values/AnimatableValue.ts">
+        <metrics statements="20" coveredstatements="16" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="4"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="21" count="13" type="stmt"/>
+        <line num="30" count="61618" type="stmt"/>
+        <line num="33" count="19135" type="stmt"/>
+        <line num="63" count="37" type="stmt"/>
+        <line num="64" count="37" type="cond" truecount="1" falsecount="0"/>
+        <line num="65" count="2" type="stmt"/>
+        <line num="67" count="37" type="stmt"/>
+        <line num="68" count="37" type="stmt"/>
+        <line num="69" count="37" type="stmt"/>
+        <line num="70" count="37" type="stmt"/>
+        <line num="71" count="37" type="cond" truecount="1" falsecount="0"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="83" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="84" count="0" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="95" count="17550" type="stmt"/>
+        <line num="106" count="30441" type="stmt"/>
+        <line num="107" count="30441" type="stmt"/>
+      </file>
+      <file name="RgbaStopValue.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/values/RgbaStopValue.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="6" count="13" type="stmt"/>
+        <line num="10" count="22" type="stmt"/>
+        <line num="11" count="22" type="stmt"/>
+        <line num="15" count="48" type="stmt"/>
+      </file>
+      <file name="RgbaValue.ts" path="/home/runner/work/tgslib/tgslib/src/core/animatable/values/RgbaValue.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="8" coveredconditionals="4" methods="5" coveredmethods="5"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="6" count="13" type="stmt"/>
+        <line num="10" count="8856" type="cond" truecount="4" falsecount="4"/>
+        <line num="14" count="25" type="stmt"/>
+        <line num="18" count="25" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="31" count="1284" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.core.errors">
+      <metrics statements="12" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <file name="AnimationError.ts" path="/home/runner/work/tgslib/tgslib/src/core/errors/AnimationError.ts">
+        <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+      <file name="CastError.ts" path="/home/runner/work/tgslib/tgslib/src/core/errors/CastError.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+      </file>
+      <file name="SerializationError.ts" path="/home/runner/work/tgslib/tgslib/src/core/errors/SerializationError.ts">
+        <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="13" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.core.layers">
+      <metrics statements="176" coveredstatements="101" conditionals="14" coveredconditionals="0" methods="58" coveredmethods="25"/>
+      <file name="CompLayer.ts" path="/home/runner/work/tgslib/tgslib/src/core/layers/CompLayer.ts">
+        <metrics statements="16" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="22" count="13" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+      </file>
+      <file name="Dimensions.ts" path="/home/runner/work/tgslib/tgslib/src/core/layers/Dimensions.ts">
+        <metrics statements="14" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="9" count="26" type="stmt"/>
+        <line num="10" count="26" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="32" count="14" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="43" count="12" type="stmt"/>
+      </file>
+      <file name="ImageLayer.ts" path="/home/runner/work/tgslib/tgslib/src/core/layers/ImageLayer.ts">
+        <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+      </file>
+      <file name="Layer.ts" path="/home/runner/work/tgslib/tgslib/src/core/layers/Layer.ts">
+        <metrics statements="56" coveredstatements="34" conditionals="5" coveredconditionals="0" methods="13" coveredmethods="4"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="29" count="13" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="52" count="60" type="stmt"/>
+        <line num="55" count="6" type="stmt"/>
+        <line num="56" count="6" type="stmt"/>
+        <line num="59" count="60" type="stmt"/>
+        <line num="62" count="8" type="stmt"/>
+        <line num="63" count="8" type="stmt"/>
+        <line num="66" count="60" type="stmt"/>
+        <line num="68" count="60" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="75" count="60" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="82" count="60" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
+        <line num="86" count="0" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="96" count="60" type="stmt"/>
+        <line num="100" count="60" type="stmt"/>
+        <line num="102" count="60" type="stmt"/>
+        <line num="113" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="114" count="0" type="stmt"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="117" count="0" type="stmt"/>
+        <line num="118" count="0" type="stmt"/>
+        <line num="122" count="0" type="stmt"/>
+        <line num="123" count="0" type="stmt"/>
+        <line num="130" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="131" count="0" type="stmt"/>
+        <line num="132" count="0" type="stmt"/>
+        <line num="133" count="0" type="stmt"/>
+        <line num="134" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="136" count="0" type="stmt"/>
+        <line num="144" count="36" type="stmt"/>
+        <line num="171" count="36" type="stmt"/>
+        <line num="172" count="36" type="stmt"/>
+        <line num="173" count="36" type="stmt"/>
+        <line num="174" count="36" type="stmt"/>
+        <line num="175" count="36" type="stmt"/>
+        <line num="176" count="36" type="stmt"/>
+        <line num="177" count="36" type="stmt"/>
+        <line num="178" count="36" type="stmt"/>
+        <line num="179" count="36" type="stmt"/>
+        <line num="180" count="36" type="stmt"/>
+        <line num="181" count="36" type="stmt"/>
+        <line num="182" count="36" type="stmt"/>
+        <line num="183" count="36" type="stmt"/>
+        <line num="184" count="36" type="stmt"/>
+        <line num="185" count="36" type="stmt"/>
+        <line num="186" count="36" type="stmt"/>
+        <line num="187" count="36" type="stmt"/>
+        <line num="188" count="36" type="stmt"/>
+      </file>
+      <file name="LayersMixin.ts" path="/home/runner/work/tgslib/tgslib/src/core/layers/LayersMixin.ts">
+        <metrics statements="18" coveredstatements="16" conditionals="3" coveredconditionals="0" methods="8" coveredmethods="6"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="21" count="26" type="stmt"/>
+        <line num="34" count="13" type="stmt"/>
+        <line num="35" count="26" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="43" count="6" type="stmt"/>
+        <line num="44" count="6" type="stmt"/>
+        <line num="48" count="18" type="stmt"/>
+        <line num="49" count="18" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="73" count="14" type="stmt"/>
+        <line num="82" count="12" type="stmt"/>
+      </file>
+      <file name="NullLayer.ts" path="/home/runner/work/tgslib/tgslib/src/core/layers/NullLayer.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="11" count="13" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+      </file>
+      <file name="PreComp.ts" path="/home/runner/work/tgslib/tgslib/src/core/layers/PreComp.ts">
+        <metrics statements="22" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="8" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="40" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="43" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+      </file>
+      <file name="ShapeLayer.ts" path="/home/runner/work/tgslib/tgslib/src/core/layers/ShapeLayer.ts">
+        <metrics statements="20" coveredstatements="18" conditionals="1" coveredconditionals="0" methods="7" coveredmethods="7"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="30" count="15" type="stmt"/>
+        <line num="31" count="15" type="stmt"/>
+        <line num="32" count="15" type="stmt"/>
+        <line num="38" count="20" type="stmt"/>
+        <line num="39" count="45" type="stmt"/>
+        <line num="41" count="20" type="cond" truecount="0" falsecount="1"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="52" count="52" type="stmt"/>
+        <line num="53" count="52" type="stmt"/>
+        <line num="60" count="24" type="stmt"/>
+        <line num="67" count="32" type="stmt"/>
+        <line num="68" count="32" type="stmt"/>
+        <line num="69" count="32" type="stmt"/>
+        <line num="77" count="24" type="stmt"/>
+        <line num="88" count="32" type="stmt"/>
+        <line num="89" count="32" type="stmt"/>
+      </file>
+      <file name="SolidLayer.ts" path="/home/runner/work/tgslib/tgslib/src/core/layers/SolidLayer.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="11" count="13" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+      </file>
+      <file name="TextLayer.ts" path="/home/runner/work/tgslib/tgslib/src/core/layers/TextLayer.ts">
+        <metrics statements="8" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="11" count="13" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.core.shapes">
+      <metrics statements="356" coveredstatements="191" conditionals="8" coveredconditionals="1" methods="125" coveredmethods="52"/>
+      <file name="EllipseShape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/EllipseShape.ts">
+        <metrics statements="19" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
+        <line num="28" count="5" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+      </file>
+      <file name="FillShape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/FillShape.ts">
+        <metrics statements="22" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="5"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="23" count="13" type="stmt"/>
+        <line num="25" count="992" type="stmt"/>
+        <line num="26" count="992" type="stmt"/>
+        <line num="29" count="992" type="stmt"/>
+        <line num="31" count="992" type="stmt"/>
+        <line num="33" count="992" type="stmt"/>
+        <line num="35" count="992" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="51" count="560" type="stmt"/>
+        <line num="58" count="980" type="stmt"/>
+        <line num="59" count="980" type="stmt"/>
+        <line num="60" count="980" type="stmt"/>
+        <line num="68" count="560" type="stmt"/>
+        <line num="82" count="980" type="stmt"/>
+        <line num="83" count="980" type="stmt"/>
+        <line num="84" count="980" type="stmt"/>
+        <line num="85" count="980" type="stmt"/>
+        <line num="86" count="980" type="stmt"/>
+      </file>
+      <file name="GradientFillShape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/GradientFillShape.ts">
+        <metrics statements="20" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="26" count="13" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+        <line num="56" count="2" type="stmt"/>
+        <line num="64" count="6" type="stmt"/>
+        <line num="78" count="2" type="stmt"/>
+        <line num="79" count="2" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="81" count="2" type="stmt"/>
+        <line num="82" count="2" type="stmt"/>
+      </file>
+      <file name="GradientMixin.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/GradientMixin.ts">
+        <metrics statements="27" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="3"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="12" count="13" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="48" count="4" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="63" count="6" type="stmt"/>
+        <line num="78" count="2" type="stmt"/>
+        <line num="79" count="2" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="81" count="2" type="stmt"/>
+        <line num="82" count="2" type="stmt"/>
+        <line num="83" count="2" type="stmt"/>
+      </file>
+      <file name="GradientStrokeShape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/GradientStrokeShape.ts">
+        <metrics statements="13" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="23" count="13" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+      </file>
+      <file name="GroupShape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/GroupShape.ts">
+        <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="27" count="13" type="stmt"/>
+        <line num="37" count="27" type="stmt"/>
+        <line num="38" count="27" type="stmt"/>
+        <line num="44" count="28" type="stmt"/>
+        <line num="45" count="84" type="stmt"/>
+        <line num="53" count="3215" type="stmt"/>
+        <line num="54" count="3215" type="stmt"/>
+        <line num="57" count="3215" type="stmt"/>
+        <line num="63" count="1835" type="stmt"/>
+        <line num="70" count="3207" type="stmt"/>
+        <line num="71" count="3207" type="stmt"/>
+        <line num="72" count="3207" type="stmt"/>
+        <line num="80" count="1835" type="stmt"/>
+        <line num="92" count="3207" type="stmt"/>
+        <line num="93" count="3207" type="stmt"/>
+        <line num="94" count="3207" type="stmt"/>
+      </file>
+      <file name="MergeShape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/MergeShape.ts">
+        <metrics statements="11" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="19" count="13" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+      </file>
+      <file name="PathShape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/PathShape.ts">
+        <metrics statements="16" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="5"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="22" count="1960" type="stmt"/>
+        <line num="23" count="1960" type="stmt"/>
+        <line num="28" count="1960" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="43" count="1120" type="stmt"/>
+        <line num="50" count="1960" type="stmt"/>
+        <line num="51" count="1960" type="stmt"/>
+        <line num="52" count="1960" type="stmt"/>
+        <line num="60" count="1120" type="stmt"/>
+        <line num="72" count="1960" type="stmt"/>
+        <line num="73" count="1960" type="stmt"/>
+        <line num="74" count="1960" type="stmt"/>
+      </file>
+      <file name="RectShape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/RectShape.ts">
+        <metrics statements="26" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="1"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="21" count="13" type="stmt"/>
+        <line num="23" count="14" type="stmt"/>
+        <line num="24" count="14" type="stmt"/>
+        <line num="27" count="14" type="stmt"/>
+        <line num="29" count="14" type="stmt"/>
+        <line num="31" count="14" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="48" count="14" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="90" count="0" type="stmt"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+      </file>
+      <file name="RepeaterShape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/RepeaterShape.ts">
+        <metrics statements="8" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="12" count="13" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+      </file>
+      <file name="RoundedCornersShape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/RoundedCornersShape.ts">
+        <metrics statements="14" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="17" count="13" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+      </file>
+      <file name="Shape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/Shape.ts">
+        <metrics statements="17" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="23" count="13" type="stmt"/>
+        <line num="33" count="102" type="stmt"/>
+        <line num="44" count="10671" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="53" count="10671" type="stmt"/>
+        <line num="56" count="20" type="stmt"/>
+        <line num="57" count="20" type="stmt"/>
+        <line num="61" count="2" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
+        <line num="70" count="6060" type="stmt"/>
+        <line num="84" count="10588" type="stmt"/>
+        <line num="85" count="10588" type="stmt"/>
+        <line num="86" count="10588" type="stmt"/>
+        <line num="87" count="10588" type="stmt"/>
+        <line num="88" count="10588" type="stmt"/>
+      </file>
+      <file name="ShapesMixin.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/ShapesMixin.ts">
+        <metrics statements="28" coveredstatements="24" conditionals="8" coveredconditionals="1" methods="12" coveredmethods="8"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="13" count="13" type="stmt"/>
+        <line num="14" count="3267" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="44" type="stmt"/>
+        <line num="23" count="44" type="stmt"/>
+        <line num="27" count="32" type="stmt"/>
+        <line num="28" count="32" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="37" count="5" type="stmt"/>
+        <line num="38" count="5" type="cond" truecount="0" falsecount="1"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="49" count="8" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="60" count="5" type="stmt"/>
+        <line num="61" count="5" type="cond" truecount="0" falsecount="1"/>
+        <line num="62" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="65" count="5" type="cond" truecount="0" falsecount="1"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="77" count="1859" type="stmt"/>
+        <line num="87" count="3239" type="stmt"/>
+      </file>
+      <file name="StarShape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/StarShape.ts">
+        <metrics statements="42" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="21" count="13" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="123" count="0" type="stmt"/>
+        <line num="124" count="0" type="stmt"/>
+        <line num="125" count="0" type="stmt"/>
+        <line num="126" count="0" type="stmt"/>
+        <line num="127" count="0" type="stmt"/>
+        <line num="128" count="0" type="stmt"/>
+        <line num="129" count="0" type="stmt"/>
+        <line num="130" count="0" type="stmt"/>
+        <line num="131" count="0" type="stmt"/>
+        <line num="132" count="0" type="stmt"/>
+      </file>
+      <file name="StrokeMixin.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/StrokeMixin.ts">
+        <metrics statements="21" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="13" count="13" type="stmt"/>
+        <line num="14" count="1221" type="stmt"/>
+        <line num="16" count="1221" type="stmt"/>
+        <line num="18" count="1221" type="stmt"/>
+        <line num="20" count="1221" type="stmt"/>
+        <line num="22" count="1221" type="stmt"/>
+        <line num="24" count="1221" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="46" count="688" type="stmt"/>
+        <line num="63" count="1204" type="stmt"/>
+        <line num="64" count="1204" type="stmt"/>
+        <line num="65" count="1204" type="stmt"/>
+        <line num="66" count="1204" type="stmt"/>
+        <line num="67" count="1204" type="stmt"/>
+        <line num="68" count="1204" type="stmt"/>
+      </file>
+      <file name="StrokeShape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/StrokeShape.ts">
+        <metrics statements="16" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="24" count="13" type="stmt"/>
+        <line num="26" count="1221" type="stmt"/>
+        <line num="27" count="1221" type="stmt"/>
+        <line num="30" count="1221" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="41" count="688" type="stmt"/>
+        <line num="48" count="1204" type="stmt"/>
+        <line num="49" count="1204" type="stmt"/>
+        <line num="50" count="1204" type="stmt"/>
+        <line num="58" count="688" type="stmt"/>
+        <line num="70" count="1204" type="stmt"/>
+        <line num="71" count="1204" type="stmt"/>
+        <line num="72" count="1204" type="stmt"/>
+      </file>
+      <file name="TransformShape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/TransformShape.ts">
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="22" count="3260" type="stmt"/>
+        <line num="23" count="3260" type="stmt"/>
+        <line num="31" count="1851" type="stmt"/>
+        <line num="42" count="3235" type="stmt"/>
+        <line num="43" count="3235" type="stmt"/>
+        <line num="50" count="1851" type="stmt"/>
+        <line num="57" count="3235" type="stmt"/>
+        <line num="58" count="3235" type="stmt"/>
+        <line num="59" count="3235" type="stmt"/>
+      </file>
+      <file name="TrimShape.ts" path="/home/runner/work/tgslib/tgslib/src/core/shapes/TrimShape.ts">
+        <metrics statements="26" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="18" count="13" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="99" count="0" type="stmt"/>
+        <line num="100" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utilities">
+      <metrics statements="62" coveredstatements="32" conditionals="13" coveredconditionals="2" methods="31" coveredmethods="16"/>
+      <file name="create.ts" path="/home/runner/work/tgslib/tgslib/src/utilities/create.ts">
+        <metrics statements="56" coveredstatements="26" conditionals="13" coveredconditionals="2" methods="31" coveredmethods="16"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="42" count="13" type="stmt"/>
+        <line num="44" count="5" type="stmt"/>
+        <line num="47" count="12" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="56" count="8" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="65" count="14" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="77" count="25" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="83" count="17" type="stmt"/>
+        <line num="87" count="13" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
+        <line num="92" count="2" type="stmt"/>
+        <line num="95" count="20" type="stmt"/>
+        <line num="98" count="2" type="stmt"/>
+        <line num="102" count="13" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="107" count="0" type="stmt"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="113" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="114" count="0" type="stmt"/>
+        <line num="117" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="118" count="0" type="stmt"/>
+        <line num="121" count="0" type="stmt"/>
+        <line num="125" count="13" type="stmt"/>
+        <line num="127" count="14" type="stmt"/>
+        <line num="130" count="12" type="stmt"/>
+        <line num="147" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="148" count="9" type="stmt"/>
+        <line num="150" count="9" type="stmt"/>
+        <line num="158" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="159" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="160" count="0" type="stmt"/>
+        <line num="162" count="0" type="stmt"/>
+        <line num="164" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="165" count="0" type="stmt"/>
+        <line num="167" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="168" count="0" type="stmt"/>
+        <line num="170" count="0" type="stmt"/>
+        <line num="194" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="195" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="200" count="0" type="stmt"/>
+        <line num="202" count="0" type="stmt"/>
+        <line num="204" count="1" type="stmt"/>
+        <line num="220" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="221" count="0" type="stmt"/>
+        <line num="225" count="0" type="stmt"/>
+        <line num="228" count="13" type="stmt"/>
+        <line num="230" count="13" type="stmt"/>
+        <line num="237" count="13" type="stmt"/>
+      </file>
+      <file name="enum.ts" path="/home/runner/work/tgslib/tgslib/src/utilities/enum.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="17" count="13" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/runner/work/tgslib/tgslib/src/utilities/index.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="6" count="13" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utilities.animation">
+      <metrics statements="37" coveredstatements="14" conditionals="3" coveredconditionals="0" methods="6" coveredmethods="1"/>
+      <file name="blink.ts" path="/home/runner/work/tgslib/tgslib/src/utilities/animation/blink.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="15" count="13" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="18" type="stmt"/>
+        <line num="24" count="18" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/runner/work/tgslib/tgslib/src/utilities/animation/index.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
+      </file>
+      <file name="particles.ts" path="/home/runner/work/tgslib/tgslib/src/utilities/animation/particles.ts">
+        <metrics statements="29" coveredstatements="6" conditionals="3" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="1" count="13" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="49" count="13" type="stmt"/>
+        <line num="50" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="54" count="13" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="92" count="13" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="99" count="0" type="stmt"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="105" count="13" type="stmt"/>
+        <line num="106" count="0" type="stmt"/>
+        <line num="107" count="0" type="stmt"/>
+        <line num="108" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="110" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
