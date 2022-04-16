@@ -1,9 +1,9 @@
-# TgsLib - A Library for Creating Telegram Stickers
+# tg-sticker-creator - A Library for Creating Telegram Stickers
 
 > Alpha Version
 
-[![CI](https://github.com/avoonix/tgslib/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/avoonix/tgslib/actions/workflows/main.yml)
-[![Coverage](https://github.io/avoonix/tgslib/coverage/badge.png)](https://github.io/avoonix/tgslib/coverage/index.html)
+[![CI](https://github.com/avoonix/tg-sticker-creator/actions/workflows/main.yml/badge.svg?branch=alpha)](https://github.com/avoonix/tg-sticker-creator/actions/workflows/main.yml)
+[![Coverage](https://github.io/avoonix/tg-sticker-creator/coverage/badge.png)](https://github.io/avoonix/tg-sticker-creator/coverage/index.html)
 
 ## Full Example
 
@@ -11,7 +11,7 @@
 import pako from "pako";
 import download from "downloadjs";
 
-import { create } from "tgslib";
+import { create } from "tg-sticker-creator";
 
 const mySticker = create
   .sticker()

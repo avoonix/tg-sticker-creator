@@ -5,7 +5,7 @@
   "excludeProtected": true,
   "excludeInternal": true,
   "out": "docs",
-  "name": "TgsLib Documentation",
+  "name": "TG Sticker Creator Documentation",
   "hideGenerator": false,
   "sort": ["enum-value-ascending","visibility", "instance-first", "kind", "alphabetical"]
 }

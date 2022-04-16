@@ -1,10 +1,10 @@
 {
-  "name": "tgslib",
+  "name": "tg-sticker-creator",
   "version": "0.0.0",
   "description": "",
-  "main": "lib/tgslib.cjs.js",
-  "module": "lib/tgslib.esm.js",
-  "typings": "lib/tgslib.d.ts",
+  "main": "lib/tg-sticker-creator.cjs.js",
+  "module": "lib/tg-sticker-creator.esm.js",
+  "typings": "lib/tg-sticker-creator.d.ts",
   "scripts": {
     "build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
     "test:watch": "jest --maxWorkers=75% --watch",
@@ -16,11 +16,11 @@
     "commit": "cz"
   },
   "bugs": {
-    "url": "https://github.com/avoonix/tgslib/issues"
+    "url": "https://github.com/avoonix/tg-sticker-creator/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/avoonix/tgslib.git"
+    "url": "https://github.com/avoonix/tg-sticker-creator.git"
   },
   "files": [
     "lib"

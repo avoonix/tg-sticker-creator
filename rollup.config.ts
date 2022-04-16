@@ -21,7 +21,7 @@ const rollupConfig = defineConfig([
     input: "src/index.ts",
     external: (id) => !/^[./]/.test(id),
     output: {
-      file: `./lib/tgslib.d.ts`,
+      file: `./lib/tg-sticker-creator.d.ts`,
       format: "es",
     },
   },
@@ -32,13 +32,13 @@ const rollupConfig = defineConfig([
     output: [
       {
         sourcemap: true,
-        file: "./lib/tgslib.esm.js",
+        file: "./lib/tg-sticker-creator.esm.js",
         format: "es",
         exports: "auto",
       },
       {
         sourcemap: true,
-        file: "./lib/tgslib.cjs.js",
+        file: "./lib/tg-sticker-creator.cjs.js",
         format: "cjs",
         exports: "auto",
       },
@@ -51,10 +51,10 @@ const rollupConfig = defineConfig([
     output: [
       {
         sourcemap: true,
-        file: "./lib/tgslib.umd.js",
+        file: "./lib/tg-sticker-creator.umd.js",
         format: "umd",
         exports: "auto",
-        name: "TgsLib",
+        name: "TgStickerCreator",
         esModule: false,
       },
     ],

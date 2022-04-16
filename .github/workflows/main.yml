@@ -33,7 +33,7 @@ jobs:
           JEST_HTML_REPORTERS_PUBLIC_PATH: coverage
           JEST_HTML_REPORTERS_FILE_NAME: jest-report.html
           JEST_HTML_REPORTERS_HIDE_ICON: true
-          JEST_HTML_REPORTERS_PAGE_TITLE: TgsLib Test Report
+          JEST_HTML_REPORTERS_PAGE_TITLE: TG Sticker Creator Test Report
       - name: Archive coverage
         uses: actions/upload-artifact@v2
         with:
