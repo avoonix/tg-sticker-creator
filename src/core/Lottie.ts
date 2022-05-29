@@ -62,6 +62,16 @@ export class Lottie extends LottieItem implements Resolvable {
 
   has3dLayers = false;
 
+  /**
+   * Get the frame number at the specified percentage
+   * 
+   * @param percentage 
+   * @returns 
+   */
+  frameAt(percentage: number) {
+    return (this.finalFrame - this.initialFrame) * percentage + this.initialFrame;
+  }
+
   setFrameRate(frameRate: number) {
     this.frameRate = frameRate;
     return this;
