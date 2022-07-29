@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
-    "outDir": "dist"
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "module": "NodeNext"
   }
 }
