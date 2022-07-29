@@ -1,8 +1,7 @@
-import chromium from "chrome-aws-lambda";
 import "dotenv/config";
 import express from "express";
 import PQueue from "p-queue";
-import * as playwright from "playwright-core";
+import { chromium } from "playwright-chromium";
 import { Stream } from "stream";
 import { File, Web3Storage } from "web3.storage";
 
@@ -73,15 +72,10 @@ app.get("/", async (req, res) => {
   queue.add(async () => {
     const exe = await chromium.executablePath;
     // Start the browser with the AWS Lambda wrapper (chrome-aws-lambda)
-    const browser = exe
-      ? await playwright.chromium.launch({
-          args: chromium.args,
-          executablePath: await chromium.executablePath,
-          headless: chromium.headless,
-        })
-      : await playwright.chromium.launch({
-          headless: false,
-        });
+    const browser = await chromium.launch({
+      headless: true,
+      chromiumSandbox: false,
+    });
     // // Set the s-maxage property which caches the images then on the Vercel edge
     // res.setHeader("Cache-Control", "s-maxage=31536000, stale-while-revalidate")
     // res.setHeader('Content-Type', 'image/png')
