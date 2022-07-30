@@ -5,6 +5,9 @@ import { chromium } from "playwright-chromium";
 import { Stream } from "stream";
 import { File, Web3Storage } from "web3.storage";
 
+const second = 1000;
+const minute = 60 * second;
+
 let queue;
 
 const streamToBuffer = (stream: Stream) =>
@@ -90,7 +93,7 @@ app.get("/", async (req, res) => {
     console.log("download")
     const [download] = await Promise.all([
       // Start waiting for the download
-      page.waitForEvent("download", { timeout: 60000 }),
+      page.waitForEvent("download", { timeout: 3 * minute }),
       // Perform the action that initiates download
       // Click text=Export Telegram Sticker
       page.locator("text=Export as video").click(),
