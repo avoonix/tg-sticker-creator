@@ -70,7 +70,7 @@ app.get("/", async (req, res) => {
   if (queue.size > 5) return res.status(429).end();
 
   queue.add(async () => {
-    const exe = await chromium.executablePath;
+    console.log("start")
     // Start the browser with the AWS Lambda wrapper (chrome-aws-lambda)
     const browser = await chromium.launch({
       headless: true,
@@ -82,10 +82,12 @@ app.get("/", async (req, res) => {
     // write the image to the response with the specified Content-Type
     // res.end(data)
 
+    console.log("page")
     const page = await browser.newPage();
     // Go to https://tg-sticker-app.vercel.app/
     await page.goto("https://tg-sticker-app.vercel.app/wizard/pet");
 
+    console.log("download")
     const [download] = await Promise.all([
       // Start waiting for the download
       page.waitForEvent("download", { timeout: 60000 }),
@@ -93,6 +95,7 @@ app.get("/", async (req, res) => {
       // Click text=Export Telegram Sticker
       page.locator("text=Export as video").click(),
     ]);
+    console.log("result")
     const result = await download.createReadStream();
     if (!result) throw new Error("no result");
     // res.setHeader("Content-Type", "video/webm");
@@ -106,6 +109,7 @@ app.get("/", async (req, res) => {
       ],
       { name: "sticker test" }
     );
+    console.log("close")
     await browser.close();
     console.log(cid);
   });
