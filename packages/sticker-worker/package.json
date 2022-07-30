@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "postinstall": "tsc"
+    "postinstall": "tsc && npx playwright install chromium"
   },
   "dependencies": {
     "@types/express": "^4.17.13",
