@@ -161,8 +161,8 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.no-transition-slider >>> .v-slider__track-fill,
-.no-transition-slider >>> .v-slider__thumb-container {
+.no-transition-slider :deep(.v-slider__track-fill),
+.no-transition-slider :deep(.v-slider__thumb-container) {
   transition: none !important;
 }
 </style>

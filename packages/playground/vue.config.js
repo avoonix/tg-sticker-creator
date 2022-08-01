@@ -26,11 +26,5 @@ module.exports = {
     ]);
 
     config.module.rules.delete("eslint");
-
-    config.plugin("disable-react-devtool-hint").use(webpack.DefinePlugin, [
-      {
-        __REACT_DEVTOOLS_GLOBAL_HOOK__: "({ isDisabled: true })",
-      },
-    ]);
   },
 };
