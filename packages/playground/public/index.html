@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- uwu -->
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <style>
+      :root {
+        --loader-color: #ff55c8;
+      }
+
+      /* https://cssloaders.github.io/ */
+      .fullscreen-loader-container {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #121212;
+        z-index: 10;
+        flex-direction: column;
+        color: #ffd4f1;
+        font-family: Roboto, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans",
+          "Helvetica Neue", sans-serif;
+        transition: opacity 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+      }
+      .hide-loader {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .loader {
+        position: relative;
+        width: 40px;
+        height: 60px;
+        animation: heartBeat 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+
+      .loader:before,
+      .loader:after {
+        content: "";
+        background: var(--loader-color);
+        width: 40px;
+        height: 60px;
+        border-radius: 50px 50px 0 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: rotate(45deg);
+        transform-origin: 50% 68%;
+      }
+      .loader:after {
+        transform: rotate(-45deg);
+      }
+      @keyframes heartBeat {
+        0% {
+          transform: scale(0.95);
+        }
+        5% {
+          transform: scale(1.1);
+        }
+        39% {
+          transform: scale(0.85);
+        }
+        45% {
+          transform: scale(1);
+        }
+        60% {
+          transform: scale(0.95);
+        }
+        100% {
+          transform: scale(0.9);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div class="fullscreen-loader-container">
+      <div>Loading</div>
+      <span class="loader"></span>
+    </div>
+    <div id="app"></div>
+
+    <!-- built files will be auto injected -->
+  </body>
+</html>
