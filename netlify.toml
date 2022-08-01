@@ -1,0 +1,5 @@
+[build]
+  publish = "packages/playground/dist/"
+  command = "npx pnpm install --store=node_modules/.pnpm-store && npx pnpm run --recursive --filter playground build"
+[build.environment]
+  NPM_FLAGS = "--version"
