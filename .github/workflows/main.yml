@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    name: Build, lint, test, and release on Node ${{ matrix.node }} and ${{ matrix.os }}
+    name: Build, lint, and test on Node ${{ matrix.node }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -42,11 +42,6 @@ jobs:
         with:
           name: code-coverage-report
           path: packages/tg-sticker-creator/coverage
-      - name: Publish package on NPM
-        working-directory: packages/tg-sticker-creator
-        run: npm publish --dry-run
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
   docs:
     needs: build
     runs-on: ubuntu-latest

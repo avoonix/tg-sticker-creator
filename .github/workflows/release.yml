@@ -1,0 +1,33 @@
+name: CI
+on:
+  release:
+    types: [created]
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 7.0.0-rc.5
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 'lts/*'
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Build
+        working-directory: packages/tg-sticker-creator
+        run: pnpm build
+      - name: Test
+        working-directory: packages/tg-sticker-creator
+        run: pnpm test:ci
+      - name: Publish package on NPM
+        working-directory: packages/tg-sticker-creator
+        run: npm publish --dry-run
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
