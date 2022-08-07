@@ -1,13 +1,13 @@
 # tg-sticker-creator - A Library for Creating Telegram Stickers
 
 > Alpha Version
+ 
+Works in most browsers and nodejs
 
 [![CI](https://github.com/avoonix/tg-sticker-creator/actions/workflows/main.yml/badge.svg?branch=alpha)](https://github.com/avoonix/tg-sticker-creator/actions/workflows/main.yml)
 [![Coverage](https://avoonix.github.io/tg-sticker-creator/coverage/badge.png)](https://avoonix.github.io/tg-sticker-creator/coverage/jest-report.html)
 
 ## Full Example ([Try it in the online editor](https://sticker-playground.netlify.app/))
-
-
 
 ```ts
 import pako from "pako";

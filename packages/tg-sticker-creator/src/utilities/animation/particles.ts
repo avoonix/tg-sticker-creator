@@ -1,4 +1,5 @@
 import { create, Easing, GroupShape, Shape } from "../..";
+import { defaults } from "../utilities";
 
 const defaultConfig: ParticleAnimationOptions = {
   decay: 0,
@@ -22,9 +23,9 @@ const defaultConfig: ParticleAnimationOptions = {
 export type RandomizableValue =
   | number
   | {
-      min: number;
-      max: number;
-    };
+    min: number;
+    max: number;
+  };
 
 /**
  * Instantiates many shapes
@@ -100,12 +101,4 @@ export const particles = (shape: Shape, options: Partial<ParticleAnimationOption
   } while (frame <= finalFrame);
 
   return group.addShapeBack(create.transform());
-};
-
-const defaults = <T extends {}>(options: Partial<T>, defaultOptions: T) => {
-  const result: any = {};
-  for (const [key, defaultValue] of Object.entries(defaultOptions)) {
-    result[key] = (options as any)[key] ?? defaultValue;
-  }
-  return result as T;
 };
