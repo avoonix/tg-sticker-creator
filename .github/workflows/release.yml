@@ -1,4 +1,4 @@
-name: CI
+name: Release
 on:
   workflow_dispatch:
   release:
@@ -30,7 +30,7 @@ jobs:
         working-directory: packages/tg-sticker-creator
         run: |
           pnpm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
-          pnpm publish --access public
+          pnpm publish --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
