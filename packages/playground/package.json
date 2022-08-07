@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "postinstall": "rollup -c rollup.types.config.js"
+    "prepare": "rollup -c rollup.types.config.js",
+    "build:ci": "pnpm prepare && pnpm build"
   },
   "dependencies": {
     "@babel/core": "7",
