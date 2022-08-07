@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1659381518130" clover="3.2.0">
-  <project timestamp="1659381518130" name="All files">
+<coverage generated="1659850884900" clover="3.2.0">
+  <project timestamp="1659850884900" name="All files">
     <metrics statements="1557" coveredstatements="1098" conditionals="224" coveredconditionals="127" methods="532" coveredmethods="297" elements="2313" coveredelements="1522" complexity="0" loc="1557" ncloc="1557" packages="10" files="68" classes="68"/>
     <package name="src">
       <metrics statements="61" coveredstatements="61" conditionals="0" coveredconditionals="0" methods="59" coveredmethods="12"/>
-      <file name="index.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/index.ts">
+      <file name="index.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/index.ts">
         <metrics statements="61" coveredstatements="61" conditionals="0" coveredconditionals="0" methods="59" coveredmethods="12"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
@@ -71,7 +71,7 @@
     </package>
     <package name="src.core">
       <metrics statements="473" coveredstatements="402" conditionals="106" coveredconditionals="86" methods="113" coveredmethods="86"/>
-      <file name="LayerTransform.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/LayerTransform.ts">
+      <file name="LayerTransform.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/LayerTransform.ts">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
@@ -85,7 +85,7 @@
         <line num="46" count="36" type="stmt"/>
         <line num="47" count="36" type="stmt"/>
       </file>
-      <file name="Lottie.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/Lottie.ts">
+      <file name="Lottie.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/Lottie.ts">
         <metrics statements="69" coveredstatements="49" conditionals="9" coveredconditionals="3" methods="20" coveredmethods="11"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
@@ -157,7 +157,7 @@
         <line num="228" count="12" type="stmt"/>
         <line num="229" count="12" type="stmt"/>
       </file>
-      <file name="LottieItem.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/LottieItem.ts">
+      <file name="LottieItem.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/LottieItem.ts">
         <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="5"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
@@ -171,7 +171,7 @@
         <line num="95" count="28552" type="stmt"/>
         <line num="102" count="1" type="stmt"/>
       </file>
-      <file name="Mask.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/Mask.ts">
+      <file name="Mask.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/Mask.ts">
         <metrics statements="27" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="18" count="13" type="stmt"/>
@@ -201,7 +201,7 @@
         <line num="106" count="0" type="stmt"/>
         <line num="107" count="0" type="stmt"/>
       </file>
-      <file name="Resolvable.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/Resolvable.ts">
+      <file name="Resolvable.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/Resolvable.ts">
         <metrics statements="25" coveredstatements="24" conditionals="9" coveredconditionals="9" methods="6" coveredmethods="5"/>
         <line num="1" count="13" type="stmt"/>
         <line num="22" count="13" type="stmt"/>
@@ -229,7 +229,7 @@
         <line num="132" count="144" type="stmt"/>
         <line num="143" count="51" type="stmt"/>
       </file>
-      <file name="TransformMixin.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/TransformMixin.ts">
+      <file name="TransformMixin.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/TransformMixin.ts">
         <metrics statements="30" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="2"/>
         <line num="1" count="13" type="stmt"/>
         <line num="11" count="13" type="stmt"/>
@@ -262,12 +262,12 @@
         <line num="78" count="3271" type="stmt"/>
         <line num="79" count="3271" type="stmt"/>
       </file>
-      <file name="classes.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/classes.ts">
+      <file name="classes.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/classes.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="36" count="13" type="stmt"/>
       </file>
-      <file name="constants.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/constants.ts">
+      <file name="constants.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/constants.ts">
         <metrics statements="79" coveredstatements="79" conditionals="24" coveredconditionals="24" methods="12" coveredmethods="12"/>
         <line num="1" count="13" type="cond" truecount="2" falsecount="0"/>
         <line num="2" count="13" type="stmt"/>
@@ -349,7 +349,7 @@
         <line num="100" count="13" type="stmt"/>
         <line num="101" count="13" type="stmt"/>
       </file>
-      <file name="internal.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/internal.ts">
+      <file name="internal.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/internal.ts">
         <metrics statements="60" coveredstatements="60" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="13" type="stmt"/>
         <line num="3" count="13" type="stmt"/>
@@ -412,7 +412,7 @@
         <line num="61" count="13" type="stmt"/>
         <line num="62" count="13" type="stmt"/>
       </file>
-      <file name="matchKeys.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/matchKeys.ts">
+      <file name="matchKeys.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/matchKeys.ts">
         <metrics statements="54" coveredstatements="51" conditionals="38" coveredconditionals="34" methods="7" coveredmethods="7"/>
         <line num="9" count="13" type="stmt"/>
         <line num="10" count="21" type="cond" truecount="1" falsecount="0"/>
@@ -469,7 +469,7 @@
         <line num="135" count="13" type="stmt"/>
         <line num="136" count="51" type="cond" truecount="1" falsecount="1"/>
       </file>
-      <file name="util.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/util.ts">
+      <file name="util.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/util.ts">
         <metrics statements="105" coveredstatements="96" conditionals="22" coveredconditionals="13" methods="43" coveredmethods="40"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
@@ -580,7 +580,7 @@
     </package>
     <package name="src.core.animatable">
       <metrics statements="123" coveredstatements="108" conditionals="27" coveredconditionals="17" methods="44" coveredmethods="38"/>
-      <file name="AnimatableValueTransform.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/AnimatableValueTransform.ts">
+      <file name="AnimatableValueTransform.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/AnimatableValueTransform.ts">
         <metrics statements="54" coveredstatements="50" conditionals="18" coveredconditionals="15" methods="30" coveredmethods="26"/>
         <line num="1" count="13" type="stmt"/>
         <line num="16" count="13" type="stmt"/>
@@ -637,7 +637,7 @@
         <line num="136" count="36" type="stmt"/>
         <line num="140" count="13" type="stmt"/>
       </file>
-      <file name="BezierValues.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/BezierValues.ts">
+      <file name="BezierValues.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/BezierValues.ts">
         <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="1" count="13" type="stmt"/>
         <line num="17" count="13" type="stmt"/>
@@ -652,7 +652,7 @@
         <line num="55" count="3642" type="stmt"/>
         <line num="56" count="3642" type="stmt"/>
       </file>
-      <file name="Path.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/Path.ts">
+      <file name="Path.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/Path.ts">
         <metrics statements="31" coveredstatements="21" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="5"/>
         <line num="1" count="13" type="stmt"/>
         <line num="22" count="13" type="stmt"/>
@@ -686,7 +686,7 @@
         <line num="102" count="1960" type="stmt"/>
         <line num="103" count="1960" type="stmt"/>
       </file>
-      <file name="easing.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/easing.ts">
+      <file name="easing.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/easing.ts">
         <metrics statements="6" coveredstatements="5" conditionals="3" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="45" count="13" type="stmt"/>
         <line num="91" count="13" type="stmt"/>
@@ -695,7 +695,7 @@
         <line num="94" count="0" type="stmt"/>
         <line num="96" count="37" type="stmt"/>
       </file>
-      <file name="stops.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/stops.ts">
+      <file name="stops.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/stops.ts">
         <metrics statements="20" coveredstatements="20" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
         <line num="1" count="13" type="stmt"/>
         <line num="3" count="13" type="stmt"/>
@@ -721,7 +721,7 @@
     </package>
     <package name="src.core.animatable.keyframes">
       <metrics statements="78" coveredstatements="50" conditionals="4" coveredconditionals="0" methods="30" coveredmethods="17"/>
-      <file name="ColorKeyframe.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/keyframes/ColorKeyframe.ts">
+      <file name="ColorKeyframe.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/keyframes/ColorKeyframe.ts">
         <metrics statements="14" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
         <line num="1" count="13" type="stmt"/>
         <line num="14" count="13" type="stmt"/>
@@ -738,7 +738,7 @@
         <line num="63" count="0" type="stmt"/>
         <line num="64" count="0" type="stmt"/>
       </file>
-      <file name="GradientKeyframe.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/keyframes/GradientKeyframe.ts">
+      <file name="GradientKeyframe.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/keyframes/GradientKeyframe.ts">
         <metrics statements="14" coveredstatements="12" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="5"/>
         <line num="1" count="13" type="stmt"/>
         <line num="16" count="13" type="stmt"/>
@@ -755,7 +755,7 @@
         <line num="62" count="2" type="stmt"/>
         <line num="63" count="2" type="stmt"/>
       </file>
-      <file name="Keyframe.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/keyframes/Keyframe.ts">
+      <file name="Keyframe.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/keyframes/Keyframe.ts">
         <metrics statements="18" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
         <line num="1" count="13" type="stmt"/>
         <line num="12" count="13" type="stmt"/>
@@ -776,7 +776,7 @@
         <line num="63" count="2718" type="stmt"/>
         <line num="64" count="2718" type="stmt"/>
       </file>
-      <file name="OffsetKeyframe.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/keyframes/OffsetKeyframe.ts">
+      <file name="OffsetKeyframe.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/keyframes/OffsetKeyframe.ts">
         <metrics statements="17" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
         <line num="1" count="13" type="stmt"/>
         <line num="9" count="13" type="stmt"/>
@@ -796,7 +796,7 @@
         <line num="66" count="2716" type="stmt"/>
         <line num="67" count="2716" type="stmt"/>
       </file>
-      <file name="PathKeyframe.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/keyframes/PathKeyframe.ts">
+      <file name="PathKeyframe.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/keyframes/PathKeyframe.ts">
         <metrics statements="15" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="13" count="13" type="stmt"/>
@@ -817,7 +817,7 @@
     </package>
     <package name="src.core.animatable.values">
       <metrics statements="179" coveredstatements="133" conditionals="49" coveredconditionals="21" methods="63" coveredmethods="49"/>
-      <file name="Animatable1DValue.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/values/Animatable1DValue.ts">
+      <file name="Animatable1DValue.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/values/Animatable1DValue.ts">
         <metrics statements="24" coveredstatements="15" conditionals="4" coveredconditionals="1" methods="9" coveredmethods="6"/>
         <line num="1" count="13" type="stmt"/>
         <line num="17" count="13" type="stmt"/>
@@ -844,7 +844,7 @@
         <line num="88" count="16478" type="stmt"/>
         <line num="89" count="16478" type="stmt"/>
       </file>
-      <file name="Animatable2DValue.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/values/Animatable2DValue.ts">
+      <file name="Animatable2DValue.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/values/Animatable2DValue.ts">
         <metrics statements="24" coveredstatements="15" conditionals="4" coveredconditionals="1" methods="9" coveredmethods="6"/>
         <line num="1" count="13" type="stmt"/>
         <line num="20" count="13" type="stmt"/>
@@ -871,7 +871,7 @@
         <line num="92" count="9817" type="stmt"/>
         <line num="93" count="9817" type="stmt"/>
       </file>
-      <file name="AnimatableColor.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/values/AnimatableColor.ts">
+      <file name="AnimatableColor.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/values/AnimatableColor.ts">
         <metrics statements="24" coveredstatements="23" conditionals="8" coveredconditionals="6" methods="9" coveredmethods="9"/>
         <line num="1" count="13" type="stmt"/>
         <line num="19" count="13" type="stmt"/>
@@ -898,7 +898,7 @@
         <line num="92" count="2184" type="stmt"/>
         <line num="93" count="2184" type="stmt"/>
       </file>
-      <file name="AnimatableGradient.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/values/AnimatableGradient.ts">
+      <file name="AnimatableGradient.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/values/AnimatableGradient.ts">
         <metrics statements="34" coveredstatements="28" conditionals="11" coveredconditionals="5" methods="9" coveredmethods="8"/>
         <line num="1" count="13" type="stmt"/>
         <line num="21" count="13" type="stmt"/>
@@ -935,7 +935,7 @@
         <line num="110" count="2" type="stmt"/>
         <line num="111" count="2" type="stmt"/>
       </file>
-      <file name="AnimatablePath.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/values/AnimatablePath.ts">
+      <file name="AnimatablePath.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/values/AnimatablePath.ts">
         <metrics statements="23" coveredstatements="12" conditionals="4" coveredconditionals="0" methods="9" coveredmethods="5"/>
         <line num="1" count="13" type="stmt"/>
         <line num="21" count="13" type="stmt"/>
@@ -961,7 +961,7 @@
         <line num="89" count="1960" type="stmt"/>
         <line num="90" count="1960" type="stmt"/>
       </file>
-      <file name="AnimatablePosition.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/values/AnimatablePosition.ts">
+      <file name="AnimatablePosition.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/values/AnimatablePosition.ts">
         <metrics statements="18" coveredstatements="12" conditionals="6" coveredconditionals="2" methods="6" coveredmethods="4"/>
         <line num="1" count="13" type="stmt"/>
         <line num="18" count="13" type="stmt"/>
@@ -982,7 +982,7 @@
         <line num="78" count="3271" type="stmt"/>
         <line num="79" count="3271" type="stmt"/>
       </file>
-      <file name="AnimatableValue.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/values/AnimatableValue.ts">
+      <file name="AnimatableValue.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/values/AnimatableValue.ts">
         <metrics statements="20" coveredstatements="16" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="4"/>
         <line num="1" count="13" type="stmt"/>
         <line num="21" count="13" type="stmt"/>
@@ -1005,7 +1005,7 @@
         <line num="106" count="30441" type="stmt"/>
         <line num="107" count="30441" type="stmt"/>
       </file>
-      <file name="RgbaStopValue.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/values/RgbaStopValue.ts">
+      <file name="RgbaStopValue.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/values/RgbaStopValue.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="13" type="stmt"/>
         <line num="6" count="13" type="stmt"/>
@@ -1013,7 +1013,7 @@
         <line num="11" count="22" type="stmt"/>
         <line num="15" count="48" type="stmt"/>
       </file>
-      <file name="RgbaValue.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/animatable/values/RgbaValue.ts">
+      <file name="RgbaValue.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/animatable/values/RgbaValue.ts">
         <metrics statements="7" coveredstatements="7" conditionals="8" coveredconditionals="4" methods="5" coveredmethods="5"/>
         <line num="1" count="13" type="stmt"/>
         <line num="6" count="13" type="stmt"/>
@@ -1026,21 +1026,21 @@
     </package>
     <package name="src.core.errors">
       <metrics statements="12" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
-      <file name="AnimationError.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/errors/AnimationError.ts">
+      <file name="AnimationError.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/errors/AnimationError.ts">
         <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="8" count="13" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
       </file>
-      <file name="CastError.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/errors/CastError.ts">
+      <file name="CastError.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/errors/CastError.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="8" count="13" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
       </file>
-      <file name="SerializationError.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/errors/SerializationError.ts">
+      <file name="SerializationError.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/errors/SerializationError.ts">
         <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="6" count="13" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
@@ -1050,7 +1050,7 @@
     </package>
     <package name="src.core.layers">
       <metrics statements="176" coveredstatements="101" conditionals="14" coveredconditionals="0" methods="58" coveredmethods="25"/>
-      <file name="CompLayer.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/layers/CompLayer.ts">
+      <file name="CompLayer.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/layers/CompLayer.ts">
         <metrics statements="16" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
@@ -1069,7 +1069,7 @@
         <line num="72" count="0" type="stmt"/>
         <line num="73" count="0" type="stmt"/>
       </file>
-      <file name="Dimensions.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/layers/Dimensions.ts">
+      <file name="Dimensions.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/layers/Dimensions.ts">
         <metrics statements="14" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
         <line num="1" count="13" type="stmt"/>
         <line num="8" count="13" type="stmt"/>
@@ -1086,7 +1086,7 @@
         <line num="42" count="12" type="stmt"/>
         <line num="43" count="12" type="stmt"/>
       </file>
-      <file name="ImageLayer.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/layers/ImageLayer.ts">
+      <file name="ImageLayer.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/layers/ImageLayer.ts">
         <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="8" count="13" type="stmt"/>
@@ -1095,7 +1095,7 @@
         <line num="23" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
       </file>
-      <file name="Layer.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/layers/Layer.ts">
+      <file name="Layer.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/layers/Layer.ts">
         <metrics statements="56" coveredstatements="34" conditionals="5" coveredconditionals="0" methods="13" coveredmethods="4"/>
         <line num="1" count="13" type="stmt"/>
         <line num="29" count="13" type="stmt"/>
@@ -1154,7 +1154,7 @@
         <line num="187" count="36" type="stmt"/>
         <line num="188" count="36" type="stmt"/>
       </file>
-      <file name="LayersMixin.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/layers/LayersMixin.ts">
+      <file name="LayersMixin.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/layers/LayersMixin.ts">
         <metrics statements="18" coveredstatements="16" conditionals="3" coveredconditionals="0" methods="8" coveredmethods="6"/>
         <line num="1" count="13" type="stmt"/>
         <line num="20" count="13" type="stmt"/>
@@ -1175,7 +1175,7 @@
         <line num="73" count="14" type="stmt"/>
         <line num="82" count="12" type="stmt"/>
       </file>
-      <file name="NullLayer.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/layers/NullLayer.ts">
+      <file name="NullLayer.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/layers/NullLayer.ts">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="1" count="13" type="stmt"/>
         <line num="11" count="13" type="stmt"/>
@@ -1186,7 +1186,7 @@
         <line num="29" count="2" type="stmt"/>
         <line num="30" count="2" type="stmt"/>
       </file>
-      <file name="PreComp.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/layers/PreComp.ts">
+      <file name="PreComp.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/layers/PreComp.ts">
         <metrics statements="22" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="8" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
@@ -1211,7 +1211,7 @@
         <line num="82" count="0" type="stmt"/>
         <line num="83" count="0" type="stmt"/>
       </file>
-      <file name="ShapeLayer.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/layers/ShapeLayer.ts">
+      <file name="ShapeLayer.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/layers/ShapeLayer.ts">
         <metrics statements="20" coveredstatements="18" conditionals="1" coveredconditionals="0" methods="7" coveredmethods="7"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
@@ -1234,7 +1234,7 @@
         <line num="88" count="32" type="stmt"/>
         <line num="89" count="32" type="stmt"/>
       </file>
-      <file name="SolidLayer.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/layers/SolidLayer.ts">
+      <file name="SolidLayer.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/layers/SolidLayer.ts">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="1" count="13" type="stmt"/>
         <line num="11" count="13" type="stmt"/>
@@ -1245,7 +1245,7 @@
         <line num="29" count="2" type="stmt"/>
         <line num="30" count="2" type="stmt"/>
       </file>
-      <file name="TextLayer.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/layers/TextLayer.ts">
+      <file name="TextLayer.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/layers/TextLayer.ts">
         <metrics statements="8" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="11" count="13" type="stmt"/>
@@ -1259,7 +1259,7 @@
     </package>
     <package name="src.core.shapes">
       <metrics statements="356" coveredstatements="191" conditionals="8" coveredconditionals="1" methods="125" coveredmethods="52"/>
-      <file name="EllipseShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/EllipseShape.ts">
+      <file name="EllipseShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/EllipseShape.ts">
         <metrics statements="19" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
         <line num="1" count="13" type="stmt"/>
         <line num="20" count="13" type="stmt"/>
@@ -1281,7 +1281,7 @@
         <line num="81" count="0" type="stmt"/>
         <line num="82" count="0" type="stmt"/>
       </file>
-      <file name="FillShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/FillShape.ts">
+      <file name="FillShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/FillShape.ts">
         <metrics statements="22" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="5"/>
         <line num="1" count="13" type="stmt"/>
         <line num="23" count="13" type="stmt"/>
@@ -1306,7 +1306,7 @@
         <line num="85" count="980" type="stmt"/>
         <line num="86" count="980" type="stmt"/>
       </file>
-      <file name="GradientFillShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/GradientFillShape.ts">
+      <file name="GradientFillShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/GradientFillShape.ts">
         <metrics statements="20" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
@@ -1329,7 +1329,7 @@
         <line num="81" count="2" type="stmt"/>
         <line num="82" count="2" type="stmt"/>
       </file>
-      <file name="GradientMixin.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/GradientMixin.ts">
+      <file name="GradientMixin.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/GradientMixin.ts">
         <metrics statements="27" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="3"/>
         <line num="1" count="13" type="stmt"/>
         <line num="12" count="13" type="stmt"/>
@@ -1359,7 +1359,7 @@
         <line num="82" count="2" type="stmt"/>
         <line num="83" count="2" type="stmt"/>
       </file>
-      <file name="GradientStrokeShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/GradientStrokeShape.ts">
+      <file name="GradientStrokeShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/GradientStrokeShape.ts">
         <metrics statements="13" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
@@ -1375,7 +1375,7 @@
         <line num="63" count="0" type="stmt"/>
         <line num="64" count="0" type="stmt"/>
       </file>
-      <file name="GroupShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/GroupShape.ts">
+      <file name="GroupShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/GroupShape.ts">
         <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
@@ -1396,7 +1396,7 @@
         <line num="93" count="3207" type="stmt"/>
         <line num="94" count="3207" type="stmt"/>
       </file>
-      <file name="MergeShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/MergeShape.ts">
+      <file name="MergeShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/MergeShape.ts">
         <metrics statements="11" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="19" count="13" type="stmt"/>
@@ -1410,7 +1410,7 @@
         <line num="59" count="0" type="stmt"/>
         <line num="60" count="0" type="stmt"/>
       </file>
-      <file name="PathShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/PathShape.ts">
+      <file name="PathShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/PathShape.ts">
         <metrics statements="16" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="5"/>
         <line num="1" count="13" type="stmt"/>
         <line num="20" count="13" type="stmt"/>
@@ -1429,7 +1429,7 @@
         <line num="73" count="1960" type="stmt"/>
         <line num="74" count="1960" type="stmt"/>
       </file>
-      <file name="RectShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/RectShape.ts">
+      <file name="RectShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/RectShape.ts">
         <metrics statements="26" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="1"/>
         <line num="1" count="13" type="stmt"/>
         <line num="21" count="13" type="stmt"/>
@@ -1458,7 +1458,7 @@
         <line num="93" count="0" type="stmt"/>
         <line num="94" count="0" type="stmt"/>
       </file>
-      <file name="RepeaterShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/RepeaterShape.ts">
+      <file name="RepeaterShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/RepeaterShape.ts">
         <metrics statements="8" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="12" count="13" type="stmt"/>
@@ -1469,7 +1469,7 @@
         <line num="30" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
       </file>
-      <file name="RoundedCornersShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/RoundedCornersShape.ts">
+      <file name="RoundedCornersShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/RoundedCornersShape.ts">
         <metrics statements="14" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="17" count="13" type="stmt"/>
@@ -1486,7 +1486,7 @@
         <line num="62" count="0" type="stmt"/>
         <line num="63" count="0" type="stmt"/>
       </file>
-      <file name="Shape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/Shape.ts">
+      <file name="Shape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/Shape.ts">
         <metrics statements="17" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
         <line num="2" count="13" type="stmt"/>
         <line num="23" count="13" type="stmt"/>
@@ -1506,7 +1506,7 @@
         <line num="87" count="10588" type="stmt"/>
         <line num="88" count="10588" type="stmt"/>
       </file>
-      <file name="ShapesMixin.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/ShapesMixin.ts">
+      <file name="ShapesMixin.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/ShapesMixin.ts">
         <metrics statements="28" coveredstatements="24" conditionals="8" coveredconditionals="1" methods="12" coveredmethods="8"/>
         <line num="1" count="13" type="stmt"/>
         <line num="13" count="13" type="stmt"/>
@@ -1537,7 +1537,7 @@
         <line num="77" count="1859" type="stmt"/>
         <line num="87" count="3239" type="stmt"/>
       </file>
-      <file name="StarShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/StarShape.ts">
+      <file name="StarShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/StarShape.ts">
         <metrics statements="42" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="21" count="13" type="stmt"/>
@@ -1582,7 +1582,7 @@
         <line num="131" count="0" type="stmt"/>
         <line num="132" count="0" type="stmt"/>
       </file>
-      <file name="StrokeMixin.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/StrokeMixin.ts">
+      <file name="StrokeMixin.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/StrokeMixin.ts">
         <metrics statements="21" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
         <line num="1" count="13" type="stmt"/>
         <line num="13" count="13" type="stmt"/>
@@ -1606,7 +1606,7 @@
         <line num="67" count="1204" type="stmt"/>
         <line num="68" count="1204" type="stmt"/>
       </file>
-      <file name="StrokeShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/StrokeShape.ts">
+      <file name="StrokeShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/StrokeShape.ts">
         <metrics statements="16" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
@@ -1625,7 +1625,7 @@
         <line num="71" count="1204" type="stmt"/>
         <line num="72" count="1204" type="stmt"/>
       </file>
-      <file name="TransformShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/TransformShape.ts">
+      <file name="TransformShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/TransformShape.ts">
         <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
@@ -1640,7 +1640,7 @@
         <line num="58" count="3235" type="stmt"/>
         <line num="59" count="3235" type="stmt"/>
       </file>
-      <file name="TrimShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/core/shapes/TrimShape.ts">
+      <file name="TrimShape.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/core/shapes/TrimShape.ts">
         <metrics statements="26" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="18" count="13" type="stmt"/>
@@ -1672,7 +1672,7 @@
     </package>
     <package name="src.utilities">
       <metrics statements="62" coveredstatements="32" conditionals="13" coveredconditionals="2" methods="31" coveredmethods="16"/>
-      <file name="create.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/utilities/create.ts">
+      <file name="create.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/utilities/create.ts">
         <metrics statements="56" coveredstatements="26" conditionals="13" coveredconditionals="2" methods="31" coveredmethods="16"/>
         <line num="2" count="13" type="stmt"/>
         <line num="42" count="13" type="stmt"/>
@@ -1731,12 +1731,12 @@
         <line num="230" count="13" type="stmt"/>
         <line num="237" count="13" type="stmt"/>
       </file>
-      <file name="enum.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/utilities/enum.ts">
+      <file name="enum.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/utilities/enum.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="17" count="13" type="stmt"/>
       </file>
-      <file name="index.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/utilities/index.ts">
+      <file name="index.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/utilities/index.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
@@ -1746,7 +1746,7 @@
     </package>
     <package name="src.utilities.animation">
       <metrics statements="37" coveredstatements="14" conditionals="3" coveredconditionals="0" methods="6" coveredmethods="1"/>
-      <file name="blink.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/utilities/animation/blink.ts">
+      <file name="blink.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/utilities/animation/blink.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="15" count="13" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
@@ -1754,13 +1754,13 @@
         <line num="24" count="18" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
       </file>
-      <file name="index.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/utilities/animation/index.ts">
+      <file name="index.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/utilities/animation/index.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
         <line num="8" count="13" type="stmt"/>
       </file>
-      <file name="particles.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/src/utilities/animation/particles.ts">
+      <file name="particles.ts" path="/home/runner/work/tg-sticker-creator/tg-sticker-creator/packages/tg-sticker-creator/src/utilities/animation/particles.ts">
         <metrics statements="29" coveredstatements="6" conditionals="3" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="1" count="13" type="stmt"/>
         <line num="3" count="13" type="stmt"/>
