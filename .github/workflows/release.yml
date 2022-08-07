@@ -1,5 +1,6 @@
 name: CI
 on:
+  workflow_dispatch:
   release:
     types: [created]
 jobs:
@@ -27,7 +28,9 @@ jobs:
         run: pnpm test:ci
       - name: Publish package on NPM
         working-directory: packages/tg-sticker-creator
-        run: npm publish
+        run: |
+          pnpm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+          pnpm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
