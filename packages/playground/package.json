@@ -1,0 +1,53 @@
+{
+  "name": "playground",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "postinstall": "rollup -c rollup.types.config.js"
+  },
+  "dependencies": {
+    "@mdi/js": "^6.5.95",
+    "@types/downloadjs": "^1.4.2",
+    "@types/lodash": "^4.14.178",
+    "@types/node": "^18.6.3",
+    "@types/pako": "^1.0.2",
+    "@types/tinycolor2": "^1.4.3",
+    "@vue/cli-plugin-babel": "~5.0.8",
+    "@vue/cli-plugin-router": "~5.0.8",
+    "@vue/cli-plugin-typescript": "~5.0.8",
+    "@vue/cli-service": "~5.0.8",
+    "acorn": "^8.8.0",
+    "acorn-loose": "^8.2.1",
+    "acorn-walk": "^8.2.0",
+    "core-js": "^3.24.1",
+    "downloadjs": "^1.4.7",
+    "firacode": "^6.2.0",
+    "lodash": "^4.17.21",
+    "lottie-web": "^5.8.1",
+    "monaco-editor": "^0.27.0",
+    "monaco-editor-webpack-plugin": "^4.1.2",
+    "pako": "^2.0.4",
+    "raw-loader": "^4.0.2",
+    "reflect-metadata": "^0.1.13",
+    "roboto-fontface": "*",
+    "rollup": "^2.77.2",
+    "rollup-plugin-dts": "^4.0.1",
+    "sass": "1.32",
+    "sass-loader": "^10.0.0",
+    "tg-sticker-creator": "^1.0.0-alpha.2",
+    "tinycolor2": "^1.4.2",
+    "typescript": "~4.5.5",
+    "vue": "^2.6.14",
+    "vue-cli-plugin-vuetify": "~2.5.1",
+    "vue-router": "^3.5.3",
+    "vuetify": "^2.6.1",
+    "vuetify-loader": "^1.7.3"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
