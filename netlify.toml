@@ -1,5 +1,5 @@
 [build]
   publish = "packages/playground/dist/"
-  command = "npx pnpm install --store=node_modules/.pnpm-store && npx pnpm run --recursive --filter playground build"
+  command = "npx pnpm install --store=node_modules/.pnpm-store && pnpm run --recursive --filter tg-sticker-creator build && npx pnpm run --recursive --filter playground build:ci"
 [build.environment]
   NPM_FLAGS = "--version"
