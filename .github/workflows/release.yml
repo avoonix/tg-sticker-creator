@@ -27,7 +27,7 @@ jobs:
         run: pnpm test:ci
       - name: Publish package on NPM
         working-directory: packages/tg-sticker-creator
-        run: npm publish --dry-run
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
