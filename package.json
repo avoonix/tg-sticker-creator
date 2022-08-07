@@ -5,5 +5,8 @@
   "scripts": {
     "postinstall": "if [ $PREPARE_STICKER_WORKER ]; then npm run postinstall-worker; else echo no environment detected, please set PREPARE_STICKER_WORKER; fi",
     "postinstall-worker": "npx pnpm install --ignore-scripts --store=node_modules/.pnpm-store && cd packages/sticker-worker && npx pnpm postinstall"
+  },
+  "dependencies": {
+    "pnpm": "^7.9.0"
   }
 }

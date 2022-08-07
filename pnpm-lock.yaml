@@ -3,7 +3,10 @@ lockfileVersion: 5.4
 importers:
 
   .:
-    specifiers: {}
+    specifiers:
+      pnpm: ^7.9.0
+    dependencies:
+      pnpm: 7.9.0
 
   packages/frontend:
     specifiers:
@@ -11097,6 +11100,12 @@ packages:
   /playwright-core/1.24.2:
     resolution: {integrity: sha512-zfAoDoPY/0sDLsgSgLZwWmSCevIg1ym7CppBwllguVBNiHeixZkc1AdMuYUPZC6AdEYc4CxWEyLMBTw2YcmRrA==}
     engines: {node: '>=14'}
+    hasBin: true
+    dev: false
+
+  /pnpm/7.9.0:
+    resolution: {integrity: sha512-xkIVw73yJm/h5M4VvFIS5Q+gQCRDrp3r92g58PtcCK86aZCa7EQ6q6ivdfTAz0KsAVgloA6Anub28n6wju5v3w==}
+    engines: {node: '>=14.6'}
     hasBin: true
     dev: false
 

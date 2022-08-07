@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build:types": "rollup -c rollup.types.config.js",
-    "build:ci": "npx pnpm build:types && npx pnpm build"
+    "build:ci": "pnpm build:types && pnpm build"
   },
   "dependencies": {
     "@babel/core": "7",
