@@ -1,5 +1,5 @@
 import cloneDeep from "lodash.clonedeep";
-import tinycolor from "tinycolor2";
+import tinycolor, { type Instance } from "tinycolor2";
 import { hasMixin } from "ts-mixer";
 import {
   BezierValues,
@@ -145,7 +145,7 @@ export const isClassArray = <T extends abstract new (...args: any) => any>(
   return true;
 };
 
-export const colorFromTinycolor = (instance: tinycolor.Instance) => {
+export const colorFromTinycolor = (instance: Instance) => {
   const rgb = instance.toRgb();
   return new RgbaValue([rgb.r / 255, rgb.g / 255, rgb.b / 255, rgb.a]);
 };
@@ -155,7 +155,7 @@ export const colorFromString = (color: string) => {
 };
 
 export const stopFromTinycolor = (
-  instance: tinycolor.Instance,
+  instance: Instance,
   stop: number
 ) => {
   const rgb = instance.toRgb();

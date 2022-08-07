@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "18.x"
+    "node": ">=14"
   },
   "scripts": {
     "postinstall": "if [ $PREPARE_STICKER_WORKER ]; then npm run postinstall-worker; else echo no environment detected, please set PREPARE_STICKER_WORKER; fi",
