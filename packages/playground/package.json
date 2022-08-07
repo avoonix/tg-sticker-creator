@@ -8,6 +8,7 @@
     "postinstall": "rollup -c rollup.types.config.js"
   },
   "dependencies": {
+    "@babel/core": "7",
     "@mdi/js": "^6.5.95",
     "@types/downloadjs": "^1.4.2",
     "@types/lodash": "^4.14.178",
@@ -43,7 +44,8 @@
     "vue-cli-plugin-vuetify": "~2.5.1",
     "vue-router": "^3.5.3",
     "vuetify": "^2.6.1",
-    "vuetify-loader": "^1.7.3"
+    "vuetify-loader": "^1.7.3",
+    "webpack": "5"
   },
   "browserslist": [
     "> 1%",
