@@ -1,28 +1,9 @@
-import {
-  ActionButton,
-  Breadcrumbs,
-  Content,
-  Dialog,
-  DialogTrigger,
-  Divider,
-  Flex,
-  Grid,
-  Heading,
-  Item,
-  Text,
-  useDialogContainer,
-  View,
-} from "@adobe/react-spectrum";
-import { FC, PropsWithChildren, useCallback, useRef, useState } from "react";
-import { parseColor } from "@react-stately/color";
-import { ColorChannel } from "@react-types/color";
-import { ColorArea, ColorField, ColorWheel } from "@react-spectrum/color";
-import ColorPicker from "./ColorPicker";
-import SecondColorPicker from "./SecondColorPicker";
-import { Pressable } from "@react-aria/interactions";
-import { useButton } from "react-aria";
+import { FC, PropsWithChildren, useRef } from "react";
+import { AriaButtonProps, useButton } from "react-aria";
 
-interface Props extends PropsWithChildren {}
+interface Props extends PropsWithChildren, AriaButtonProps<"span"> {
+  color: string;
+}
 
 const ColorButton: FC<Props> = (props) => {
   let { children } = props;
@@ -39,12 +20,16 @@ const ColorButton: FC<Props> = (props) => {
     <span
       {...buttonProps}
       style={{
-        background: isPressed ? "darkgreen" : "green",
+        background: props.color,
+        outline: isPressed ? "1px solid white" : undefined,
         color: "white",
         padding: 10,
         cursor: "pointer",
         userSelect: "none",
         WebkitUserSelect: "none",
+        display: "inline-flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
       ref={ref as any}
     >

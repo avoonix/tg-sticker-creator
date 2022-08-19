@@ -1,62 +1,43 @@
-import {
-  ActionButton,
-  Breadcrumbs,
-  Content,
-  Dialog,
-  DialogTrigger,
-  Divider,
-  Flex,
-  Grid,
-  Heading,
-  Item,
-  Text,
-  useDialogContainer,
-  View,
-} from "@adobe/react-spectrum";
-import { FC, useCallback, useState } from "react";
-import { parseColor } from "@react-stately/color";
-import { ColorChannel } from "@react-types/color";
-import { ColorArea, ColorField, ColorWheel } from "@react-spectrum/color";
-import ColorPicker from "./ColorPicker";
-import SecondColorPicker from "./SecondColorPicker";
-import { Pressable } from "@react-aria/interactions";
+import { Content, Dialog, DialogTrigger } from "@adobe/react-spectrum";
+import { Color, parseColor } from "@react-stately/color";
+import { FC, useEffect, useState } from "react";
 import ColorButton from "./ColorButton";
+import ColorPicker from "./ColorPicker";
 import ColorTabs from "./ColorTabs";
+import SecondColorPicker from "./SecondColorPicker";
+import TextColorPicker from "./TextColorPicker";
 
-interface Props {}
+interface Props {
+  color: string;
+  onChange: (color: string) => void;
+}
 
-const ColorDialog: FC<Props> = ({}) => {
+const ColorDialog: FC<Props> = (props) => {
   let [open, setOpen] = useState(false);
 
-  const toggle = useCallback(() => {
-    console.log("click", open);
-    setOpen(!open);
-  }, [open, setOpen]);
+  // const color = parseColor(props.color);
+  // const setColor = (color: Color) => props.onChange(color.toString("rgb"));
+  let [color, setColor] = useState(parseColor("hsb(0, 100%, 50%)"));
+
+  useEffect(() => {
+    setColor(parseColor(props.color).toFormat("hsb"));
+  }, [props.color])
+
+  const changeColor = (color: Color) => {
+    props.onChange(color.toString("rgb"));
+    setColor(color)
+  }
 
   return (
     <DialogTrigger type="popover" isOpen={open} onOpenChange={setOpen}>
-      {/* <Flex direction="column" alignItems="center" gap="size-100"> */}
-      <ColorButton />
-      {/* <Pressable>
-        <div
-          onClick={toggle}
-          style={{
-            width: "100px",
-            height: "100px",
-            background: "#ff00ff",
-            display: "inline-block",
-          }}
-        />
-      </Pressable> */}
-      {/* </Flex> */}
-      {/* <ActionButton>Info</ActionButton> */}
+      <ColorButton color={color.toString("rgb")} />
 
       <Dialog>
         <Content>
           <ColorTabs
-            first={<ColorPicker />}
-            second={<SecondColorPicker />}
-            third={<ColorPicker />}
+            first={<ColorPicker color={color} setColor={changeColor} />}
+            second={<SecondColorPicker color={color} setColor={changeColor} />}
+            third={<TextColorPicker color={color} setColor={changeColor} />}
           />
         </Content>
       </Dialog>

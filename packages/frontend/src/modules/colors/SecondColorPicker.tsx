@@ -1,19 +1,14 @@
-import { Breadcrumbs, Flex, Grid, Item, View } from "@adobe/react-spectrum";
+import { Flex } from "@adobe/react-spectrum";
+import { ColorSlider } from "@react-spectrum/color";
+import { Color, parseColor } from "@react-stately/color";
 import { FC, useState } from "react";
-import { parseColor } from "@react-stately/color";
-import { ColorChannel } from "@react-types/color";
-import {
-  ColorArea,
-  ColorField,
-  ColorSlider,
-  ColorWheel,
-} from "@react-spectrum/color";
 
-interface Props {}
+interface Props {
+  color: Color;
+  setColor: (color: Color) => void;
+}
 
-const SecondColorPicker: FC<Props> = ({}) => {
-  let [color, setColor] = useState(parseColor("hsba(0, 100%, 50%, 0.5)"));
-
+const SecondColorPicker: FC<Props> = ({ color, setColor }) => {
   return (
     <div role="group" aria-label="HSBA Color Picker">
       <Flex gap="size-500" alignItems="center">

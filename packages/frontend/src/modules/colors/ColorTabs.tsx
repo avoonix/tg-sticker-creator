@@ -1,24 +1,5 @@
-import {
-  Breadcrumbs,
-  Flex,
-  Grid,
-  Heading,
-  Item,
-  TabList,
-  TabPanels,
-  Tabs,
-  Text,
-  View,
-} from "@adobe/react-spectrum";
-import { FC, ReactNode, useState } from "react";
-import { parseColor } from "@react-stately/color";
-import { ColorChannel } from "@react-types/color";
-import {
-  ColorArea,
-  ColorField,
-  ColorSlider,
-  ColorWheel,
-} from "@react-spectrum/color";
+import { Item, TabList, TabPanels, Tabs } from "@adobe/react-spectrum";
+import { FC, ReactNode } from "react";
 
 interface Props {
   first: ReactNode;

@@ -1,19 +1,19 @@
-import { Breadcrumbs, Flex, Grid, Item, View } from "@adobe/react-spectrum";
-import { FC, useState } from "react";
-import { parseColor } from "@react-stately/color";
-import { ColorChannel } from "@react-types/color";
-import { ColorArea, ColorField, ColorWheel } from "@react-spectrum/color";
+import { Flex, Grid, View } from "@adobe/react-spectrum";
+import { ColorArea, ColorWheel } from "@react-spectrum/color";
+import { Color } from "@react-stately/color";
+import { FC } from "react";
 
-interface Props {}
+interface Props {
+  color: Color;
+  setColor: (color: Color) => void;
+}
 
-const ColorPicker: FC<Props> = ({}) => {
+const ColorPicker: FC<Props> = ({ color, setColor }) => {
   const change = (val?: any) => {
-    console.log("change", val);
     const newColor = (val || color).toFormat(colorSpace);
     setColor(newColor);
   };
   const changeEnd = (val?: any) => console.log("change end", val);
-  let [color, setColor] = useState(parseColor("hsb(0, 100%, 100%)"));
   let colorSpace = color.getColorSpace();
 
   return (
@@ -60,16 +60,6 @@ const ColorPicker: FC<Props> = ({}) => {
             height: "96px",
             background: color.toString("css"),
           }}
-        />
-        <ColorField
-          label="HEX Color"
-          value={color}
-          onChange={change}
-          onKeyDown={(event) =>
-            event.key === "Enter" &&
-            change((event.target as HTMLInputElement).value)
-          }
-          width="size-1200"
         />
       </Flex>
     </Flex>

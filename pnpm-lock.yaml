@@ -72,6 +72,7 @@ importers:
       eslint-import-resolver-typescript: 3.3.0
       eslint-plugin-import: 2.26.0
       eslint-plugin-prettier: 4.2.1
+      jotai: ^1.7.8
       next: 12.2.3
       next-transpile-modules: ^9.0.0
       prettier: 2.7.1
@@ -131,6 +132,7 @@ importers:
       '@spectrum-icons/illustrations': 3.3.1_react@18.2.0
       '@spectrum-icons/ui': 3.3.1_iarnvdza54cgar6atbptfawwvm
       '@spectrum-icons/workflow': 4.0.1_iarnvdza54cgar6atbptfawwvm
+      jotai: 1.7.8_react@18.2.0
       next: 12.2.3_biqbaboplfbrettd7655fr4n2y
       next-transpile-modules: 9.0.0
       react: 18.2.0
@@ -221,7 +223,7 @@ importers:
       rollup-plugin-dts: 4.2.2_33yckdm6ewepynulqj2hgikvs4
       sass: 1.32.13
       sass-loader: 10.3.1_tfuzmjzxfba7fk6d7hracu5kti
-      tg-sticker-creator: link:../tg-sticker-creator
+      tg-sticker-creator: 0.0.1
       tinycolor2: 1.4.2
       typescript: 4.5.5
       vue: 2.7.8
@@ -6750,7 +6752,7 @@ packages:
       lodash: ^4.17.20
       marko: ^3.14.4
       mote: ^0.2.0
-      mustache: ^3.0.0
+      mustache: ^4.0.1
       nunjucks: ^3.2.2
       plates: ~0.4.11
       pug: ^3.0.0
@@ -9933,6 +9935,43 @@ packages:
       '@sideway/pinpoint': 2.0.0
     dev: false
 
+  /jotai/1.7.8_react@18.2.0:
+    resolution: {integrity: sha512-rXwWz6uLqyZUCRzWIPiYTjI1hjskVxVpDN3lBoOHi66z6uQFkFmKwR8YhcQd+Ex4lODlReuKNIx6WwsF9aKy3g==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      '@babel/core': '*'
+      '@babel/template': '*'
+      '@tanstack/query-core': '*'
+      '@urql/core': '*'
+      immer: '*'
+      optics-ts: '*'
+      react: '>=16.8'
+      valtio: '*'
+      wonka: '*'
+      xstate: '*'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      '@babel/template':
+        optional: true
+      '@tanstack/query-core':
+        optional: true
+      '@urql/core':
+        optional: true
+      immer:
+        optional: true
+      optics-ts:
+        optional: true
+      valtio:
+        optional: true
+      wonka:
+        optional: true
+      xstate:
+        optional: true
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /js-message/1.0.7:
     resolution: {integrity: sha512-efJLHhLjIyKRewNS9EGZ4UpI8NguuL6fKkhRxVuMmrGV2xN/0APGdQYwLFky5w9naebSZ0OwAGp0G6/2Cg90rA==}
     engines: {node: '>=0.6.0'}
@@ -12727,6 +12766,16 @@ packages:
   /text-table/0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
+
+  /tg-sticker-creator/0.0.1:
+    resolution: {integrity: sha512-2NiAi13RJwhosmjaXHIXHep+Lr+mpQlYiCQymXVFejW+kX0pr+XhvmV9KKYYzPNKsXs3zXIa486sWxyfF+3uLw==}
+    engines: {node: '>=14'}
+    dependencies:
+      lodash.clonedeep: 4.5.0
+      tinycolor2: 1.4.2
+      ts-mixer: 6.0.1
+      tslib: 2.4.0
+    dev: false
 
   /thenify-all/1.6.0:
     resolution: {integrity: sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA==}
