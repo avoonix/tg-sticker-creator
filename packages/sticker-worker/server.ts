@@ -62,7 +62,7 @@ app.get("/", async (req, res) => {
   if (!queue)
     queue = new PQueue({
       concurrency: 1,
-      timeout: 60000,
+      // timeout: 6000000000,
       throwOnTimeout: true,
       autoStart: true,
     });
@@ -73,10 +73,12 @@ app.get("/", async (req, res) => {
   if (queue.size > 5) return res.status(429).end();
 
   queue.add(async () => {
+  const start = process.hrtime();
+
     console.log("start")
     // Start the browser with the AWS Lambda wrapper (chrome-aws-lambda)
     const browser = await chromium.launch({
-      headless: true,
+      headless: false,
       chromiumSandbox: false,
     });
     // // Set the s-maxage property which caches the images then on the Vercel edge
@@ -86,28 +88,35 @@ app.get("/", async (req, res) => {
     // res.end(data)
 
     console.log("page")
-    const page = await browser.newPage();
-    // Go to https://tg-sticker-app.vercel.app/
-    await page.goto("https://tg-sticker-app.vercel.app/wizard/pet");
+    const page = await browser.newPage({});
+    page.setDefaultTimeout(0);
 
-    console.log("download")
-    const [download] = await Promise.all([
-      // Start waiting for the download
-      page.waitForEvent("download", { timeout: 3 * minute }),
-      // Perform the action that initiates download
-      // Click text=Export Telegram Sticker
-      page.locator("text=Export as video").click(),
-    ]);
-    console.log("result")
-    const result = await download.createReadStream();
+  page.on("console", (msg) => console.log("console message:", msg.text()));
+
+  const sticker  = "popping";
+  const settingId = "c954445e-710f-47a3-9021-84a07c0b9c3a";
+
+
+  await page.goto(`https://harmonious-paletas-16a775.netlify.app/edit/${sticker}/headless?id=${encodeURIComponent(String(settingId))}`);
+
+  // const [download] = await Promise.all([
+  //   page.waitForEvent("download"),
+  //   page.locator("text=Export as MP4").click(),
+  // ]);
+  const download = await page.waitForEvent("download");
+
+  const result = (await download.createReadStream());
     if (!result) throw new Error("no result");
     // res.setHeader("Content-Type", "video/webm");
     //   res.end(result);
     // result.pipe(res, { end: true });
+
+    const durationInSeconds = getDurationInMilliseconds(start) / 1000;
+    console.log(`start until the buffer is ready: ${durationInSeconds} s`);
     const cid = await client.put(
       [
-        new File([await streamToBuffer(result)], "video.webm", {
-          type: "video/webm",
+        new File([await streamToBuffer(result)], "video.mp4", {
+          type: "video/mp4",
         }),
       ],
       { name: "sticker test" }

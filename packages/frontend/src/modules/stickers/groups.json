@@ -1,0 +1,38 @@
+{
+  "mutuallyExclusiveTraits": {
+    "tail": ["tail.bird", "tail.cat", "tail.canine", "tail.none"],
+    "feet": ["feet.bird", "feet.mammal"],
+    "face": ["face.beak", "face.muzzle"],
+    "hair": ["hair.fluffy", "hair.none"],
+    "ears": ["ears.canine", "ears.none"],
+    "hands": ["hands.primate"],
+    "arms": ["arms.regular"],
+    "eyes": ["eyes.open", "eyes.closed"],
+    "head": ["head"],
+    "ych": ["ych"],
+    "peek": [
+      "peek.present",
+      "peek.candy",
+      "peek.skull",
+      "peek.pumpkin",
+      "peek.couldron",
+      "peek.egg"
+    ],
+    "body": ["body"],
+    "torso": ["torso"],
+    "held-object": ["held-object.heart"],
+    "exclamation": ["exclamation.a"]
+  },
+  "optionalTraits": {
+    "accessories": ["accessories.collar"],
+    "effect": [
+      "effect.hearts",
+      "effect.sparkles",
+      "effect.speedlines",
+      "effect.hypno",
+      "effect.stroke-width",
+      "effect.color",
+      "effect.outline"
+    ]
+  }
+}

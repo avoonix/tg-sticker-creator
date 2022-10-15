@@ -44,11 +44,13 @@
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/quotes": [
           2,
-          "backtick",
+          "double",
           {
             "avoidEscape": true
           }
-        ]
+        ],
+        "@typescript-eslint/no-non-null-assertion": "warn",
+        "react/no-unescaped-entities": "off"
       }
     }
   ]

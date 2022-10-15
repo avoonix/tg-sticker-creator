@@ -1,73 +1,161 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import Head from "next/head";
+import VideoCardList from "@/modules/overview/VideoCardList";
+import { VideoEntry } from "@/modules/overview/VideoEntry";
+import { Heading, View } from "@adobe/react-spectrum";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import { useAtom, useSetAtom } from "jotai";
+import { authAtom } from "@/modules/export/auth";
+import { getSettings } from "@/modules/export/requests";
 
-import styles from '@/styles/Home.module.css';
+const videos: VideoEntry[] = [
+  {
+    url: "https://tg-sticker-bot.vercel.app/api/dev/headpats/null/video.webm",
+    emojis: [
+      { encoded: "🍕", name: "Pizza" },
+      { encoded: "❤️", name: "Heart" },
+    ],
+    name: "Headpats",
+    stickerId: "headpats",
+  },
+  // {
+  //   url: "https://bafybeihuhrc4fwpvqwyyjmycl6yc32jde6z4ri4uejvonwp3m3axitxl7u.ipfs.dweb.link/video.webm",
+  //   emojis: [
+  //     { encoded: "🍕", name: "Pizza" },
+  //     { encoded: "❤️", name: "Heart" },
+  //   ],
+  //   name: "Heart",
+  //   stickerId: "heart",
+  // },
+  // {
+  //   url: "https://bafybeihuhrc4fwpvqwyyjmycl6yc32jde6z4ri4uejvonwp3m3axitxl7u.ipfs.dweb.link/video.webm",
+  //   emojis: [
+  //     { encoded: "🍕", name: "Pizza" },
+  //     { encoded: "❤️", name: "Heart" },
+  //   ],
+  //   name: "A",
+  //   stickerId: "a",
+  // },
+  {
+    url: "https://tg-sticker-bot.vercel.app/api/dev/popping/null/video.webm",
+    emojis: [
+      { encoded: "🍕", name: "Pizza" },
+      { encoded: "❤️", name: "Heart" },
+    ],
+    name: "Popping",
+    stickerId: "popping",
+  },
+  {
+    url: "https://tg-sticker-bot.vercel.app/api/dev/halloween/null/video.webm",
+    emojis: [
+      { encoded: "🍕", name: "Pizza" },
+      { encoded: "❤️", name: "Heart" },
+    ],
+    name: "Halloween",
+    stickerId: "halloween",
+  },
+  // {
+  //   url: "https://bafybeihuhrc4fwpvqwyyjmycl6yc32jde6z4ri4uejvonwp3m3axitxl7u.ipfs.dweb.link/video.webm",
+  //   emojis: [
+  //     { encoded: "🍕", name: "Pizza" },
+  //     { encoded: "❤️", name: "Heart" },
+  //   ],
+  //   name: "Attribution",
+  //   stickerId: "attribution",
+  // },
+];
 
 export default function Home() {
+  const router = useRouter();
+  const setConfig = useSetAtom(authAtom);
+  const [auth] = useAtom(authAtom);
+  const [savedEntries, setSavedEntries] = useState<VideoEntry[]>([]);
+
+  useEffect(() => {
+    if (!auth.data || !auth.type) throw new Error("missing auth");
+    getSettings({
+      authData: auth.data,
+      authType: auth.type,
+    }).then((saved) => {
+      setSavedEntries(
+        saved.map(
+          (s: any) =>
+            ({
+              url: `https://tg-sticker-bot.vercel.app/api/dev/${
+                s.sticker || "popping"
+              }/${s.id}/video.webm`,
+              emojis: [
+                { encoded: "🍕", name: "Pizza" },
+                { encoded: "❤️", name: "Heart" },
+              ],
+              name: s.id,
+              stickerId: "popping",
+              settingId: s.id,
+            } as VideoEntry),
+        ),
+      );
+    });
+  }, []);
+
+  useEffect(() => {
+    if (!router.query.hash) return;
+    console.log(router);
+    const data = JSON.stringify(
+      Object.fromEntries(
+        Object.entries(router.query).filter(([key]) =>
+          [
+            "id",
+            "first_name",
+            "username",
+            "photo_url",
+            "auth_date",
+            "hash",
+          ].includes(key),
+        ),
+      ),
+    );
+    setConfig({
+      data,
+      name:
+        String(router.query.username || router.query.first_name) || undefined,
+      photoUrl: String(router.query.photo_url) || undefined,
+      type: "telegram-login",
+    });
+    router.replace(router.route); // route without query
+  }, [router.query]);
+
   return (
-    <div className={styles.container}>
+    <View padding="size-100">
       <Head>
-        <title>TypeScript starter for Next.js</title>
+        <title>Avoo's Sticker Stamp - Telegram Sticker Templates</title>
         <meta
           name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
+          content="Create your custom sticker pack for telegram in minutes."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{` `}
-          <code className={styles.code}>src/pages/index.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=typescript-nextjs-starter"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+      <main>
+        <Heading level={1} UNSAFE_style={{ textAlign: "center" }}>
+          <img
+            src="/favicon.svg"
+            alt="Logo"
+            style={{
+              width: "2em",
+              height: "2em",
+              verticalAlign: "middle",
+              marginRight: "8px",
+            }}
+          />
+          <span style={{ color: "#bf8a0f" }}>A</span>voo's{" "}
+          <span style={{ color: "#bf8a0f" }}>S</span>ticker{" "}
+          <span style={{ color: "#bf8a0f" }}>S</span>tamp
+        </Heading>
+        your own
+        <VideoCardList videos={savedEntries} />
+        other
+        <VideoCardList videos={videos} />
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=typescript-nextjs-starter"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{` `}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+    </View>
   );
 }
