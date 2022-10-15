@@ -1,7 +1,7 @@
 import { Flex } from "@adobe/react-spectrum";
 import { ColorSlider } from "@react-spectrum/color";
-import { Color, parseColor } from "@react-stately/color";
-import { FC, useState } from "react";
+import { Color } from "@react-stately/color";
+import { FC } from "react";
 
 interface Props {
   color: Color;

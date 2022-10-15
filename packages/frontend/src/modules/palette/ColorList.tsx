@@ -5,19 +5,24 @@ import { splitAtom } from "jotai/utils";
 import { FC } from "react";
 import ColorButton from "../colors/ColorButton";
 import ColorItem from "./ColorItem";
-import { PaletteEntry } from "./PaletteEntry";
+import { PaletteEntry } from "../stickers/execute/PaletteEntry";
 
-const todosAtom = atom<PaletteEntry[]>([]);
-  const colorsAtom = splitAtom(todosAtom);
+export const paletteAtom = atom<PaletteEntry[]>([]);
+export const colorsAtom = splitAtom(paletteAtom);
 
-interface Props {}
+// interface Props {}
 
-const ColorList: FC<Props> = ({}) => {
-  const setTodos = useSetAtom(todosAtom);
+const ColorList: FC = () => {
+  const setPalette = useSetAtom(paletteAtom);
+
   const add = () => {
-    setTodos((prev) => [
+    setPalette((prev) => [
       ...prev,
-      { id: Math.random(), name: "color 0", color: "#ff00ff" },
+      {
+        id: Math.max(0, ...prev.map((c) => c.id)) + 1,
+        name: "color 0",
+        color: "#ff00ff",
+      },
     ]);
   };
   const [colors] = useAtom(colorsAtom);

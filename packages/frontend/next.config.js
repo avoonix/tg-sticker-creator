@@ -1,3 +1,5 @@
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const path = require("path");
 const withTM = require("next-transpile-modules")([
   "@adobe/react-spectrum",
   "@react-spectrum/actiongroup",
@@ -18,6 +20,7 @@ const withTM = require("next-transpile-modules")([
   "@react-spectrum/label",
   "@react-spectrum/layout",
   "@react-spectrum/link",
+  "@react-spectrum/list",
   "@react-spectrum/listbox",
   "@react-spectrum/menu",
   "@react-spectrum/meter",
@@ -44,11 +47,55 @@ const withTM = require("next-transpile-modules")([
   "@react-spectrum/card",
   "@react-spectrum/color",
   "@react-spectrum/tag",
+  "@react-spectrum/accordion",
   "@spectrum-icons/ui",
   "@spectrum-icons/workflow",
 ]);
 
 module.exports = withTM({
   // Your Next.js configuration
-  reactStrictMode: true,
+  reactStrictMode: false,
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: "raw-loader",
+    });
+
+    config.plugins.push(
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: path.join(__dirname, "node_modules/@ffmpeg/core/dist"),
+            to: path.join(__dirname, "public/ffmpeg"),
+          },
+          {
+            from: path.join(__dirname, "node_modules/ccapture.js/build/CCapture.all.min.js"),
+            to: path.join(__dirname, "public/CCapture.all.min.js"),
+          },
+          {
+            from: path.join(__dirname, "node_modules/gif.js/dist/gif.worker.js"),
+            to: path.join(__dirname, "public/gif.worker.js"),
+          },
+          {
+            from: path.join(__dirname, "node_modules/gif.js/dist/gif.worker.js.map"),
+            to: path.join(__dirname, "public/gif.worker.js.map"),
+          },
+        ],
+      }),
+    );
+
+    return config;
+  },
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          { key: "cross-origin-opener-policy", value: "same-origin" },
+          // { key: "cross-origin-embedder-policy", value: "require-corp" },
+          { key: "cross-origin-embedder-policy", value: "credentialless" },
+        ],
+      },
+    ];
+  },
 });

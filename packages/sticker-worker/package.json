@@ -2,7 +2,8 @@
   "private": true,
   "name": "worker",
   "scripts": {
-    "postinstall": "tsc && npx playwright install chromium"
+    "postinstall": "tsc && npx playwright install chromium",
+    "watch": "tsc --watch"
   },
   "dependencies": {
     "@types/express": "^4.17.13",

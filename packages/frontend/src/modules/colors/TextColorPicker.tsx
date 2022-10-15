@@ -8,13 +8,12 @@ interface Props {
   setColor: (color: Color) => void;
 }
 
-const TextColorPicker: FC<Props> = ({color, setColor}) => {
+const TextColorPicker: FC<Props> = ({ color, setColor }) => {
   const change = (val?: any) => {
-    console.log("change", val);
     const newColor = (val || color).toFormat(colorSpace);
     setColor(newColor);
   };
-  let colorSpace = color.getColorSpace();
+  const colorSpace = color.getColorSpace();
 
   return (
     <Flex gap="size-500" alignItems="start">
@@ -38,7 +37,7 @@ const TextColorPicker: FC<Props> = ({color, setColor}) => {
           label="HEX Color"
           value={color}
           onChange={change}
-          onKeyDown={(event) =>
+          onKeyDown={(event: any) =>
             event.key === "Enter" &&
             change((event.target as HTMLInputElement).value)
           }

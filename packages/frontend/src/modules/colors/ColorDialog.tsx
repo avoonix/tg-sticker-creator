@@ -13,20 +13,20 @@ interface Props {
 }
 
 const ColorDialog: FC<Props> = (props) => {
-  let [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   // const color = parseColor(props.color);
   // const setColor = (color: Color) => props.onChange(color.toString("rgb"));
-  let [color, setColor] = useState(parseColor("hsb(0, 100%, 50%)"));
+  const [color, setColor] = useState(parseColor("hsb(0, 100%, 50%)"));
 
   useEffect(() => {
     setColor(parseColor(props.color).toFormat("hsb"));
-  }, [props.color])
+  }, [props.color]);
 
   const changeColor = (color: Color) => {
-    props.onChange(color.toString("rgb"));
-    setColor(color)
-  }
+    props.onChange(color.toString("hex"));
+    setColor(color);
+  };
 
   return (
     <DialogTrigger type="popover" isOpen={open} onOpenChange={setOpen}>

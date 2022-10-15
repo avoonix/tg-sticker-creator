@@ -1,7 +1,7 @@
+import { Text } from "@adobe/react-spectrum";
+import { Item, TagGroup } from "@react-spectrum/tag";
 import { FC } from "react";
 import { Emoji } from "./Emoji";
-import { Item, TagGroup } from "@react-spectrum/tag";
-import { Icon, Text } from "@adobe/react-spectrum";
 
 interface Props {
   emojis: Emoji[];
@@ -13,9 +13,11 @@ const EmojiList: FC<Props> = ({ emojis }) => {
       aria-label="tag group"
       items={emojis.map((e) => ({ key: e.encoded, label: e.name }))}
     >
-      {(item) => (
+      {(item: { key: string; label: string }) => (
         <Item key={item.key} textValue={item.label}>
-          <Text>{item.key} {item.label}</Text>
+          <Text>
+            {item.key} {item.label}
+          </Text>
         </Item>
       )}
     </TagGroup>

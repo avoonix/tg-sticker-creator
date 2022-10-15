@@ -38,3 +38,8 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# generated
+public/ffmpeg
+public/CCapture.all.min.js
+public/gif.worker.js*

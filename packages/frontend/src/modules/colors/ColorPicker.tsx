@@ -13,8 +13,7 @@ const ColorPicker: FC<Props> = ({ color, setColor }) => {
     const newColor = (val || color).toFormat(colorSpace);
     setColor(newColor);
   };
-  const changeEnd = (val?: any) => console.log("change end", val);
-  let colorSpace = color.getColorSpace();
+  const colorSpace = color.getColorSpace();
 
   return (
     <Flex gap="size-500" alignItems="start">
@@ -33,15 +32,9 @@ const ColorPicker: FC<Props> = ({ color, setColor }) => {
               yChannel="brightness"
               value={color}
               onChange={change}
-              onChangeEnd={changeEnd}
             />
           </Grid>
-          <ColorWheel
-            size={"size-2400"}
-            value={color}
-            onChange={change}
-            onChangeEnd={changeEnd}
-          />
+          <ColorWheel size={"size-2400"} value={color} onChange={change} />
         </View>
       </Flex>
 

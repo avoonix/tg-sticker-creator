@@ -1,5 +1,3 @@
-import { FC, useCallback, useId } from "react";
-import { Card } from "@react-spectrum/card";
 import {
   Button,
   Content,
@@ -7,14 +5,14 @@ import {
   Heading,
   IllustratedMessage,
   Text,
-  View,
 } from "@adobe/react-spectrum";
-import { VideoEntry } from "./VideoEntry";
-import style from "./index.module.css";
+import { Card } from "@react-spectrum/card";
 import Edit from "@spectrum-icons/workflow/Edit";
-import EmojiList from "../emojis/EmojiList";
-import Link from "next/link";
 import { useRouter } from "next/router";
+import { FC, useCallback } from "react";
+import EmojiList from "../emojis/EmojiList";
+import style from "./index.module.css";
+import { VideoEntry } from "./VideoEntry";
 
 interface Props {
   entry: VideoEntry;
@@ -24,7 +22,11 @@ const VideoCard: FC<Props> = ({ entry }) => {
   const router = useRouter();
 
   const handleNavigation = useCallback(() => {
-    router.push("/edit");
+    router.push(
+      `/edit/${entry.stickerId}?id=${encodeURIComponent(
+        entry.settingId || "",
+      )}`,
+    );
   }, [entry]);
 
   return (

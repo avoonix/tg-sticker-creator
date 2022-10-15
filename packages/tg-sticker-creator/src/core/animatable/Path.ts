@@ -54,7 +54,7 @@ export class Path extends LottieItem {
     return this;
   }
 
-  addSegment(point: Coordinate, inHandle: Coordinate, outHandle: Coordinate) {
+  addSegment(point: Coordinate, inHandle: Coordinate = [0,0], outHandle: Coordinate = [0,0]) {
     this.points.push(point);
     this.inHandles.push(inHandle);
     this.outHandles.push(outHandle);

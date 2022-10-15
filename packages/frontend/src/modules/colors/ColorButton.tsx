@@ -1,14 +1,15 @@
-import { FC, PropsWithChildren, useRef } from "react";
+import { CSSProperties, FC, useRef } from "react";
 import { AriaButtonProps, useButton } from "react-aria";
 
-interface Props extends PropsWithChildren, AriaButtonProps<"span"> {
+interface Props extends AriaButtonProps<"span"> {
   color: string;
+  style?: CSSProperties;
 }
 
 const ColorButton: FC<Props> = (props) => {
-  let { children } = props;
-  let ref = useRef();
-  let { buttonProps, isPressed } = useButton(
+  const { children } = props;
+  const ref = useRef();
+  const { buttonProps, isPressed } = useButton(
     {
       ...props,
       elementType: "span",
@@ -30,6 +31,7 @@ const ColorButton: FC<Props> = (props) => {
         display: "inline-flex",
         justifyContent: "center",
         alignItems: "center",
+        ...(props.style || {}),
       }}
       ref={ref as any}
     >

@@ -1,0 +1,14 @@
+.activeStep::after {
+  pointer-events: none;
+  z-index: 2;
+  content: " ";
+  grid-area: preview;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: calc(var(--spectrum-alias-focus-ring-gap, var(--spectrum-global-dimension-static-size-25)) * -2);
+  border-radius: calc(var(--spectrum-card-quiet-border-radius, var(--spectrum-alias-border-radius-regular)) + var(--spectrum-alias-focus-ring-gap, var(--spectrum-global-dimension-static-size-25)));
+  box-shadow: 0 0 0 1px var(--spectrum-card-border-color-key-focus, var(--spectrum-alias-border-color-focus));
+  left: 0;
+  right: 0;
+}
