@@ -1,4 +1,4 @@
-# Copyright Free Telegram Stickers for Everyone
+# Copyright Free Telegram Stickers 
 
 ## Web App
 
