@@ -72,29 +72,34 @@ export default function Home() {
   const [savedEntries, setSavedEntries] = useState<VideoEntry[]>([]);
 
   useEffect(() => {
-    if (!auth.data || !auth.type) throw new Error("missing auth");
+    if (!auth.data || !auth.type) {
+      console.log("no auth data, skipping fetch");
+      return;
+    }
     getSettings({
       authData: auth.data,
       authType: auth.type,
-    }).then((saved) => {
-      setSavedEntries(
-        saved.map(
-          (s: any) =>
-            ({
-              url: `https://tg-sticker-bot.vercel.app/api/dev/${
-                s.sticker || "popping"
-              }/${s.id}/video.webm`,
-              emojis: [
-                { encoded: "🍕", name: "Pizza" },
-                { encoded: "❤️", name: "Heart" },
-              ],
-              name: s.id,
-              stickerId: "popping",
-              settingId: s.id,
-            } as VideoEntry),
-        ),
-      );
-    });
+    })
+      .then((saved) => {
+        setSavedEntries(
+          saved.map(
+            (s: any) =>
+              ({
+                url: `https://tg-sticker-bot.vercel.app/api/dev/${s.sticker}/${s.id}/video.webm`,
+                emojis: [
+                  { encoded: "🍕", name: "Pizza" },
+                  { encoded: "❤️", name: "Heart" },
+                ],
+                name: s.id,
+                stickerId: "popping",
+                settingId: s.id,
+              } as VideoEntry),
+          ),
+        );
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   }, []);
 
   useEffect(() => {
