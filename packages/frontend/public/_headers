@@ -1,3 +1,12 @@
+https://:project.pages.dev/*
+    X-Robots-Tag: noindex
+
+/_next/static/chunks/*
+    Cache-Control: public, max-age=86400
+
+/_next/static/css/*
+    Cache-Control: public, max-age=86400
+
 /*
-  Cross-Origin-Opener-Policy: same-origin
-  Cross-Origin-Embedder-Policy: require-corp
+    Cross-Origin-Opener-Policy: same-origin
+    Cross-Origin-Embedder-Policy: require-corp
