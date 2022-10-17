@@ -60,8 +60,7 @@ export default function Home(props: Props) {
             <GifButton lottie={lottie} />
             <TgsButton lottie={lottie} />
             <VideoButton lottie={lottie} />
-            TODO: only show if auth data is set ({JSON.stringify(auth)})
-            <AddToSetButton lottie={lottie} />
+            {auth.data && <AddToSetButton lottie={lottie} />}
           </>
         )}
         <StickerBreadcrumb stickerName={sticker.displayName} />

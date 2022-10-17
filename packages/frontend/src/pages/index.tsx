@@ -91,7 +91,7 @@ export default function Home() {
                   { encoded: "❤️", name: "Heart" },
                 ],
                 name: s.id,
-                stickerId: "popping",
+                stickerId: s.sticker,
                 settingId: s.id,
               } as VideoEntry),
           ),
