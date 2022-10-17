@@ -1,8 +1,8 @@
 {
   "mutuallyExclusiveTraits": {
-    "tail": ["tail.bird", "tail.cat", "tail.canine", "tail.none"],
-    "feet": ["feet.bird", "feet.mammal"],
-    "face": ["face.beak", "face.muzzle"],
+    "tail": ["tail.canine", "tail.cat", "tail.bird", "tail.none"],
+    "feet": ["feet.mammal", "feet.bird"],
+    "face": ["face.muzzle", "face.beak"],
     "hair": ["hair.fluffy", "hair.none"],
     "ears": ["ears.canine", "ears.none"],
     "hands": ["hands.primate"],

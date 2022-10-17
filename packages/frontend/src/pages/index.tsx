@@ -12,8 +12,9 @@ const videos: VideoEntry[] = [
   {
     url: "https://tg-sticker-bot.vercel.app/api/dev/headpats/null/video.webm",
     emojis: [
-      { encoded: "🍕", name: "Pizza" },
-      { encoded: "❤️", name: "Heart" },
+      { name: "waving", encoded: "👋" },
+      { name: "love", encoded: "🥰" },
+      { name: "hearts", encoded: "💕" },
     ],
     name: "Headpats",
     stickerId: "headpats",
@@ -39,18 +40,18 @@ const videos: VideoEntry[] = [
   {
     url: "https://tg-sticker-bot.vercel.app/api/dev/popping/null/video.webm",
     emojis: [
-      { encoded: "🍕", name: "Pizza" },
-      { encoded: "❤️", name: "Heart" },
+      { name: "cat", encoded: "🐱" },
+      { name: "open mouth", encoded: "😮" },
+      { name: "screaming cat", encoded: "🙀" },
+      { name: "popping cork", encoded: "🍾" },
+      { name: "bubbles", encoded: "🫧" },
     ],
     name: "Popping",
     stickerId: "popping",
   },
   {
     url: "https://tg-sticker-bot.vercel.app/api/dev/halloween/null/video.webm",
-    emojis: [
-      { encoded: "🍕", name: "Pizza" },
-      { encoded: "❤️", name: "Heart" },
-    ],
+    emojis: [{ name: "eyes", encoded: "👀" }],
     name: "Halloween",
     stickerId: "halloween",
   },
