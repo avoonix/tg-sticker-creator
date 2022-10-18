@@ -10,7 +10,6 @@ export const base = () =>
     displayName: "Base",
     inputs: {},
     async apply(sticker, inputs) {
-      // sticker.finalFrame = 12; // 6 frames = 100ms
       sticker.finalFrame = 18;
 
       sticker.addLayerBack(
@@ -22,8 +21,6 @@ export const base = () =>
           )
           .addShapeBack(create.transform()),
       );
-
-      // sticker.first(["Base Frame"])
 
       const frame1 = sticker.first(["Frame 1"])!.cast("GroupShape");
       const frame2 = sticker.first(["Frame 2"])!.cast("GroupShape");
@@ -56,9 +53,9 @@ export const base = () =>
       sticker
         .first(["root"])
         ?.cast("ShapeLayer")
-        .eachImmediateChildShape((shape) => {
-          if (!shape.is("TransformShape")) return;
-          shape
+        .setTransform(
+          create
+            .layerTransform()
             .setAnchor(create.value([310, 360]))
             .setPosition(create.value(310, 360))
             .setScale(
@@ -78,27 +75,8 @@ export const base = () =>
                   zoomEasing,
                 )
                 .addKeyframe(sticker.frameAt(1.05), [100, 100], zoomEasing),
-            );
-        });
-
-      // sticker.first(["root"])?.cast("ShapeLayer").eachImmediateChildShape((shape) => {
-      //   if (!shape.is("TransformShape")) return;
-      //   shape
-      //     .setAnchor(create.value([256, 512])
-      //       // .addKeyframe(sticker.frameAt(0.499), 0)
-      //       // .addKeyframe(sticker.frameAt(0.50), 100)
-      //       // .addKeyframe(sticker.frameAt(1), 100)
-      //     ).setPosition(create.value(256, 512)).setScale(
-      //       create.value([100, 100])
-      //               .addKeyframe(sticker.frameAt(0.4), [100, 100])
-      //               .addKeyframe(sticker.frameAt(0.5), [100, 96])
-      //               .addKeyframe(sticker.frameAt(0.6), [100, 100])
-      //               .addKeyframe(sticker.frameAt(1), [100,100])
-
-      //               )
-      // });;
-
-      // // TODO: hide frames (alternating)
+            ),
+        );
 
       setInitialHidden(sticker);
 
