@@ -3,8 +3,12 @@ import "@/styles/global.css";
 import { SSRProvider, Provider, defaultTheme } from "@adobe/react-spectrum";
 import Head from "next/head";
 import Script from "next/script";
+import { useAtom } from "jotai";
+import { themeAtom } from "@/modules/misc/theme";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
+  const [theme] = useAtom(themeAtom);
+
   return (
     <>
       <Head>
@@ -14,7 +18,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <SSRProvider>
-        <Provider theme={defaultTheme} locale="en">
+        <Provider theme={defaultTheme} colorScheme={theme.type} locale="en">
           <Script defer src="/CCapture.all.min.js"></Script>
           <Component {...pageProps} />
           <p>

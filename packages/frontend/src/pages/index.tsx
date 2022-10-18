@@ -5,7 +5,7 @@ import { Heading, View } from "@adobe/react-spectrum";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useAtom, useSetAtom } from "jotai";
-import { authAtom } from "@/modules/export/auth";
+import { authAtom, useUpdateAuthData } from "@/modules/export/auth";
 import { getSettings } from "@/modules/export/requests";
 
 const videos: VideoEntry[] = [
@@ -71,6 +71,7 @@ export default function Home() {
   const setConfig = useSetAtom(authAtom);
   const [auth] = useAtom(authAtom);
   const [savedEntries, setSavedEntries] = useState<VideoEntry[]>([]);
+  const { updateAuthData } = useUpdateAuthData();
 
   useEffect(() => {
     if (!auth.data || !auth.type) {
@@ -120,13 +121,7 @@ export default function Home() {
         ),
       ),
     );
-    setConfig({
-      data,
-      name:
-        String(router.query.username || router.query.first_name) || undefined,
-      photoUrl: String(router.query.photo_url) || undefined,
-      type: "telegram-login",
-    });
+    updateAuthData(data);
     router.replace(router.route); // route without query
   }, [router.query]);
 
