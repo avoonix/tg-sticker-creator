@@ -66,7 +66,7 @@ export default function Home(props: Props) {
         <StickerBreadcrumb stickerName={sticker.displayName} />
         <ColorList />
         <MenuTrigger>
-          <ActionButton>Transition</ActionButton>
+          <ActionButton>Convert to other sticker type</ActionButton>
           <Menu onAction={(key: any) => setStickerId(key)}>
             {stickers.map((s) => (
               <Item key={s}>{s}</Item>
