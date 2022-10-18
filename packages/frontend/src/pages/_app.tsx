@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Avoo's Sticker Stamp</title>
+        <title>Avoo's Sticker Stash</title>
         <meta name="description" content="A Telegram sticker generator" />
         <link rel="icon" href="/favicon.svg" />
         <link rel="icon" href="/favicon.png" />

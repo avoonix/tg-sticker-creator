@@ -128,7 +128,7 @@ export default function Home() {
   return (
     <View padding="size-100">
       <Head>
-        <title>Avoo's Sticker Stamp - Telegram Sticker Templates</title>
+        <title>Avoo's Sticker Stash - Telegram Sticker Templates</title>
         <meta
           name="description"
           content="Create your custom sticker pack for telegram in minutes."
@@ -150,7 +150,7 @@ export default function Home() {
           />
           <span style={{ color: "#bf8a0f" }}>A</span>voo's{" "}
           <span style={{ color: "#bf8a0f" }}>S</span>ticker{" "}
-          <span style={{ color: "#bf8a0f" }}>S</span>tamp
+          <span style={{ color: "#bf8a0f" }}>S</span>tash
         </Heading>
         your own
         <VideoCardList videos={savedEntries} />
