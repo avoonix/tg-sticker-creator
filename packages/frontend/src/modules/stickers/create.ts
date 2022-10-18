@@ -87,14 +87,13 @@ export async function createStepsNew(
     const t = options.mutuallyExclusiveTraits[feature];
     const o = options.optionalTraits[feature];
     const available: string[] = (t || o).filter((a) => features[a]);
-    const alts: FilterDefinition[] = available.map((f): FilterDefinition => {
-      const id = `feature.${feature}.${f}`;
-      const effect = getEffect(f, id);
+    const alts: FilterDefinition[] = available.map((id): FilterDefinition => {
+      const effect = getEffect(id, id);
       return (
         effect ??
-        complexShape(id, f, [
+        complexShape(id, id, [
           {
-            makeVisible: [[`[${f}]`]],
+            makeVisible: [[`[${id}]`]],
             colorable: [],
           },
         ])
@@ -105,22 +104,20 @@ export async function createStepsNew(
 
     const altPatterns: FilterDefinition[] = activePatterns
       .filter((pattern) => available.find((a) => pattern.startsWith(a)))
-      .map((pattern): FilterDefinition => {
-        const parent = available.find((a) => pattern.startsWith(a))!; // TODO: duplicate line of code
-        usedFeatures[pattern] = true;
-        const id = `feature.${feature}.${pattern}`;
-        const mandatory = !!flags[pattern]?.includes("mandatory");
-        const parentId = `feature.${feature}.${parent}`;
+      .map((id): FilterDefinition => {
+        const parentId = available.find((a) => id.startsWith(a))!; // TODO: duplicate line of code
+        usedFeatures[id] = true;
+        const mandatory = !!flags[id]?.includes("mandatory");
 
         const step = simpleShape({
           id,
-          displayName: pattern,
-          paths: [[`[${pattern}]`]],
+          displayName: id,
+          paths: [[`[${id}]`]],
           visible: ({ config, enableIds, disableIds }) =>
             (config[parentId]?.active || enableIds.includes(parentId)) &&
             !disableIds.includes(parentId),
           mandatory,
-          defaultColor: data.defaultColors[pattern] ?? "#ffffff",
+          defaultColor: data.defaultColors[id] ?? "#ffffff",
           defaultPaletteId: undefined, // TODO: set default palette id
         });
         // if (mandatory) {
