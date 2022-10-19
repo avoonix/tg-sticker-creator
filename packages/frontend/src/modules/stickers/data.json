@@ -1,6 +1,8 @@
 {
   "defaultColors": {
     "ych.primary": "#ebc05b",
-    "ych.accent": "#bf8a0f"
+    "ych.accent": "#bf8a0f",
+    "eyes.open.left.pupil": "#000000",
+    "eyes.open.right.pupil": "#000000"
   }
 }
