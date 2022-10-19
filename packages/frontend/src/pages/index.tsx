@@ -1,12 +1,12 @@
-import Head from "next/head";
+import { authAtom, useUpdateAuthData } from "@/modules/export/auth";
+import { getSettings } from "@/modules/export/requests";
 import VideoCardList from "@/modules/overview/VideoCardList";
 import { VideoEntry } from "@/modules/overview/VideoEntry";
 import { Heading, View } from "@adobe/react-spectrum";
-import { useEffect, useState } from "react";
+import { useAtom } from "jotai";
+import Head from "next/head";
 import { useRouter } from "next/router";
-import { useAtom, useSetAtom } from "jotai";
-import { authAtom, useUpdateAuthData } from "@/modules/export/auth";
-import { getSettings } from "@/modules/export/requests";
+import { useEffect, useState } from "react";
 
 const videos: VideoEntry[] = [
   {
@@ -68,7 +68,6 @@ const videos: VideoEntry[] = [
 
 export default function Home() {
   const router = useRouter();
-  const setConfig = useSetAtom(authAtom);
   const [auth] = useAtom(authAtom);
   const [savedEntries, setSavedEntries] = useState<VideoEntry[]>([]);
   const { updateAuthData } = useUpdateAuthData();
@@ -76,6 +75,10 @@ export default function Home() {
   useEffect(() => {
     if (!auth.data || !auth.type) {
       console.log("no auth data, skipping fetch");
+      return;
+    }
+    if (savedEntries.length) {
+      console.log("stickers already fetched");
       return;
     }
     getSettings({
@@ -102,7 +105,7 @@ export default function Home() {
       .catch((err) => {
         console.error(err);
       });
-  }, []);
+  }, [auth]);
 
   useEffect(() => {
     if (!router.query.hash) return;

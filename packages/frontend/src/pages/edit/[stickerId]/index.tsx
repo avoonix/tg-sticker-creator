@@ -12,12 +12,10 @@ import { useApiSettings } from "@/modules/stickers/useApiSettings";
 import { useGeneratedSticker, useSticker } from "@/modules/stickers/useSticker";
 import {
   ActionButton,
-  Button,
   Heading,
   Item,
   Menu,
   MenuTrigger,
-  Text,
   View,
 } from "@adobe/react-spectrum";
 import { useAtom } from "jotai";
@@ -73,7 +71,6 @@ export default function Home(props: Props) {
             ))}
           </Menu>
         </MenuTrigger>
-        TODO
         <StickerRenderer sticker={lottie} />
         <StepGroups groups={sticker.groups} />
       </main>
