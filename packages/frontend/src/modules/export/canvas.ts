@@ -42,14 +42,12 @@ export const renderOnCanvas = async (
     info: { progress: number; frame: number },
   ) => Promise<void> | void,
 ) => {
-  console.log("test0");
   const canvas = document.createElement("canvas");
   canvas.width = options.width; // animation.width
   canvas.height = options.height;
   const context = canvas.getContext("2d", {
     willReadFrequently: true,
   });
-  console.log("test1");
   if (!context) throw new Error("no context");
   const args: LottieArgs = {
     container: null as unknown as Element,
@@ -82,7 +80,7 @@ export const renderOnCanvas = async (
       durationIncrementPerFrame *
       (animation.finalFrame - animation.initialFrame);
     lottie.goToAndStop(progress, true);
-    console.log("after goToAndStop");
+    // console.log("after goToAndStop");
     // await new Promise((r) => setTimeout(r, 1));
     const result = onFrame(canvas, context, {
       progress: progress / wholeDurationInFrames,
@@ -91,6 +89,6 @@ export const renderOnCanvas = async (
     if (result && "then" in result) {
       await result;
     }
-    console.log("called onFrame");
+    // console.log("called onFrame");
   }
 };
