@@ -68,7 +68,7 @@ export const renderOnCanvas = async (
   );
 
   for (let i = 0; i < wholeDurationInFrames; ++i) {
-    console.log(`frame ${i + 1}`);
+    if ((i + 1) % 20 === 0) console.log(`frame ${i + 1}`);
     context.fillStyle = options.backgroundColor;
     if (options.transparent) {
       context.clearRect(0, 0, options.width, options.height);
