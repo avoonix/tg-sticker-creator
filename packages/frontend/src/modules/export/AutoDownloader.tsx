@@ -19,7 +19,7 @@ const AutoDownloader: FC = (props) => {
         fps,
         backgroundColor: "#000000",
       },
-      (p) => console.log(p),
+      (p) => {},
     ).then(() => {
       console.log("duration", (performance.now() - start) / 1000, "s");
     });

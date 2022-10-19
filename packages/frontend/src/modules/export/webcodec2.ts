@@ -62,7 +62,7 @@ export const renderMp4Webcodec = async (
     options,
     async (canvas, context, { progress, frame }) => {
       // TODO: fix types
-      console.log("capturing frame");
+      // console.log("capturing frame");
       if (!recorder) {
         const stream = canvas.captureStream(30);
         recorder = new MediaRecorder(stream);
