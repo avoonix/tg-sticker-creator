@@ -72,7 +72,6 @@
     "@types/downloadjs": "^1.4.3",
     "@types/gif.js": "^0.2.2",
     "@types/lodash": "^4.14.186",
-    "@types/lru-cache": "^7.10.10",
     "@types/pako": "^2.0.0",
     "@types/seedrandom": "^3.0.2",
     "@types/tinycolor2": "^1.4.3",

@@ -1,1 +1,0 @@
-web: cd packages/sticker-worker && node dist/server.js
