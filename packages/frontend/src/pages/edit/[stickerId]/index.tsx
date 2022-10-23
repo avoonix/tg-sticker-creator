@@ -71,7 +71,9 @@ export default function Home(props: Props) {
             ))}
           </Menu>
         </MenuTrigger>
-        <StickerRenderer sticker={lottie} />
+        <View maxWidth="size-5000">
+          <StickerRenderer sticker={lottie} />
+        </View>
         <StepGroups groups={sticker.groups} />
       </main>
     </View>

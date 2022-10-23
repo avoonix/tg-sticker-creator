@@ -1,4 +1,5 @@
 import { Accordion, Item } from "@react-spectrum/accordion";
+import { Grid, repeat } from "@react-spectrum/layout";
 import { useAtom } from "jotai";
 import { FC, useEffect, useMemo, useState } from "react";
 import { Group } from "../stickers/execute";
@@ -45,23 +46,34 @@ const StepGroups: FC<Props> = (props) => {
           textValue="asdf"
         >
           <>
-            {item.steps
-              // .filter((s) => !s.visible || s.visible({config}))
-              .map((step) => (
-                <StickerStep
-                  group={item}
-                  key={step.id}
-                  configAtom={getConfigAtom(step.id)}
-                  step={step}
-                  disable={
-                    item.multiple
-                      ? []
-                      : item.steps
-                          .map((step) => step.id)
-                          .filter((id) => id !== step.id)
-                  }
-                />
-              ))}
+            <Grid
+              columns={{
+                base: repeat("auto-fit", "size-3000"),
+                L: repeat("auto-fit", "size-3600"),
+              }}
+              autoRows={{ base: "size-4000" }}
+              gap={{ base: "size-200", L: "size-350" }}
+              width="100%"
+              justifyContent="center"
+            >
+              {item.steps
+                // .filter((s) => !s.visible || s.visible({config}))
+                .map((step) => (
+                  <StickerStep
+                    group={item}
+                    key={step.id}
+                    configAtom={getConfigAtom(step.id)}
+                    step={step}
+                    disable={
+                      item.multiple
+                        ? []
+                        : item.steps
+                            .map((step) => step.id)
+                            .filter((id) => id !== step.id)
+                    }
+                  />
+                ))}
+            </Grid>
           </>
         </Item>
       )}

@@ -13,7 +13,7 @@ const ColorTabs: FC<Props> = ({ first, second, third }) => {
       <TabList>
         <Item key="val1">Wheel</Item>
         <Item key="val2">Sliders</Item>
-        <Item key="val3">Text</Item>
+        <Item key="val3">HEX</Item>
       </TabList>
       <TabPanels>
         <Item key="val1">{first}</Item>
