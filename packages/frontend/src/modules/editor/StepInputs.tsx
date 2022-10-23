@@ -10,6 +10,7 @@ import NumberInput from "./inputs/NumberInput";
 interface Props {
   configAtom: WritableAtom<StepConfig, SetStateAction<StepConfig>, void>;
   definition: Record<string, InputDefinition>;
+  onConfigChange: () => void;
 }
 
 const StepInputs: FC<Props> = (props) => {
@@ -23,18 +24,18 @@ const StepInputs: FC<Props> = (props) => {
 
   return (
     <div>
-      Inputs:
-      <div>{JSON.stringify(config, null, 2)}</div>
       {Object.entries(props.definition).map(([key, value]) => {
         const Input = inputs[value.type];
         return (
           <div key={key}>
-            {key}:{" "}
             <Input
               definition={value}
               value={config?.[key] ?? value.default}
               onChange={(updated) =>
-                setConfig((old) => ({ ...old, [key]: updated }))
+                setConfig((old) => {
+                  props.onConfigChange();
+                  return { ...old, [key]: updated };
+                })
               }
             />
           </div>
