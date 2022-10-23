@@ -6,7 +6,7 @@ export const base = () =>
   createFilter({
     mandatory: true,
     niceness: 0,
-    id: "base.attribution",
+    id: "base.headpats",
     displayName: "Base",
     inputs: {
       duration: {

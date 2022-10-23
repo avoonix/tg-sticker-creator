@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 
 const videos: VideoEntry[] = [
   {
-    url: "https://tg-sticker-bot.vercel.app/api/dev/headpats/null/video.webm",
+    url: "https://tg-sticker-bot.vercel.app/api/dev/headpats/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/video.webm",
     emojis: [
       { name: "waving", encoded: "👋" },
       { name: "love", encoded: "🥰" },
@@ -19,26 +19,8 @@ const videos: VideoEntry[] = [
     name: "Headpats",
     stickerId: "headpats",
   },
-  // {
-  //   url: "https://bafybeihuhrc4fwpvqwyyjmycl6yc32jde6z4ri4uejvonwp3m3axitxl7u.ipfs.dweb.link/video.webm",
-  //   emojis: [
-  //     { encoded: "🍕", name: "Pizza" },
-  //     { encoded: "❤️", name: "Heart" },
-  //   ],
-  //   name: "Heart",
-  //   stickerId: "heart",
-  // },
-  // {
-  //   url: "https://bafybeihuhrc4fwpvqwyyjmycl6yc32jde6z4ri4uejvonwp3m3axitxl7u.ipfs.dweb.link/video.webm",
-  //   emojis: [
-  //     { encoded: "🍕", name: "Pizza" },
-  //     { encoded: "❤️", name: "Heart" },
-  //   ],
-  //   name: "A",
-  //   stickerId: "a",
-  // },
   {
-    url: "https://tg-sticker-bot.vercel.app/api/dev/popping/null/video.webm",
+    url: "https://tg-sticker-bot.vercel.app/api/dev/popping/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/video.webm",
     emojis: [
       { name: "cat", encoded: "🐱" },
       { name: "open mouth", encoded: "😮" },
@@ -50,20 +32,11 @@ const videos: VideoEntry[] = [
     stickerId: "popping",
   },
   {
-    url: "https://tg-sticker-bot.vercel.app/api/dev/halloween/null/video.webm",
+    url: "https://tg-sticker-bot.vercel.app/api/dev/halloween/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/video.webm",
     emojis: [{ name: "eyes", encoded: "👀" }],
     name: "Halloween",
     stickerId: "halloween",
   },
-  // {
-  //   url: "https://bafybeihuhrc4fwpvqwyyjmycl6yc32jde6z4ri4uejvonwp3m3axitxl7u.ipfs.dweb.link/video.webm",
-  //   emojis: [
-  //     { encoded: "🍕", name: "Pizza" },
-  //     { encoded: "❤️", name: "Heart" },
-  //   ],
-  //   name: "Attribution",
-  //   stickerId: "attribution",
-  // },
 ];
 
 export default function Home() {
@@ -92,8 +65,8 @@ export default function Home() {
               ({
                 url: `https://tg-sticker-bot.vercel.app/api/dev/${s.sticker}/${s.id}/video.webm`,
                 emojis: [
-                  { encoded: "🍕", name: "Pizza" },
-                  { encoded: "❤️", name: "Heart" },
+                  // { encoded: "🍕", name: "Pizza" },
+                  // { encoded: "❤️", name: "Heart" },
                 ],
                 name: s.id,
                 stickerId: s.sticker,

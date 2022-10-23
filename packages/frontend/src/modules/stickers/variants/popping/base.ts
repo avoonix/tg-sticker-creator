@@ -1,6 +1,6 @@
 import { create, easings } from "tg-sticker-creator";
 import { createFilter, setInitialHidden, svgToLottie } from "../../utilities";
-import attribution from "./popping.svg";
+import popping from "./popping.svg";
 
 export const base = () =>
   createFilter({
@@ -17,7 +17,7 @@ export const base = () =>
           .shapeLayer()
           .setName("root")
           .addShapeBack(
-            svgToLottie(attribution, { forceAllShapesVisible: true }),
+            svgToLottie(popping, { forceAllShapesVisible: true }),
           )
           .addShapeBack(create.transform()),
       );
