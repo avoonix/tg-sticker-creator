@@ -5,9 +5,34 @@ import Head from "next/head";
 import Script from "next/script";
 import { useAtom } from "jotai";
 import { themeAtom } from "@/modules/misc/theme";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import { useUpdateAuthData } from "@/modules/export/auth";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const [theme] = useAtom(themeAtom);
+  const { updateAuthData } = useUpdateAuthData();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!router.query.hash) return;
+    const data = JSON.stringify(
+      Object.fromEntries(
+        Object.entries(router.query).filter(([key]) =>
+          [
+            "id",
+            "first_name",
+            "username",
+            "photo_url",
+            "auth_date",
+            "hash",
+          ].includes(key),
+        ),
+      ),
+    );
+    updateAuthData(data);
+    router.replace(router.route); // route without query
+  }, [router.query]);
 
   return (
     <>

@@ -1,11 +1,10 @@
-import { authAtom, useUpdateAuthData } from "@/modules/export/auth";
+import { authAtom } from "@/modules/export/auth";
 import { getSettings } from "@/modules/export/requests";
 import VideoCardList from "@/modules/overview/VideoCardList";
 import { VideoEntry } from "@/modules/overview/VideoEntry";
 import { Heading, View } from "@adobe/react-spectrum";
 import { useAtom } from "jotai";
 import Head from "next/head";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 const videos: VideoEntry[] = [
@@ -40,10 +39,8 @@ const videos: VideoEntry[] = [
 ];
 
 export default function Home() {
-  const router = useRouter();
   const [auth] = useAtom(authAtom);
   const [savedEntries, setSavedEntries] = useState<VideoEntry[]>([]);
-  const { updateAuthData } = useUpdateAuthData();
 
   useEffect(() => {
     if (!auth.data || !auth.type) {
@@ -79,27 +76,6 @@ export default function Home() {
         console.error(err);
       });
   }, [auth]);
-
-  useEffect(() => {
-    if (!router.query.hash) return;
-    console.log(router);
-    const data = JSON.stringify(
-      Object.fromEntries(
-        Object.entries(router.query).filter(([key]) =>
-          [
-            "id",
-            "first_name",
-            "username",
-            "photo_url",
-            "auth_date",
-            "hash",
-          ].includes(key),
-        ),
-      ),
-    );
-    updateAuthData(data);
-    router.replace(router.route); // route without query
-  }, [router.query]);
 
   return (
     <View padding="size-100">
