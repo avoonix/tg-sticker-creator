@@ -50,7 +50,8 @@
           }
         ],
         "@typescript-eslint/no-non-null-assertion": "warn",
-        "react/no-unescaped-entities": "off"
+        "react/no-unescaped-entities": "off",
+        "@next/next/no-sync-scripts": "off"
       }
     }
   ]
