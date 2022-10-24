@@ -17,6 +17,7 @@ const videos: VideoEntry[] = [
     ],
     name: "Headpats",
     stickerId: "headpats",
+    settingId: "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5",
   },
   {
     url: "https://tg-sticker-bot.vercel.app/api/dev/popping/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/video.webm",
@@ -29,12 +30,14 @@ const videos: VideoEntry[] = [
     ],
     name: "Popping",
     stickerId: "popping",
+    settingId: "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5",
   },
   {
     url: "https://tg-sticker-bot.vercel.app/api/dev/halloween/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/video.webm",
     emojis: [{ name: "eyes", encoded: "👀" }],
     name: "Halloween",
     stickerId: "halloween",
+    settingId: "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5",
   },
 ];
 

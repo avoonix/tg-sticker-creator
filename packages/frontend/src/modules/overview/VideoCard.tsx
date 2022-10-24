@@ -23,7 +23,7 @@ const VideoCard: FC<Props> = ({ entry }) => {
 
   const handleNavigation = useCallback(() => {
     router.push(
-      `/edit/${entry.stickerId}?id=${encodeURIComponent(
+      `/edit/${entry.stickerId}?config=${encodeURIComponent(
         entry.settingId || "",
       )}`,
     );
@@ -39,6 +39,7 @@ const VideoCard: FC<Props> = ({ entry }) => {
           loop
           className={style.stickerVideo}
           src={entry.url}
+          style={{ aspectRatio: 1}}
         />
       </IllustratedMessage>
       <Text slot="detail">TGS</Text>

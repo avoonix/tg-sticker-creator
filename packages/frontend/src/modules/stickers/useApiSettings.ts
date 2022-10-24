@@ -14,7 +14,7 @@ export const useApiSettings = () => {
   const [config, setConfig] = useAtom(configAtom);
 
   useEffect(() => {
-    const id = router.query.id && String(router.query.id);
+    const id = router.query.config && String(router.query.config);
     if (!id) return;
     console.log("getting settings ...");
     getSetting({ id })
