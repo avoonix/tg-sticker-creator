@@ -16,9 +16,7 @@ export const base = () =>
         create
           .shapeLayer()
           .setName("root")
-          .addShapeBack(
-            svgToLottie(popping, { forceAllShapesVisible: true }),
-          )
+          .addShapeBack(svgToLottie(popping, { forceAllShapesVisible: true }))
           .addShapeBack(create.transform()),
       );
 
