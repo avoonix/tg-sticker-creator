@@ -57,6 +57,7 @@ export default function Home(props: Props) {
         <pre>
           user: {JSON.stringify(telegram?.initDataUnsafe?.user, null, 2)}
         </pre>
+        <pre>auth data: {JSON.stringify(getAuthData(), null, 2)}</pre>
 
         <Button
           elementType="a"
