@@ -53,7 +53,10 @@ export default function Home(props: Props) {
       <main>
         <Heading level={1}>Debug</Heading>
 
-        <div>{JSON.stringify(telegram)}</div>
+        <pre>telegram: {JSON.stringify(telegram, null, 2)}</pre>
+        <pre>
+          user: {JSON.stringify(telegram?.initDataUnsafe?.user, null, 2)}
+        </pre>
 
         <Button
           elementType="a"
@@ -65,7 +68,7 @@ export default function Home(props: Props) {
 
         <div suppressHydrationWarning={true}>
           {/* client render only */}
-          {typeof window && <div>{JSON.stringify(auth)}</div>}
+          {typeof window && <pre>{JSON.stringify(auth, null, 2)}</pre>}
         </div>
 
         <table className="w-100">
