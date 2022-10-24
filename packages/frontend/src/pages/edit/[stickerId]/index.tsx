@@ -55,9 +55,13 @@ export default function Home(props: Props) {
         <Heading level={1}>Edit</Heading>
         {lottie && (
           <>
-            <GifButton lottie={lottie} />
-            <TgsButton lottie={lottie} />
-            <VideoButton lottie={lottie} />
+            {auth.type !== "web-app" && (
+              <>
+                <GifButton lottie={lottie} />
+                <TgsButton lottie={lottie} />
+                <VideoButton lottie={lottie} />
+              </>
+            )}
             {auth.data && <AddToSetButton lottie={lottie} />}
           </>
         )}
