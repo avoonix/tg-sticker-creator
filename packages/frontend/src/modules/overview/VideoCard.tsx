@@ -27,7 +27,7 @@ const VideoCard: FC<Props> = ({ entry }) => {
         entry.settingId || "",
       )}`,
     );
-  }, [entry]);
+  }, [entry, router]);
 
   return (
     <Card>

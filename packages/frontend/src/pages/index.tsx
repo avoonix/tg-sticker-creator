@@ -78,7 +78,7 @@ export default function Home() {
       .catch((err) => {
         console.error(err);
       });
-  }, [auth]);
+  }, [auth, savedEntries.length]);
 
   return (
     <View padding="size-100">

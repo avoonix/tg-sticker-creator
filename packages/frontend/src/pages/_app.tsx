@@ -32,7 +32,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     );
     updateAuthData(data);
     router.replace(router.route); // route without query
-  }, [router.query]);
+  }, [router, updateAuthData]);
 
   return (
     <>
