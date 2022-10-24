@@ -1,12 +1,11 @@
-import { authAtom } from "@/modules/export/auth";
+import { authAtom, getAuthData } from "@/modules/export/auth";
 import { getSticker, getSummary } from "@/modules/stickers";
-import { View } from "@adobe/react-spectrum";
-import { Heading } from "@react-spectrum/text";
+import { Button, View } from "@adobe/react-spectrum";
+import { Heading, Text } from "@react-spectrum/text";
 import { useAtom } from "jotai";
 import { uniq } from "lodash";
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 interface Props {
@@ -40,7 +39,7 @@ export default function Home(props: Props) {
     stickers.map((v) => v.tags.includes(tag)),
   );
 
-  const [auth] = useAtom(authAtom);
+  const [auth, setAuth] = useAtom(authAtom);
 
   return (
     <View padding="size-100">
@@ -50,6 +49,19 @@ export default function Home(props: Props) {
       </Head>
       <main>
         <Heading level={1}>Debug</Heading>
+
+        <Button
+          elementType="a"
+          variant="cta"
+          onPress={() => setAuth(getAuthData())}
+        >
+          <Text>Update Auth Data</Text>
+        </Button>
+
+        <div suppressHydrationWarning={true}>
+          {/* client render only */}
+          {typeof window && <div>{JSON.stringify(auth)}</div>}
+        </div>
 
         <table className="w-100">
           <thead>
@@ -75,11 +87,6 @@ export default function Home(props: Props) {
             ))}
           </tbody>
         </table>
-
-        <div suppressHydrationWarning={true}>
-          {/* client render only */}
-          {typeof window && <div>{JSON.stringify(auth)}</div>}
-        </div>
       </main>
     </View>
   );

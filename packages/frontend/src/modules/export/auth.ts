@@ -10,7 +10,7 @@ export interface Auth {
   photoUrl?: string;
 }
 
-const getAuthData = (): Auth => {
+export const getAuthData = (): Auth => {
   if (telegram?.initDataUnsafe?.user)
     return {
       data: telegram?.initData,
