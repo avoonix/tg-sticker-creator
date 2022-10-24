@@ -41,6 +41,9 @@ export default function Home(props: Props) {
 
   const [auth, setAuth] = useAtom(authAtom);
 
+  const telegram = (typeof window !== "undefined" ? (window as any) : {})
+    ?.Telegram?.WebApp;
+
   return (
     <View padding="size-100">
       <Head>
@@ -49,6 +52,8 @@ export default function Home(props: Props) {
       </Head>
       <main>
         <Heading level={1}>Debug</Heading>
+
+        <div>{JSON.stringify(telegram)}</div>
 
         <Button
           elementType="a"
