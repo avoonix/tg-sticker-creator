@@ -1,8 +1,5 @@
 import { atom, useSetAtom } from "jotai";
 
-const telegram = (typeof window !== "undefined" ? (window as any) : {})
-  ?.Telegram?.WebApp;
-
 export interface Auth {
   type?: "web-app" | "telegram-login";
   data?: string; // data submitted to server for validation
@@ -11,6 +8,9 @@ export interface Auth {
 }
 
 export const getAuthData = (): Auth => {
+  const telegram = (typeof window !== "undefined" ? (window as any) : {})
+    ?.Telegram?.WebApp;
+
   if (telegram?.initDataUnsafe?.user)
     return {
       data: telegram?.initData,

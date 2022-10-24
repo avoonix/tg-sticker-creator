@@ -44,8 +44,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <SSRProvider>
         <Provider theme={defaultTheme} colorScheme={theme.type} locale="en">
-          <Script defer src="/CCapture.all.min.js"></Script>
-          <Script src="https://telegram.org/js/telegram-web-app.js"></Script>
           <Component {...pageProps} />
           <p>
             License:{" "}
