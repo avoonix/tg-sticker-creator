@@ -1,6 +1,8 @@
+import { authAtom } from "@/modules/export/auth";
 import { getSticker, getSummary } from "@/modules/stickers";
 import { View } from "@adobe/react-spectrum";
 import { Heading } from "@react-spectrum/text";
+import { useAtom } from "jotai";
 import { uniq } from "lodash";
 import { GetStaticProps } from "next";
 import Head from "next/head";
@@ -38,6 +40,8 @@ export default function Home(props: Props) {
     stickers.map((v) => v.tags.includes(tag)),
   );
 
+  const [auth] = useAtom(authAtom);
+
   return (
     <View padding="size-100">
       <Head>
@@ -71,6 +75,11 @@ export default function Home(props: Props) {
             ))}
           </tbody>
         </table>
+
+        <div suppressHydrationWarning={true}>
+          {/* client render only */}
+          {typeof window && <div>{JSON.stringify(auth)}</div>}
+        </div>
       </main>
     </View>
   );
