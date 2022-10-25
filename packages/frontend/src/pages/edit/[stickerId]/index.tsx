@@ -76,26 +76,28 @@ export default function Home(props: Props) {
             ))}
           </Menu>
         </MenuTrigger>
-        <View maxWidth="size-5000">
-          <InView>
-            {({ inView, ref, entry }) => (
-              <div
-                style={{
-                  aspectRatio: 1,
-                  width: "100%",
-                  backgroundColor: "#bf8a0f",
-                }}
-                ref={ref}
-              >
-                {inView ? (
-                  <StickerRenderer sticker={lottie} />
-                ) : (
-                  <div style={{ aspectRatio: 1, width: "100%" }} />
-                )}
-              </div>
-            )}
-          </InView>
-        </View>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <View maxWidth="size-5000" width="size-5000">
+            <InView>
+              {({ inView, ref, entry }) => (
+                <div
+                  style={{
+                    backgroundColor: "#bf8a0f",
+                    borderRadius:
+                      "var(--spectrum-button-primary-border-radius,var(--spectrum-alias-border-radius-large))",
+                  }}
+                  ref={ref}
+                >
+                  {inView ? (
+                    <StickerRenderer sticker={lottie} />
+                  ) : (
+                    <div style={{ aspectRatio: 1, width: "100%" }}></div>
+                  )}
+                </div>
+              )}
+            </InView>
+          </View>
+        </div>
         <StepGroups groups={sticker.groups} />
       </main>
     </View>
