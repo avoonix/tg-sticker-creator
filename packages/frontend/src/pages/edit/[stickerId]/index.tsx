@@ -22,6 +22,7 @@ import { useAtom } from "jotai";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import { useState } from "react";
+import { InView } from "react-intersection-observer";
 
 interface Props {
   stickerId: string;
@@ -76,7 +77,17 @@ export default function Home(props: Props) {
           </Menu>
         </MenuTrigger>
         <View maxWidth="size-5000">
-          <StickerRenderer sticker={lottie} />
+          <InView>
+            {({ inView, ref, entry }) => (
+              <div style={{ aspectRatio: 1, width: "100%" }} ref={ref}>
+                {inView ? (
+                  <StickerRenderer sticker={lottie} />
+                ) : (
+                  <div style={{ aspectRatio: 1, width: "100%" }} />
+                )}
+              </div>
+            )}
+          </InView>
         </View>
         <StepGroups groups={sticker.groups} />
       </main>

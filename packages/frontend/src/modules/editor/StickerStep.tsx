@@ -2,6 +2,7 @@ import { Button } from "@react-spectrum/button";
 import { Text } from "@react-spectrum/text";
 import { SetStateAction, useAtom, useSetAtom, WritableAtom } from "jotai";
 import { FC, useState } from "react";
+import { InView } from "react-intersection-observer";
 import ColorButton from "../colors/ColorButton";
 import { Group, StepConfig } from "../stickers/execute";
 import { configAtom, useGeneratedSticker } from "../stickers/useSticker";
@@ -17,12 +18,16 @@ interface Props {
   configAtom: WritableAtom<StepConfig, SetStateAction<StepConfig>, void>;
 }
 
-const StickerStep: FC<Props> = (props) => {
+const Preview = (props: { enable: string[]; disable: string[] }) => {
   const { lottie } = useGeneratedSticker({
-    enable: [props.step.id],
+    enable: props.enable,
     disable: props.disable,
   });
 
+  return <StickerRenderer sticker={lottie} />;
+};
+
+const StickerStep: FC<Props> = (props) => {
   const [changed, setChanged] = useState(false);
 
   const setWholeConfig = useSetAtom(configAtom);
@@ -75,7 +80,17 @@ const StickerStep: FC<Props> = (props) => {
         onPress={toggleActive}
         color={active ? "#bf8a0f40" : "transparent"}
       >
-        <StickerRenderer sticker={lottie} />
+        <InView>
+          {({ inView, ref, entry }) => (
+            <div style={{ aspectRatio: 1, width: "100%" }} ref={ref}>
+              {inView ? (
+                <Preview enable={[props.step.id]} disable={props.disable} />
+              ) : (
+                <div style={{ aspectRatio: 1, width: "100%" }} />
+              )}
+            </div>
+          )}
+        </InView>
       </ColorButton>
       <StepInputs
         definition={props.step.inputs}
