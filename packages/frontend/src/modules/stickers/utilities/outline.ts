@@ -41,6 +41,12 @@ export const outline = (id: string) =>
           }
         }
       });
+      // clone.eachChildShape(shape => {
+      //   if(shape.is("GroupShape")) {
+      //     shape.addShapeBack(create.roundedCorners().setRadius(create.value(50)))
+      //     // shape.addShapeFront(create.roundedCorners().setRadius(create.value(50)))
+      //   }
+      // })
       combineLotties(sticker, clone); // TODO: parameter to decide whether to add as top or bottom layers
       return sticker;
     },

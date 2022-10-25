@@ -79,7 +79,14 @@ export default function Home(props: Props) {
         <View maxWidth="size-5000">
           <InView>
             {({ inView, ref, entry }) => (
-              <div style={{ aspectRatio: 1, width: "100%" }} ref={ref}>
+              <div
+                style={{
+                  aspectRatio: 1,
+                  width: "100%",
+                  backgroundColor: "#bf8a0f",
+                }}
+                ref={ref}
+              >
                 {inView ? (
                   <StickerRenderer sticker={lottie} />
                 ) : (
