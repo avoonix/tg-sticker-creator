@@ -66,8 +66,8 @@ export const base = () =>
                   .addKeyframe(sticker.frameAt(0.4), 0, easing)
                   .addKeyframe(sticker.frameAt(1), 0, easing),
               )
-              .setAnchor(create.value(175, 220))
-              .setPosition(create.value(175, 220));
+              .setAnchor(create.value(175, 190))
+              .setPosition(create.value(175, 190));
           }
         });
       // .addShapeFront(
