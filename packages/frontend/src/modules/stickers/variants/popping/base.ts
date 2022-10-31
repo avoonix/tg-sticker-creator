@@ -8,9 +8,17 @@ export const base = () =>
     niceness: 0,
     id: "base.popping",
     displayName: "Base",
-    inputs: {},
+    inputs: {
+      duration: {
+        type: "number",
+        default: 18,
+        displayName: "Duration (frames)",
+        min: 10,
+        max: 60,
+      },
+    },
     async apply(sticker, inputs) {
-      sticker.finalFrame = 18;
+      sticker.finalFrame = inputs.duration;
 
       sticker.addLayerBack(
         create
