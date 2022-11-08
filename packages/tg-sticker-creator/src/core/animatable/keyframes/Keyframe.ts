@@ -1,9 +1,11 @@
 import {
   BezierValues,
-  converters, JsonObject, LottieItem,
+  converters,
+  JsonObject,
+  LottieItem,
   toInstance,
   toPlain,
-  ToPlainOptions
+  ToPlainOptions,
 } from "../../internal";
 
 /**
@@ -19,7 +21,7 @@ export abstract class Keyframe extends LottieItem {
 
   jumpToEnd? = false;
 
-  setJumpToEnd(jump: boolean) {
+  setJumpToEnd(jump: boolean | undefined) {
     this.jumpToEnd = jump;
     return this;
   }

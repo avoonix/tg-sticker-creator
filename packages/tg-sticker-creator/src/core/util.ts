@@ -26,7 +26,7 @@ import {
   StarShape,
   StrokeShape,
   TransformShape,
-  TrimShape
+  TrimShape,
 } from "./internal";
 
 export const createBezier = (
@@ -34,6 +34,13 @@ export const createBezier = (
   dimensions: number,
   array: boolean
 ) => {
+  if (easingName === "jump") {
+    return {
+      bezierIn: undefined,
+      bezierOut: undefined,
+      jump: true,
+    };
+  }
   const bezierIn = new BezierValues();
   const bezierOut = new BezierValues();
   const easing = convertEasing(easingName);
@@ -51,6 +58,7 @@ export const createBezier = (
   return {
     bezierIn,
     bezierOut,
+    jump: undefined,
   };
 };
 
@@ -154,10 +162,7 @@ export const colorFromString = (color: string) => {
   return colorFromTinycolor(tinycolor(color));
 };
 
-export const stopFromTinycolor = (
-  instance: Instance,
-  stop: number
-) => {
+export const stopFromTinycolor = (instance: Instance, stop: number) => {
   const rgb = instance.toRgb();
   return new RgbaStopValue(
     [rgb.r / 255, rgb.g / 255, rgb.b / 255, rgb.a],

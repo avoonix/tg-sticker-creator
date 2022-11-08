@@ -38,8 +38,13 @@ export type EasingName =
   | "easeLinearOutSlowIn";
 
 /**
- * Easings 
- * 
+ * Jump to the end value without easing
+ */
+export type JumpEasing = "jump";
+
+/**
+ * Easings
+ *
  * Bezier handles encoded as `[x1, y1, x2, y2]` - the same as `cubic-bezier(x1, y1, x2, y2)` in css
  */
 export const easings: { [name in EasingName]: EasingArray } = {
@@ -86,9 +91,9 @@ export const easings: { [name in EasingName]: EasingArray } = {
 /**
  * Either a predefined easing name or a custom bezier easing encoded as array: `[x1, y1, x2, y2]`
  */
-export type Easing = EasingArray | EasingName;
+export type Easing = EasingArray | EasingName | JumpEasing;
 
-export const convertEasing = (name: Easing) => {
+export const convertEasing = (name: EasingArray | EasingName) => {
   const values = typeof name === "string" ? easings[name] : name;
   if (!values) {
     throw new Error(`no such easing: ${name}`);

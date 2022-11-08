@@ -3,19 +3,21 @@ import {
   converters,
   createBezier,
   Easing,
-  isClassArray, JsonObject, Keyframe,
+  isClassArray,
+  JsonObject,
+  Keyframe,
   LottieItem,
   toInstance,
   toPlain,
-  ToPlainOptions
+  ToPlainOptions,
 } from "../../internal";
 
 /**
  * The base class for other values
- * 
+ *
  * References:
  * - https://gitlab.com/mattbas/python-lottie/-/blob/master/lib/lottie/objects/properties.py
- * 
+ *
  * @category Values
  */
 export abstract class AnimatableValue<
@@ -36,14 +38,14 @@ export abstract class AnimatableValue<
   /**
    * You can only append keyframes (for now)
    * @param frame value should be after the previous keyframe
-   * @param value 
-   * @param easing 
+   * @param value
+   * @param easing
    */
   abstract addKeyframe(frame: number, value: V, easing?: Easing): this;
 
   /**
-   * 
-   * @param firstFrame 
+   *
+   * @param firstFrame
    * @throws AnimationError
    */
   abstract toAnimated(firstFrame: number): this;
@@ -60,14 +62,17 @@ export abstract class AnimatableValue<
     array: boolean,
     newKeyframeStart: number
   ) {
-    const { bezierIn, bezierOut } = createBezier(easing, dimensions, array);
+    const { bezierIn, bezierOut, jump } = createBezier(
+      easing,
+      dimensions,
+      array
+    );
     if (!this.animated) {
       this.toAnimated(0);
     }
     const keyframes = this.value as Keyframe[];
     const last = keyframes[keyframes.length - 1];
-    last.setBezierIn(bezierIn);
-    last.setBezierOut(bezierOut);
+    last.setBezierIn(bezierIn).setBezierOut(bezierOut).setJumpToEnd(jump);
     if (newKeyframeStart === last.startTime) {
       // the new keyframe has the same start as the last keyframe -> replace last keyframe
       keyframes.pop();
