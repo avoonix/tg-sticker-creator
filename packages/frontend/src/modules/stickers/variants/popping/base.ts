@@ -36,9 +36,7 @@ export const base = () =>
         shape.setOpacity(
           create
             .value(100)
-            .addKeyframe(sticker.frameAt(0.4), 100)
-            .addKeyframe(sticker.frameAt(0.401), 0)
-            .addKeyframe(sticker.frameAt(1), 0),
+            .addKeyframe(sticker.frameAt(0.4), 0, "jump")
         );
       });
 
@@ -47,9 +45,7 @@ export const base = () =>
         shape.setOpacity(
           create
             .value(0)
-            .addKeyframe(sticker.frameAt(0.399), 0)
-            .addKeyframe(sticker.frameAt(0.4), 100)
-            .addKeyframe(sticker.frameAt(1), 100),
+            .addKeyframe(sticker.frameAt(0.4), 100, "jump")
         );
       });
 

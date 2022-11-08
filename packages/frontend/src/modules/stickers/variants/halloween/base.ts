@@ -69,11 +69,8 @@ export const base = () =>
           shape.setOpacity(
             create
               .value(100)
-              .addKeyframe(sticker.frameAt(boooStart), 100)
-              .addKeyframe(sticker.frameAt(boooStart + 0.001), 0)
-              .addKeyframe(sticker.frameAt(boooEnd - 0.001), 0)
-              .addKeyframe(sticker.frameAt(boooEnd), 100)
-              .addKeyframe(sticker.frameAt(1), 100),
+              .addKeyframe(sticker.frameAt(boooStart), 0, "jump")
+              .addKeyframe(sticker.frameAt(boooEnd), 100, "jump"),
           );
         });
       }
@@ -84,11 +81,8 @@ export const base = () =>
           shape.setOpacity(
             create
               .value(0)
-              .addKeyframe(sticker.frameAt(boooStart - 0.001), 0)
-              .addKeyframe(sticker.frameAt(boooStart), 100)
-              .addKeyframe(sticker.frameAt(boooEnd), 100)
-              .addKeyframe(sticker.frameAt(boooEnd + 0.001), 0)
-              .addKeyframe(sticker.frameAt(1), 0),
+              .addKeyframe(sticker.frameAt(boooStart), 100, "jump")
+              .addKeyframe(sticker.frameAt(boooEnd), 0, "jump"),
           );
         });
       }
