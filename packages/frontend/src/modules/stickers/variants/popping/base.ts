@@ -34,18 +34,14 @@ export const base = () =>
       frame1.eachImmediateChildShape((shape) => {
         if (!shape.is("TransformShape")) return;
         shape.setOpacity(
-          create
-            .value(100)
-            .addKeyframe(sticker.frameAt(0.4), 0, "jump")
+          create.value(100).addKeyframe(sticker.frameAt(0.4), 0, "jump"),
         );
       });
 
       frame2.eachImmediateChildShape((shape) => {
         if (!shape.is("TransformShape")) return;
         shape.setOpacity(
-          create
-            .value(0)
-            .addKeyframe(sticker.frameAt(0.4), 100, "jump")
+          create.value(0).addKeyframe(sticker.frameAt(0.4), 100, "jump"),
         );
       });
 
