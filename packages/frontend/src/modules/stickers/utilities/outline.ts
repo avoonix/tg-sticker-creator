@@ -17,8 +17,8 @@ export const outline = (id: string) =>
         type: "number",
         displayName: "Width",
         default: 10,
-        min: 0,
-        max: 50,
+        min: 1,
+        max: 25,
       },
       color: {
         type: "color",

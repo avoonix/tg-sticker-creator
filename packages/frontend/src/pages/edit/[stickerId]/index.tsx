@@ -26,6 +26,10 @@ import { InView } from "react-intersection-observer";
 
 interface Props {
   stickerId: string;
+  stickers: {
+    id: string;
+    name: string;
+  }[];
 }
 
 export default function Home(props: Props) {
@@ -36,8 +40,6 @@ export default function Home(props: Props) {
   const [auth] = useAtom(authAtom);
 
   const { userSettings } = useApiSettings();
-
-  const stickers = ["halloween", "popping", "headpats"];
 
   console.log("user settings", userSettings);
 
@@ -71,8 +73,8 @@ export default function Home(props: Props) {
         <MenuTrigger>
           <ActionButton>Convert to other sticker type</ActionButton>
           <Menu onAction={(key: any) => setStickerId(key)}>
-            {stickers.map((s) => (
-              <Item key={s}>{s}</Item>
+            {props.stickers.map((s) => (
+              <Item key={s.id}>{s.name}</Item>
             ))}
           </Menu>
         </MenuTrigger>
@@ -106,10 +108,17 @@ export default function Home(props: Props) {
 
 export const getStaticProps: GetStaticProps<Props> = async (context) => {
   const stickerId = context.params?.stickerId;
+  const stickers = await getSummary();
   if (typeof stickerId !== "string") throw new Error("invalid id");
   return {
     props: {
       stickerId,
+      stickers: Object.entries(stickers).map(
+        ([id, { displayName, emojis }]) => ({
+          id,
+          name: `${displayName} - ${emojis.map((e) => e.emoji).join("")}`,
+        }),
+      ),
     },
   };
 };
