@@ -1,5 +1,6 @@
 import { authAtom } from "@/modules/export/auth";
 import { getSettings } from "@/modules/export/requests";
+import LoginButton from "@/modules/overview/LoginButton";
 import VideoCardList from "@/modules/overview/VideoCardList";
 import { VideoEntry } from "@/modules/overview/VideoEntry";
 import { Heading, View } from "@adobe/react-spectrum";
@@ -45,8 +46,10 @@ export default function Home() {
   const [auth] = useAtom(authAtom);
   const [savedEntries, setSavedEntries] = useState<VideoEntry[]>([]);
 
+  const loggedIn = Boolean(auth.data && auth.type)
+
   useEffect(() => {
-    if (!auth.data || !auth.type) {
+    if (!loggedIn) {
       console.log("no auth data, skipping fetch");
       return;
     }
@@ -55,8 +58,8 @@ export default function Home() {
       return;
     }
     getSettings({
-      authData: auth.data,
-      authType: auth.type,
+      authData: auth.data!,
+      authType: auth.type!,
     })
       .then((saved) => {
         setSavedEntries(
@@ -78,7 +81,7 @@ export default function Home() {
       .catch((err) => {
         console.error(err);
       });
-  }, [auth, savedEntries.length]);
+  }, [loggedIn, auth, savedEntries.length]);
 
   return (
     <View padding="size-100">
@@ -107,9 +110,13 @@ export default function Home() {
           <span style={{ color: "#bf8a0f" }}>S</span>ticker{" "}
           <span style={{ color: "#bf8a0f" }}>S</span>tash
         </Heading>
+        {loggedIn ? <>
         your own
         <VideoCardList videos={savedEntries} />
         other
+        </> : <>
+        <LoginButton />
+        </>}
         <VideoCardList videos={videos} />
       </main>
     </View>
