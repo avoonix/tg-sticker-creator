@@ -1,6 +1,11 @@
 import { AppProps } from "next/app";
 import "@/styles/global.css";
-import { SSRProvider, Provider, defaultTheme } from "@adobe/react-spectrum";
+import {
+  SSRProvider,
+  Provider,
+  defaultTheme,
+  View,
+} from "@adobe/react-spectrum";
 import Head from "next/head";
 import Script from "next/script";
 import { useAtom } from "jotai";
@@ -45,17 +50,31 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <SSRProvider>
         <Provider theme={defaultTheme} colorScheme={theme.type} locale="en">
           <Component {...pageProps} />
-          <p>
-            License:{" "}
+          <View padding="size-100">
+            <a
+              href="https://github.com/avoonix/tg-sticker-creator/tree/master/packages/frontend"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              sauce
+            </a>{" "}
+            &bull;{" "}
             <a
               href="https://www.gnu.org/licenses/agpl-3.0.en.html"
               target="_blank"
               rel="noreferrer noopener"
             >
-              GNU Affero General Public License
+              code license
+            </a>{" "}
+            &bull;{" "}
+            <a
+              href="https://creativecommons.org/publicdomain/zero/1.0/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              template license
             </a>
-            .
-          </p>
+          </View>
         </Provider>
       </SSRProvider>
     </>
