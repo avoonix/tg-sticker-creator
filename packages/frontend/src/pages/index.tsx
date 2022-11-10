@@ -39,6 +39,16 @@ const videos: VideoEntry[] = [
     stickerId: "halloween",
     settingId: "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5",
   },
+  {
+    url: "https://tg-sticker-bot.vercel.app/api/dev/attribution/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/video.webm",
+    emojis: [
+      { name: "info", encoded: "ℹ️" },
+      { name: "writing", encoded: "✍️" },
+    ],
+    name: "Attribution",
+    stickerId: "attribution",
+    settingId: "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5",
+  },
 ];
 
 export default function Home() {
