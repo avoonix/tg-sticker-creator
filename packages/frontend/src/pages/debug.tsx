@@ -1,7 +1,8 @@
-import { authAtom, getAuthData } from "@/modules/export/auth";
+import { authAtom } from "@/modules/export/auth";
+import DisableSsr from "@/modules/misc/DisableSsr";
 import { getSticker, getSummary } from "@/modules/stickers";
-import { Button, View } from "@adobe/react-spectrum";
-import { Heading, Text } from "@react-spectrum/text";
+import { View } from "@adobe/react-spectrum";
+import { Heading } from "@react-spectrum/text";
 import { useAtom } from "jotai";
 import { uniq } from "lodash";
 import { GetStaticProps } from "next";
@@ -47,30 +48,22 @@ export default function Home(props: Props) {
   return (
     <View padding="size-100">
       <Head>
+        {/* TODO: noindex */}
         {/* <title>TypeScript starter for Next.js</title>
           <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <main>
         <Heading level={1}>Debug</Heading>
 
-        <pre>telegram: {JSON.stringify(telegram, null, 2)}</pre>
-        <pre>
-          user: {JSON.stringify(telegram?.initDataUnsafe?.user, null, 2)}
-        </pre>
-        <pre>auth data: {JSON.stringify(getAuthData(), null, 2)}</pre>
-
-        <Button
-          elementType="a"
-          variant="cta"
-          onPress={() => setAuth(getAuthData())}
-        >
-          <Text>Update Auth Data</Text>
-        </Button>
-
-        <div suppressHydrationWarning={true}>
-          {/* client render only */}
+        <Heading level={2}>Auth</Heading>
+        <DisableSsr>
           {typeof window && <pre>{JSON.stringify(auth, null, 2)}</pre>}
-        </div>
+        </DisableSsr>
+
+        <Heading level={2}>Telegram</Heading>
+        <DisableSsr>
+          {typeof window && <pre>{JSON.stringify(telegram, null, 2)}</pre>}
+        </DisableSsr>
 
         <table className="w-100">
           <thead>

@@ -74,7 +74,7 @@ const StickerStep: FC<Props> = (props) => {
       className={active ? style.activeStep : ""}
       style={{ position: "relative" }}
     >
-      <h4>Step {props.step.displayName}</h4>
+      <h4>{props.step.displayName}</h4>
       <ColorButton
         style={{ width: "100%" }}
         onPress={toggleActive}
