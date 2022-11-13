@@ -54,7 +54,7 @@ const sepia = (color: tinycolor.Instance) => {
 export const colors = (id: string) =>
   createFilter({
     mandatory: false,
-    niceness: -1,
+    niceness: 6,
     id,
     displayName: "Color Filter",
     inputs: {

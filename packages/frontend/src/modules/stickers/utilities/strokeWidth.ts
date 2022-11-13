@@ -4,7 +4,7 @@ import { createFilter } from "./createFilter";
 export const strokeWidth = (id: string) =>
   createFilter({
     mandatory: false,
-    niceness: -5,
+    niceness: 1,
     id,
     displayName: "Stroke Width",
     inputs: {
