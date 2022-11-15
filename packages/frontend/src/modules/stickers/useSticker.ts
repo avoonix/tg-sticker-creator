@@ -43,17 +43,6 @@ export const useSticker = (id: string) => {
 export const getConfigAtom = (stepId: string) =>
   focusAtom(configAtom, (optic) => optic.prop(stepId));
 
-// export const useStepConfig = (step: FilterDefinition) => {
-//     step.id;
-//     step.inputs;
-
-//     const [config, setConfig] = useAtom(configAtom);
-
-//     return {
-
-//     }
-// }
-
 export const useGeneratedSticker = (
   args: { enable?: string[]; disable?: string[] } = {},
 ) => {

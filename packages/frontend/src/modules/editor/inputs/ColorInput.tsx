@@ -27,7 +27,7 @@ const ColorInput: FC<InputProps<string | ConfigRef, ColorInputDefinition>> = (
   );
   const picker =
     typeof props.value === "string" ? (
-      <ColorDialog color={props.value} onChange={props.onChange} />
+      <ColorDialog color={props.value} onChangeClose={props.onChange} />
     ) : (
       <PaletteColorPicker
         id={props.value.paletteId}

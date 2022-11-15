@@ -9,14 +9,13 @@ import TextColorPicker from "./TextColorPicker";
 
 interface Props {
   color: string;
-  onChange: (color: string) => void;
+  onChange?: (color: string) => void;
+  onChangeClose?: (color: string) => void;
 }
 
 const ColorDialog: FC<Props> = (props) => {
   const [open, setOpen] = useState(false);
 
-  // const color = parseColor(props.color);
-  // const setColor = (color: Color) => props.onChange(color.toString("rgb"));
   const [color, setColor] = useState(parseColor("hsb(0, 100%, 50%)"));
 
   useEffect(() => {
@@ -24,12 +23,20 @@ const ColorDialog: FC<Props> = (props) => {
   }, [props.color]);
 
   const changeColor = (color: Color) => {
-    props.onChange(color.toString("hex"));
+    props.onChange?.(color.toString("hex"));
     setColor(color);
   };
 
+  const changeOpen = (open: boolean) => {
+    setOpen(open);
+    const hex = color.toString("hex");
+    if (!open && hex !== props.color) {
+      props.onChangeClose?.(hex);
+    }
+  };
+
   return (
-    <DialogTrigger type="popover" isOpen={open} onOpenChange={setOpen}>
+    <DialogTrigger type="popover" isOpen={open} onOpenChange={changeOpen}>
       <ColorButton color={color.toString("rgb")} />
 
       <Dialog>
