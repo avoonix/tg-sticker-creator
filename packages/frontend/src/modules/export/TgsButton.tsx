@@ -13,6 +13,8 @@ const TgsButton: FC<Props> = (props) => {
   const generate = useCallback(async () => {
     const blob = await gzip(optimizeFilesize(props.lottie.clone()));
 
+    console.log("size in KiB", blob.size / (1 << 10));
+
     download(blob, `${props.lottie.name || "sticker"}.tgs`, "application/gzip");
   }, [props.lottie]);
 

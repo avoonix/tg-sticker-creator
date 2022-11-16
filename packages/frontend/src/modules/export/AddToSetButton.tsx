@@ -24,7 +24,6 @@ const AddToSetButton: FC<Props> = (props) => {
   const save = useCallback(async () => {
     if (!auth.data || !auth.type) throw new Error("missing auth");
     const file = await gzip(optimizeFilesize(props.lottie.clone()));
-    console.log("size in KiB", file.size / (1 << 10));
     const response = await saveSticker({
       settings: JSON.stringify(config),
       palette: JSON.stringify(colors),

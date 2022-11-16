@@ -43,7 +43,12 @@ const StickerRenderer: FC<Props> = (props) => {
     };
   }, [animationData]);
 
-  return <div style={{ aspectRatio: 1, width: "100%", display: "flex" }} ref={ref as any} />;
+  return (
+    <div
+      style={{ aspectRatio: 1, width: "100%", display: "flex" }}
+      ref={ref as any}
+    />
+  );
 };
 
 export default StickerRenderer;

@@ -4,6 +4,8 @@ import StickerRenderer from "@/modules/editor/StickerRenderer";
 import AddToSetButton from "@/modules/export/AddToSetButton";
 import { authAtom } from "@/modules/export/auth";
 import GifButton from "@/modules/export/GifButton";
+import JsonExportButton from "@/modules/export/JsonExportButton";
+import JsonImportButton from "@/modules/export/JsonImportButton";
 import TgsButton from "@/modules/export/TgsButton";
 import VideoButton from "@/modules/export/VideoButton";
 import ColorList from "@/modules/palette/ColorList";
@@ -41,8 +43,6 @@ export default function Home(props: Props) {
 
   const { userSettings } = useApiSettings();
 
-  console.log("user settings", userSettings);
-
   return (
     <View padding="size-100">
       <Head>
@@ -66,6 +66,12 @@ export default function Home(props: Props) {
               </>
             )}
             {auth.data && <AddToSetButton lottie={lottie} />}
+            {auth.type !== "web-app" && (
+              <>
+                <JsonImportButton />
+                <JsonExportButton />
+              </>
+            )}
           </>
         )}
         <StickerBreadcrumb stickerName={sticker.displayName} />

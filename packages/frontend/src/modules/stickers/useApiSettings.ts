@@ -11,7 +11,7 @@ export const useApiSettings = () => {
   const [userSettings, setUserSettings] = useState({});
   const [userSettingsLoaded, setUserSettingsLoaded] = useState(false);
   const setPalette = useSetAtom(paletteAtom);
-  const [config, setConfig] = useAtom(configAtom);
+  const setConfig = useSetAtom(configAtom);
 
   useEffect(() => {
     const id = router.query.config && String(router.query.config);
