@@ -1,0 +1,43 @@
+[
+  {
+    "url": "https://tg-sticker-bot.vercel.app/api/dev/headpats/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/video.webm",
+    "emojis": [
+      { "name": "waving", "emoji": "👋" },
+      { "name": "love", "emoji": "🥰" },
+      { "name": "hearts", "emoji": "💕" }
+    ],
+    "name": "Headpats",
+    "stickerId": "headpats",
+    "settingId": "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5"
+  },
+  {
+    "url": "https://tg-sticker-bot.vercel.app/api/dev/popping/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/video.webm",
+    "emojis": [
+      { "name": "cat", "emoji": "🐱" },
+      { "name": "open mouth", "emoji": "😮" },
+      { "name": "screaming cat", "emoji": "🙀" },
+      { "name": "popping cork", "emoji": "🍾" },
+      { "name": "bubbles", "emoji": "🫧" }
+    ],
+    "name": "Popping",
+    "stickerId": "popping",
+    "settingId": "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5"
+  },
+  {
+    "url": "https://tg-sticker-bot.vercel.app/api/dev/halloween/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/video.webm",
+    "emojis": [{ "name": "eyes", "emoji": "👀" }],
+    "name": "Halloween",
+    "stickerId": "halloween",
+    "settingId": "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5"
+  },
+  {
+    "url": "https://tg-sticker-bot.vercel.app/api/dev/attribution/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/video.webm",
+    "emojis": [
+      { "name": "info", "emoji": "ℹ️" },
+      { "name": "writing", "emoji": "✍️" }
+    ],
+    "name": "Attribution",
+    "stickerId": "attribution",
+    "settingId": "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5"
+  }
+]
