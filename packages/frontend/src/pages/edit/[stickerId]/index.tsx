@@ -6,6 +6,7 @@ import { authAtom } from "@/modules/export/auth";
 import GifButton from "@/modules/export/GifButton";
 import JsonExportButton from "@/modules/export/JsonExportButton";
 import JsonImportButton from "@/modules/export/JsonImportButton";
+import PngButton from "@/modules/export/PngButton";
 import TgsButton from "@/modules/export/TgsButton";
 import VideoButton from "@/modules/export/VideoButton";
 import ColorList from "@/modules/palette/ColorList";
@@ -63,6 +64,7 @@ export default function Home(props: Props) {
                 <GifButton lottie={lottie} />
                 <TgsButton lottie={lottie} />
                 <VideoButton lottie={lottie} />
+                <PngButton lottie={lottie} />
               </>
             )}
             {auth.data && <AddToSetButton lottie={lottie} />}

@@ -5,31 +5,33 @@ import {
   DialogTrigger,
   Divider,
   Heading,
-  Text
+  Text,
 } from "@adobe/react-spectrum";
 import Import from "@spectrum-icons/workflow/Import";
 import { FC } from "react";
-import { Droppable } from "./Droppable";
+import { Lottie } from "tg-sticker-creator";
+import PngList from "./PngList";
 
-const JsonImportButton: FC = (props) => {
+interface Props {
+  lottie: Lottie;
+}
+
+const PngButton: FC<Props> = (props) => {
   return (
     <DialogTrigger type="popover">
       <ActionButton>
         <Import />
-        <Text>Import from File</Text>
+        <Text>Export PNG</Text>
       </ActionButton>
       <Dialog>
-        <Heading>Import</Heading>
+        <Heading>Export PNG</Heading>
         <Divider />
         <Content>
-          <Text>
-            Select the <code>.json</code> file or drop it below.
-          </Text>
-          <Droppable />
+          <PngList lottie={props.lottie} />
         </Content>
       </Dialog>
     </DialogTrigger>
   );
 };
 
-export default JsonImportButton;
+export default PngButton;
