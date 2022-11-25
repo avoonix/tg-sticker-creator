@@ -39,28 +39,28 @@ export const hearts = (id: string) =>
       setColor(heartGroup, inputs.color, "FillShape");
 
       const createConfig = (
-        offset: number,
+        startFrame: number,
       ): Partial<ParticleAnimationOptions> => ({
         decay: {
-          max: (9 / 17) * sticker.finalFrame,
-          min: (5 / 17) * sticker.finalFrame,
+          max: sticker.frameAt(0.1),
+          min: sticker.frameAt(0.1),
         },
         emissionEasing: "easeInOut",
         emissionDuration: {
-          min: (3 / 17) * sticker.finalFrame,
-          max: (5 / 17) * sticker.finalFrame,
+          min: sticker.frameAt(0.1),
+          max: sticker.frameAt(0.1),
         },
         direction: { min: -45, max: -135 },
-        emission: { min: 1, max: 8 },
-        startFrame: 0 + offset,
-        finalEmissionFrame: 3 + offset,
+        emission: { min: 1, max: 4 },
+        startFrame,
+        finalEmissionFrame: startFrame + sticker.frameAt(0.1),
         lifetime: {
-          min: (4 / 17) * sticker.finalFrame,
-          max: (8 / 17) * sticker.finalFrame,
+          min: sticker.frameAt(0.1),
+          max: sticker.frameAt(0.1),
         },
         velocity: {
-          min: (3 / sticker.finalFrame) * 17,
-          max: (5 / sticker.finalFrame) * 17,
+          min: 10 / sticker.frameAt(0.1),
+          max: 10 / sticker.frameAt(0.1),
         },
         random: createRandom("asdf1234"),
         decayEasing: "easeInOut",
@@ -68,27 +68,25 @@ export const hearts = (id: string) =>
         yOffset: { min: -50 + centerOffset, max: 150 + centerOffset },
       });
 
-      const startPercentage = 0.2;
+      const layer = create
+        .shapeLayer()
+        .addShapeFront(
+          create.animation.particles(
+            heartGroup,
+            createConfig(sticker.frameAt(0.0)),
+          ),
+        )
+        // .addShapeFront(
+        //   create.animation.particles(
+        //     heartGroup,
+        //     createConfig(sticker.frameAt(0.2 - 1)),
+        //   ),
+        // )
+        .addShapeBack(create.transform());
 
-      sticker.addLayerFront(
-        create
-          .shapeLayer()
-          .addShapeFront(
-            create.animation.particles(
-              heartGroup,
-              createConfig(sticker.finalFrame * startPercentage),
-            ),
-          )
-          .addShapeFront(
-            create.animation.particles(
-              heartGroup,
-              createConfig(
-                -sticker.finalFrame + sticker.finalFrame * startPercentage,
-              ),
-            ),
-          )
-          .addShapeBack(create.transform()),
-      );
+      sticker.addLayerFront(layer);
+
+      // console.log(layer);
 
       return sticker;
     },
