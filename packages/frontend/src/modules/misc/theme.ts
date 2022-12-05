@@ -8,5 +8,5 @@ export interface Theme {
 }
 
 export const themeAtom = atom<Theme>({
-  type: telegram?.colorScheme || "dark",
+  type: telegram?.initData ? telegram?.colorScheme || "dark" : "dark",
 });
