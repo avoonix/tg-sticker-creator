@@ -1,4 +1,4 @@
 export interface Emoji {
   name: string;
-  encoded: string;
+  emoji: string;
 }

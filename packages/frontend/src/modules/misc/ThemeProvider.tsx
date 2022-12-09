@@ -12,21 +12,17 @@ export default function ThemeProvider() {
       :root {
         --spectrum-global-color-static-blue-200: ${color
           .clone()
-          .darken(50)
+          .darken(40)
           .toHexString()} !important;
         --spectrum-global-color-static-blue-300: ${color
           .clone()
-          .darken(40)
+          .darken(30)
           .toHexString()} !important;
         --spectrum-global-color-static-blue-400: ${color
           .clone()
-          .darken(30)
-          .toHexString()} !important;
-        --spectrum-global-color-static-blue-500: ${color
-          .clone()
           .darken(20)
           .toHexString()} !important;
-        --spectrum-global-color-static-blue-600: ${color
+        --spectrum-global-color-static-blue-500: ${color
           .clone()
           .darken(10)
           .toHexString()} !important;
