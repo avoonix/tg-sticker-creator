@@ -1,18 +1,18 @@
-import { AppProps } from "next/app";
-import "@/styles/global.css";
+import { useUpdateAuthData } from "@/modules/export/auth";
+import { themeAtom } from "@/modules/misc/theme";
+import ThemeProvider from "@/modules/misc/ThemeProvider";
+import "@/styles/global.scss";
 import {
-  SSRProvider,
-  Provider,
   defaultTheme,
+  Provider,
+  SSRProvider,
   View,
 } from "@adobe/react-spectrum";
-import Head from "next/head";
-import Script from "next/script";
 import { useAtom } from "jotai";
-import { themeAtom } from "@/modules/misc/theme";
-import { useEffect } from "react";
+import { AppProps } from "next/app";
+import Head from "next/head";
 import { useRouter } from "next/router";
-import { useUpdateAuthData } from "@/modules/export/auth";
+import { useEffect } from "react";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const [theme] = useAtom(themeAtom);
@@ -77,6 +77,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           </View>
         </Provider>
       </SSRProvider>
+      <ThemeProvider />
     </>
   );
 }
