@@ -3,12 +3,8 @@ import StepGroups from "@/modules/editor/StepGroups";
 import StickerRenderer from "@/modules/editor/StickerRenderer";
 import AddToSetButton from "@/modules/export/AddToSetButton";
 import { authAtom } from "@/modules/export/auth";
-import GifButton from "@/modules/export/GifButton";
-import JsonExportButton from "@/modules/export/JsonExportButton";
-import JsonImportButton from "@/modules/export/JsonImportButton";
-import PngButton from "@/modules/export/PngButton";
-import TgsButton from "@/modules/export/TgsButton";
-import VideoButton from "@/modules/export/VideoButton";
+import ExportMenu from "@/modules/export/ExportMenu";
+import SettingsMenu from "@/modules/export/SettingsMenu";
 import ColorList from "@/modules/palette/ColorList";
 import { getSummary } from "@/modules/stickers";
 import { useApiSettings } from "@/modules/stickers/useApiSettings";
@@ -19,8 +15,10 @@ import {
   Item,
   Menu,
   MenuTrigger,
+  Text,
   View,
 } from "@adobe/react-spectrum";
+import Switch from "@spectrum-icons/workflow/Switch";
 import { useAtom } from "jotai";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
@@ -47,52 +45,50 @@ export default function Home(props: Props) {
   return (
     <View padding="size-100">
       <Head>
-        {/* <title>TypeScript starter for Next.js</title>
-        <meta
-          name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
-        /> */}
-        <link rel="icon" href="/favicon.ico" />
+        <title>
+          {sticker.displayName} Telegram Sticker Template - Avoo's Sticker Stash
+        </title>
       </Head>
 
       <main>
         <Heading level={1}>Edit</Heading>
-        {lottie && (
-          <>
-            {auth.type !== "web-app" && (
-              <>
-                <GifButton lottie={lottie} />
-                <TgsButton lottie={lottie} />
-                <VideoButton lottie={lottie} />
-                <PngButton lottie={lottie} />
-              </>
-            )}
-            {auth.data && <AddToSetButton lottie={lottie} />}
-            {auth.type !== "web-app" && (
-              <>
-                <JsonImportButton />
-                <JsonExportButton />
-              </>
-            )}
-          </>
-        )}
+        <View
+          UNSAFE_style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "var(--spectrum-global-dimension-size-65)",
+            flexWrap: "wrap",
+          }}
+          borderWidth="thin"
+          borderColor="dark"
+          borderRadius="medium"
+          padding="size-250"
+        >
+          {auth.type !== "web-app" && <SettingsMenu />}
+          {auth.type !== "web-app" && lottie && <ExportMenu lottie={lottie} />}
+          <MenuTrigger>
+            <ActionButton>
+              <Switch />
+              <Text>Change Template</Text>
+            </ActionButton>
+            <Menu onAction={(key: any) => setStickerId(key)}>
+              {props.stickers.map((s) => (
+                <Item key={s.id}>{s.name}</Item>
+              ))}
+            </Menu>
+          </MenuTrigger>
+          {lottie && <>{auth.data && <AddToSetButton lottie={lottie} />}</>}
+        </View>
         <StickerBreadcrumb stickerName={sticker.displayName} />
         <ColorList />
-        <MenuTrigger>
-          <ActionButton>Convert to other sticker type</ActionButton>
-          <Menu onAction={(key: any) => setStickerId(key)}>
-            {props.stickers.map((s) => (
-              <Item key={s.id}>{s.name}</Item>
-            ))}
-          </Menu>
-        </MenuTrigger>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <View maxWidth="size-5000" width="size-5000">
             <InView>
               {({ inView, ref, entry }) => (
                 <div
                   style={{
-                    backgroundColor: "#bf8a0f",
+                    backgroundColor:
+                      "var(--spectrum-global-color-static-blue-600)",
                     borderRadius:
                       "var(--spectrum-button-primary-border-radius,var(--spectrum-alias-border-radius-large))",
                   }}

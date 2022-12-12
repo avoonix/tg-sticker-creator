@@ -22,11 +22,11 @@ export function Droppable({ children }: any) {
     },
   });
 
-  let { clipboardProps } = useClipboard({
+  const { clipboardProps } = useClipboard({
     onPaste: (items) => handleDropItems(items),
   });
 
-  let { buttonProps } = useButton(
+  const { buttonProps } = useButton(
     {
       elementType: "div",
       onPress: () => {

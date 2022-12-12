@@ -1,12 +1,10 @@
-import { ActionButton, Button, Text } from "@adobe/react-spectrum";
-import Export from "@spectrum-icons/workflow/Export";
 import download from "downloadjs";
 import { useAtom } from "jotai";
-import { FC, useCallback } from "react";
+import { useCallback } from "react";
 import { paletteAtom } from "../palette/ColorList";
 import { configAtom } from "../stickers/useSticker";
 
-const JsonExportButton: FC = () => {
+export const useExport = () => {
   const [config] = useAtom(configAtom);
   const [palette] = useAtom(paletteAtom);
 
@@ -18,14 +16,7 @@ const JsonExportButton: FC = () => {
     );
   }, [config]);
 
-  return (
-    <div>
-      <ActionButton onPress={downloadJson}>
-        <Export />
-        <Text>Export to File</Text>
-      </ActionButton>
-    </div>
-  );
+  return {
+    downloadJson,
+  };
 };
-
-export default JsonExportButton;
