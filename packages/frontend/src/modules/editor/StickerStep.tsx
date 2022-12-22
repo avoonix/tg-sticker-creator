@@ -1,12 +1,19 @@
 import { Button } from "@react-spectrum/button";
 import { Text } from "@react-spectrum/text";
-import { SetStateAction, useAtom, useSetAtom, WritableAtom } from "jotai";
+import {
+  SetStateAction,
+  useAtom,
+  useSetAtom,
+  WritableAtom,
+  useAtomValue,
+} from "jotai";
 import { FC, useState } from "react";
 import { InView } from "react-intersection-observer";
 import ColorButton from "../colors/ColorButton";
 import { Group, StepConfig } from "../stickers/execute";
 import { configAtom, useGeneratedSticker } from "../stickers/useSticker";
 import { FilterDefinition } from "../stickers/utilities";
+import { animateAtom } from "./animate";
 import style from "./editor.module.css";
 import StepInputs from "./StepInputs";
 import StickerRenderer from "./StickerRenderer";
@@ -24,7 +31,11 @@ const Preview = (props: { enable: string[]; disable: string[] }) => {
     disable: props.disable,
   });
 
-  return <StickerRenderer sticker={lottie} />;
+  const animate = useAtomValue(animateAtom);
+
+  return (
+    <StickerRenderer key={String(animate)} sticker={lottie} animate={animate} />
+  );
 };
 
 const StickerStep: FC<Props> = (props) => {

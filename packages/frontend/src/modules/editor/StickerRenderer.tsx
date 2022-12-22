@@ -4,6 +4,7 @@ import { JsonObject, Lottie } from "tg-sticker-creator";
 
 interface Props {
   sticker: Lottie | null;
+  animate?: boolean;
 }
 
 const StickerRenderer: FC<Props> = (props) => {
@@ -30,7 +31,7 @@ const StickerRenderer: FC<Props> = (props) => {
         renderer: "svg",
         animationData,
         loop: true,
-        autoplay: true,
+        autoplay: props.animate ?? false,
       });
       animation.addEventListener("error", (event) => {
         console.log("lottie error event", event); // TODO: display errors

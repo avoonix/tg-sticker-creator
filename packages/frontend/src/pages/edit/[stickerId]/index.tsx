@@ -1,4 +1,5 @@
 import StickerBreadcrumb from "@/modules/breadcrumb/StickerBreadcrumb";
+import { animateAtom } from "@/modules/editor/animate";
 import StepGroups from "@/modules/editor/StepGroups";
 import StickerRenderer from "@/modules/editor/StickerRenderer";
 import AddToSetButton from "@/modules/export/AddToSetButton";
@@ -10,6 +11,7 @@ import { getSummary } from "@/modules/stickers";
 import { useApiSettings } from "@/modules/stickers/useApiSettings";
 import { useGeneratedSticker, useSticker } from "@/modules/stickers/useSticker";
 import {
+  Switch,
   ActionButton,
   Heading,
   Item,
@@ -18,7 +20,7 @@ import {
   Text,
   View,
 } from "@adobe/react-spectrum";
-import Switch from "@spectrum-icons/workflow/Switch";
+import SwitchIcon from "@spectrum-icons/workflow/Switch";
 import { useAtom } from "jotai";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
@@ -42,6 +44,8 @@ export default function Home(props: Props) {
 
   const { userSettings } = useApiSettings();
 
+  const [animatePreviews, setAnimatePreviews] = useAtom(animateAtom);
+
   return (
     <View padding="size-100">
       <Head>
@@ -64,11 +68,14 @@ export default function Home(props: Props) {
           borderRadius="medium"
           padding="size-250"
         >
+          <Switch isSelected={animatePreviews} onChange={setAnimatePreviews}>
+            Animate Previews
+          </Switch>
           {auth.type !== "web-app" && <SettingsMenu />}
           {auth.type !== "web-app" && lottie && <ExportMenu lottie={lottie} />}
           <MenuTrigger>
             <ActionButton>
-              <Switch />
+              <SwitchIcon />
               <Text>Change Template</Text>
             </ActionButton>
             <Menu onAction={(key: any) => setStickerId(key)}>
@@ -95,7 +102,7 @@ export default function Home(props: Props) {
                   ref={ref}
                 >
                   {inView ? (
-                    <StickerRenderer sticker={lottie} />
+                    <StickerRenderer sticker={lottie} animate />
                   ) : (
                     <div style={{ aspectRatio: 1, width: "100%" }}></div>
                   )}
