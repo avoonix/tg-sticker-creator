@@ -88,8 +88,17 @@ export default function Home(props: Props) {
         </View>
         <StickerBreadcrumb stickerName={sticker.displayName} />
         <ColorList />
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <View maxWidth="size-5000" width="size-5000">
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            position: "sticky",
+            top: 0,
+            zIndex: 3,
+            backgroundColor: "var(--spectrum-alias-background-color-default)",
+          }}
+        >
+          <View maxWidth="size-5000" width="size-5000" margin="size-100">
             <InView>
               {({ inView, ref, entry }) => (
                 <div
