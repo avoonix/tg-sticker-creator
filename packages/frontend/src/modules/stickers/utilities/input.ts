@@ -13,13 +13,21 @@ export interface NumberInputDefinition extends BaseInputDefinition {
   default: number;
   min: number;
   max: number;
-  // min?: number;
-  // max?: number;
 }
 
 export interface BooleanInputDefinition extends BaseInputDefinition {
   type: "boolean";
   default: boolean;
+}
+
+export interface SelectInputDefinition extends BaseInputDefinition {
+  type: "select";
+  // multiple: boolean;
+  options: {
+    name: string;
+    value: string;
+  }[];
+  default: string;
 }
 
 // export interface EasingInputDefinition extends BaseInputDefinition {
@@ -30,6 +38,7 @@ export interface BooleanInputDefinition extends BaseInputDefinition {
 export type InputDefinition =
   | ColorInputDefinition
   | NumberInputDefinition
-  | BooleanInputDefinition; // | EasingInputDefinition;
+  | BooleanInputDefinition
+  | SelectInputDefinition; // | EasingInputDefinition;
 
 export type InputType = InputDefinition["type"];

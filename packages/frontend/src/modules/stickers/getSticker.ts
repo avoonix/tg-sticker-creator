@@ -8,6 +8,7 @@ export const stickers: {
   popping: () => import("./variants/popping"),
   halloween: () => import("./variants/halloween"),
   attribution: () => import("./variants/attribution"),
+  paws: () => import("./variants/paws"),
 };
 
 export const getSticker = async (id: string) => {

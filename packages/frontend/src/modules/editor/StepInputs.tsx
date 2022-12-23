@@ -6,6 +6,7 @@ import BooleanInput from "./inputs/BooleanInput";
 import ColorInput from "./inputs/ColorInput";
 import { InputProps } from "./inputs/InputProps";
 import NumberInput from "./inputs/NumberInput";
+import SelectInput from "./inputs/SelectInput";
 
 interface Props {
   configAtom: WritableAtom<StepConfig, SetStateAction<StepConfig>, void>;
@@ -20,6 +21,7 @@ const StepInputs: FC<Props> = (props) => {
     boolean: BooleanInput,
     color: ColorInput,
     number: NumberInput,
+    select: SelectInput,
   };
 
   return (

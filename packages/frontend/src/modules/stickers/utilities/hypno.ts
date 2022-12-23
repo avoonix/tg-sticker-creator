@@ -4,19 +4,19 @@ import { createFilter } from "./createFilter";
 export const hypno = (id: string) =>
   createFilter({
     mandatory: false,
-    niceness: 5,
+    niceness: 6,
     id,
     displayName: "Hypno",
     inputs: {
       color1: {
         type: "color",
         displayName: "Color 1",
-        default: "#ffd4f1",
+        default: "#a17206",
       },
       color2: {
         type: "color",
         displayName: "Color 2",
-        default: "#ff55c8",
+        default: "#dba62c",
       },
     },
     async apply(sticker, inputs) {
