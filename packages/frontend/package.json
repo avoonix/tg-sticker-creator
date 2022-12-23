@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build && next export && next-sitemap",
     "start": "next start",
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
@@ -89,6 +89,7 @@
     "lru-cache": "^7.14.0",
     "mp4box": "^0.5.2",
     "next": "12.3.1",
+    "next-sitemap": "^3.1.43",
     "next-transpile-modules": "^9.0.0",
     "optics-ts": "^2.3.0",
     "pako": "^2.0.4",
