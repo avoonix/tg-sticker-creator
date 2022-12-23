@@ -25,6 +25,9 @@ const data = _data as {
 
 const filterTagRegex = /\[(?<name>\S+)\]/;
 
+const prettyName = (id: string, parentId: string) =>
+  id.replace(parentId, "").replaceAll(/[-.]/g, " ");
+
 export async function createStepsNew(
   animation: Lottie,
 ): Promise<{ groups: Group[]; tags: string[]; defaultConfig: StickerConfig }> {
@@ -91,7 +94,7 @@ export async function createStepsNew(
       const effect = getEffect(id, id);
       return (
         effect ??
-        complexShape(id, id, [
+        complexShape(id, prettyName(id, feature), [
           {
             makeVisible: [[`[${id}]`]],
             colorable: [],
@@ -111,7 +114,7 @@ export async function createStepsNew(
 
         const step = simpleShape({
           id,
-          displayName: id,
+          displayName: prettyName(id, parentId),
           paths: [[`[${id}]`]],
           visible: ({ config, enableIds, disableIds }) =>
             (config[parentId]?.active || enableIds.includes(parentId)) &&
