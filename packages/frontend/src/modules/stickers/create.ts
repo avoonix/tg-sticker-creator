@@ -144,14 +144,16 @@ export async function createStepsNew(
 
     groups.push(
       {
-        name: feature,
+        name: prettyName(feature, ""),
         steps: alts,
         multiple: !t,
+        visible: alts.length > 1 || Object.entries(alts[0].inputs).length > 0,
       },
       {
-        name: `${feature} patterns`,
+        name: `${prettyName(feature, "")} patterns`,
         steps: altPatterns,
         multiple: true,
+        visible: true,
       },
     );
   }

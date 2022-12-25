@@ -26,7 +26,7 @@ const StepGroups: FC<Props> = (props) => {
               s.visible({ config, enableIds: [], disableIds: [] }),
           ),
         }))
-        .filter((g) => g.steps.length),
+        .filter((g) => g.steps.length && g.visible),
     [config, props.groups],
   );
 
