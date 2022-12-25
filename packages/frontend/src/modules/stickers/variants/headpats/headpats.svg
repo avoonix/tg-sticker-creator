@@ -23,15 +23,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="2.1812094"
-     inkscape:cx="227.04169"
-     inkscape:cy="153.67343"
+     inkscape:zoom="3.2932925"
+     inkscape:cx="131.59018"
+     inkscape:cy="186.18347"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
      inkscape:window-y="32"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g2256"
+     inkscape:current-layer="g5004"
      inkscape:rotation="-1"
      inkscape:snap-global="false"
      inkscape:showpageshadow="0"
@@ -201,7 +201,7 @@
           <g
              id="g13548"
              inkscape:label="stripes"
-             style="display:inline">
+             style="display:none">
             <path
                style="fill:#d2d2d2;fill-opacity:1;stroke:none;stroke-width:1.25686;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
                d="m 175.21671,159.09008 c 0.13421,-3.30055 3.81975,-6.48447 6.27414,-6.87423 1.12884,0.37184 2.60508,2.70288 2.85119,3.26257 -2.54029,1.75777 -3.77239,5.17664 -6.01272,6.98336 -1.0609,-1.3346 -2.05232,-2.0532 -3.11261,-3.3717 z"
@@ -1118,7 +1118,7 @@
         <g
            id="g984"
            inkscape:label="mammal [feet.mammal] {hidden}"
-           style="display:none">
+           style="display:inline">
           <g
              id="g7393"
              transform="translate(-21.314935,0.8696362)"
@@ -1139,7 +1139,7 @@
                  d="m 262.05361,211.06053 -0.12777,-3.98154 c -1.67713,-1.21196 -2.38791,-0.20427 -3.19177,0.58961 -1.87383,-3.06477 -3.02721,-1.3939 -4.21325,0.0623 -1.32755,-2.00915 -2.68556,-2.87445 -4.14058,-0.0961 -1.22993,-1.21372 -2.52006,-1.27572 -3.86235,-0.33959 l 0.21512,3.70016 c 5.06335,1.24198 10.1867,0.80138 15.3206,0.0652 z"
                  id="path1625"
                  sodipodi:nodetypes="cccccccc"
-                 inkscape:label="toe background [feet.mammal.toes] {mandatory}" />
+                 inkscape:label="toe background [feet.mammal.toes] {hidden}" />
               <path
                  style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.25686;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                  d="m 254.37027,211.19223 c 0.2272,-7.18258 4.34191,-6.98284 4.05932,-0.31022"
@@ -1188,7 +1188,7 @@
                  d="m 176.29594,209.1921 -0.75544,-3.45408 c -1.67713,-1.21196 -2.80696,-0.24282 -3.61082,0.55106 -1.87383,-3.06477 -2.88412,-1.71356 -4.07016,-0.25736 -1.13319,-2.00169 -1.84775,-2.84228 -4.14058,-0.0961 -1.22993,-1.21372 -1.61504,-1.20852 -2.95733,-0.27239 l -0.62083,2.96401 c 5.06335,1.24198 9.63322,1.6586 14.76712,0.92242 z"
                  id="path1625-3"
                  sodipodi:nodetypes="ccccccccc"
-                 inkscape:label="toe background [feet.mammal.toes] {mandatory}" />
+                 inkscape:label="toe background [feet.mammal.toes] {hidden}" />
               <path
                  style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.25686;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                  d="m 167.92823,208.98765 c -0.11719,-6.03009 4.21036,-6.63535 3.89806,0.0153"
@@ -1221,7 +1221,7 @@
         <g
            id="g964"
            inkscape:label="bird [feet.bird] {hidden}"
-           style="display:inline">
+           style="display:none">
           <g
              id="g7205"
              inkscape:label="bird right leg"
