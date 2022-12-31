@@ -6,7 +6,9 @@ export interface SaveStickerArgs {
   settings: string;
   palette: string;
   sticker: string;
+  action: "save" | "add" | "saveAndAdd";
 }
+
 export interface GetSettingsArgs {
   authData: string;
   authType: "web-app" | "telegram-login";
@@ -25,6 +27,7 @@ export const saveSticker = async (args: SaveStickerArgs) => {
   data.append("settings", args.settings);
   data.append("palette", args.palette);
   data.append("sticker", args.sticker);
+  data.append("action", args.action);
 
   const resp = await fetch("https://tg-sticker-bot.vercel.app/api/upload", {
     method: "POST",
