@@ -46,7 +46,7 @@ const AddToSetButton: FC<Props> = (props) => {
           sticker: sticker.id,
           action: String(key) as "save" | "add" | "saveAndAdd",
         });
-        if(key === "save" || key === "saveAndAdd") {
+        if (key === "save" || key === "saveAndAdd") {
           router.push("/"); // TODO: close gui if used from within bot?
         }
         console.log("response", response);
