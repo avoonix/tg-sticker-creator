@@ -47,6 +47,7 @@ export const createSticker = (definition: StickerDefinition): Sticker => {
             name: "Base",
             steps: [base],
             multiple: false,
+            visible: true,
           },
           ...res.groups,
         ],
