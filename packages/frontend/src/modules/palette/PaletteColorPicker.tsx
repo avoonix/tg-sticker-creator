@@ -1,13 +1,14 @@
 import { Grid, repeat } from "@adobe/react-spectrum";
 import Checkmark from "@spectrum-icons/workflow/Checkmark";
 import { useAtom } from "jotai";
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import ColorButton from "../colors/ColorButton";
 import { paletteAtom } from "./ColorList";
 
 interface Props {
-  id: number;
+  id: number | null; // null .. none selected
   onChange: (value: number) => void;
+  before?: ReactNode | undefined;
 }
 
 const PaletteColorPicker: FC<Props> = (props) => {
@@ -20,6 +21,7 @@ const PaletteColorPicker: FC<Props> = (props) => {
       justifyContent="center"
       gap="size-100"
     >
+      {props.before}
       {colors.map((item) => (
         <ColorButton
           key={item.id}
