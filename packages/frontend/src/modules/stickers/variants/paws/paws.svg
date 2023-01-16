@@ -7,7 +7,7 @@
    viewBox="0 0 135.46667 135.46667"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="paws.svg"
    xml:space="preserve"
    inkscape:export-filename="rendered/paws.png"
@@ -27,8 +27,8 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="1.5883609"
-     inkscape:cx="178.17109"
-     inkscape:cy="187.92958"
+     inkscape:cx="108.28773"
+     inkscape:cy="364.21194"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -1440,7 +1440,7 @@
              transform="matrix(-0.44083863,-0.37538148,0.3747937,-0.44014836,97.093622,134.78068)" /></g></g></g><g
        id="g3666-3-5-3-3"
        style="display:inline;stroke:#000000;stroke-width:1.25686;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:label="[feet.bird]"
+       inkscape:label="[feet.bird] {hidden}"
        transform="matrix(0.84204688,0,0,0.84204688,-99.758627,-52.205553)" /></g><g
      inkscape:groupmode="layer"
      id="layer2"

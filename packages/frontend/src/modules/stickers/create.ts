@@ -142,12 +142,14 @@ export async function createStepsNew(
       };
     }
 
+    const featureMultiple = !t;
+
     groups.push(
       {
         name: prettyName(feature, ""),
         steps: alts,
-        multiple: !t,
-        visible: alts.length > 1 || Object.entries(alts[0].inputs).length > 0,
+        multiple: featureMultiple,
+        visible: alts.length > 1 || Object.entries(alts[0].inputs).length > 0 || featureMultiple,
       },
       {
         name: `${prettyName(feature, "")} patterns`,

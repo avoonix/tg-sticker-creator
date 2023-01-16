@@ -24,14 +24,14 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="3.2932925"
-     inkscape:cx="131.59018"
-     inkscape:cy="186.18347"
+     inkscape:cx="305.55676"
+     inkscape:cy="223.84116"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
      inkscape:window-y="32"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g5004"
+     inkscape:current-layer="g1816"
      inkscape:rotation="-1"
      inkscape:snap-global="false"
      inkscape:showpageshadow="0"
@@ -467,7 +467,8 @@
           </g>
           <g
              id="g32273"
-             transform="translate(-0.04190238,0.07880253)">
+             transform="translate(-0.04190238,0.07880253)"
+             style="display:inline">
             <path
                style="display:inline;fill:#604b00;fill-opacity:1;stroke:none;stroke-width:0.314214px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                d="m 244.76686,166.42745 c -0.21578,-2.47216 -1.80224,-4.11038 -4.74532,-4.9879 -1.57306,-0.46903 -3.62861,-0.56474 -5.25932,0.18369 -1.73171,0.79478 -2.35745,1.67143 -2.81362,2.63692 1.78745,2.15443 10.28874,3.54173 12.81826,2.16729 z"
