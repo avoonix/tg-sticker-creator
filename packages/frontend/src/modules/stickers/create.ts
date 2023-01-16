@@ -149,7 +149,10 @@ export async function createStepsNew(
         name: prettyName(feature, ""),
         steps: alts,
         multiple: featureMultiple,
-        visible: alts.length > 1 || Object.entries(alts[0].inputs).length > 0 || featureMultiple,
+        visible:
+          alts.length > 1 ||
+          Object.entries(alts[0].inputs).length > 0 ||
+          featureMultiple,
       },
       {
         name: `${prettyName(feature, "")} patterns`,

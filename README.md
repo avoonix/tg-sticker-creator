@@ -14,6 +14,14 @@ Copyright Free Telegram Sticker Templates
 Use the [web app](https://stickers.avoonix.com/) or try the [telegram bot](https://stickers.avoonix.com/) that can save your designs and upload the stickers for you.
 
 
+## Library
+
+There's also a npm library for creating stickers:
+
+- Playground: https://sticker-playground.netlify.app/
+- Package: https://www.npmjs.com/package/tg-sticker-creator
+- Docs: https://avoonix.github.io/tg-sticker-creator/docs/index.html
+
 <!-- ## Web App
 
 [here](./packages/frontend)
