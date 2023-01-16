@@ -16,7 +16,6 @@ Use the [web app](https://stickers.avoonix.com/) or try the [telegram bot](https
 ## Examples
 
 <p align="center">
-<a href="https://stickers.avoonix.com/">
 <img width="200" alt="Blue Paws Sticker" src="./examples/furry-telegram-sticker-animated-paws-blue-pastel-beans.gif">
 <img width="200" alt="Petting Pink Fox Sticker" src="./examples/furry-telegram-sticker-animated-petting-petpet-pink-fox.gif">
 <img width="200" alt="Popping Sticker" src="./examples/furry-telegram-sticker-animated-popcat-popping-meme-blank-template.gif">
@@ -24,7 +23,6 @@ Use the [web app](https://stickers.avoonix.com/) or try the [telegram bot](https
 <img width="200" alt="Popping Pink Fox Sticker" src="./examples/furry-telegram-sticker-animated-popcat-popping-meme-pink-fox.gif">
 <img width="200" alt="Orange Paws Sticker" src="./examples/furry-telegram-sticker-animated-paws-hypno-spiral-orange-green-beans.gif">
 <img width="200" alt="Blue Fox Halloween Couldron Sticker" src="./examples/furry-telegram-sticker-animated-halloween-couldron-blue-fox.gif">
-</a>
 </p>
 
 ## Library
