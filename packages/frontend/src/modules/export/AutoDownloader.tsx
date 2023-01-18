@@ -1,28 +1,39 @@
+import download from "downloadjs";
 import { FC, useEffect } from "react";
 import { useGeneratedSticker } from "../stickers/useSticker";
-import { renderMp4Webcodec } from "./webcodec2";
+import { renderOnCanvas } from "./canvas";
+import { ImageMime } from "./pngRenderer";
 
 const AutoDownloader: FC = (props) => {
   const { lottie } = useGeneratedSticker();
   useEffect(() => {
     if (!lottie) return;
-    const fps = 30;
     const start = performance.now();
 
-    renderMp4Webcodec(
+    renderOnCanvas(
       lottie,
       {
-        width: 512,
-        height: 512,
         transparent: true,
-        speed: 1,
-        fps,
         backgroundColor: "#000000",
+        fps: 30,
+        height: 512,
+        speed: 1,
+        width: 512,
       },
-      () => null,
-    ).then(() => {
-      console.log("duration", (performance.now() - start) / 1000, "s");
-    });
+      async (canvas, context, { progress }) => {
+        const type = ImageMime.png;
+        const url = canvas.toDataURL(type);
+        if (!url.match(type)) {
+          throw new Error(
+            `exporting as ${type} is not supported by this browser`,
+          );
+        }
+        const blob = await (await fetch(url)).blob();
+        download(blob, "file.png", type);
+        console.log("duration", (performance.now() - start) / 1000, "s");
+        return true;
+      },
+    );
   }, [lottie]);
 
   return <>download starting</>;

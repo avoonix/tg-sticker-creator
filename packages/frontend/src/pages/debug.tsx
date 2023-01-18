@@ -48,9 +48,7 @@ export default function Home(props: Props) {
   return (
     <View padding="size-100">
       <Head>
-        {/* TODO: noindex */}
-        {/* <title>TypeScript starter for Next.js</title>
-          <link rel="icon" href="/favicon.ico" /> */}
+        <meta name="robots" content="noindex" />
       </Head>
       <main>
         <Heading level={1}>Debug</Heading>

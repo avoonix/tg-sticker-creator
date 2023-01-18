@@ -1,4 +1,3 @@
-
 <p align="center">
 <a href="https://stickers.avoonix.com/">
 <img width="250" alt="Avoo's Sticker Stash Logo" src="./packages/frontend/public/favicon.svg">

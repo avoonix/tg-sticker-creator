@@ -39,7 +39,7 @@ export default function Home(props: Props) {
           saved.map(
             (s: any) =>
               ({
-                url: `https://tg-sticker-bot.vercel.app/api/dev/${s.sticker}/${s.id}/video.webm`,
+                url: `https://tg-sticker-bot.vercel.app/api/dev/${s.sticker}/${s.id}/sticker.png`,
                 emojis: [],
                 name: s.id,
                 stickerId: s.sticker,

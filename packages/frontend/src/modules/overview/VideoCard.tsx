@@ -10,7 +10,6 @@ import { Card } from "@react-spectrum/card";
 import Edit from "@spectrum-icons/workflow/Edit";
 import { useRouter } from "next/router";
 import { FC, useCallback } from "react";
-import { InView } from "react-intersection-observer";
 import EmojiList from "../emojis/EmojiList";
 import style from "./index.module.css";
 import { VideoEntry } from "./VideoEntry";
@@ -33,30 +32,13 @@ const VideoCard: FC<Props> = ({ entry }) => {
   return (
     <Card>
       <IllustratedMessage height="100%">
-        <InView
-          onChange={(inView, entry) => {
-            const target = entry.target as HTMLVideoElement;
-            if (!target) return;
-            target.autoplay = inView;
-            if (inView) {
-              target.play();
-            } else {
-              target.pause();
-            }
-          }}
-        >
-          {({ ref }) => (
-            <video
-              ref={ref}
-              playsInline
-              muted
-              loop
-              className={style.stickerVideo}
-              src={entry.url}
-              style={{ aspectRatio: 1 }}
-            />
-          )}
-        </InView>
+        <img
+          className={style.stickerVideo}
+          src={entry.url}
+          style={{ aspectRatio: 1 }}
+          alt="Sticker Preview"
+          loading="lazy"
+        />
       </IllustratedMessage>
       <Text slot="detail">TGS</Text>
       <Heading>{entry.name}</Heading>

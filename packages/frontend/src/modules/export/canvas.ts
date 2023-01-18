@@ -36,11 +36,14 @@ export const calculateTimings = (
 export const renderOnCanvas = async (
   animation: Lottie,
   options: CanvasRenderOptions,
+  /**
+   * @returns true to break early
+   */
   onFrame: (
     canvas: HTMLCanvasElement,
     context: CanvasRenderingContext2D,
     info: { progress: number; frame: number },
-  ) => Promise<void> | void,
+  ) => Promise<boolean | void> | boolean | void,
 ) => {
   const canvas = document.createElement("canvas");
   canvas.width = options.width; // animation.width
@@ -82,13 +85,15 @@ export const renderOnCanvas = async (
     lottie.goToAndStop(progress, true);
     // console.log("after goToAndStop");
     // await new Promise((r) => setTimeout(r, 1));
-    const result = onFrame(canvas, context, {
+    let result = onFrame(canvas, context, {
       progress: progress / wholeDurationInFrames,
       frame: progress,
     });
-    if (result && "then" in result) {
-      await result;
+    if (result && typeof result !== "boolean" && "then" in result) {
+      result = await result;
     }
-    // console.log("called onFrame");
+    if (result) {
+      break;
+    }
   }
 };
