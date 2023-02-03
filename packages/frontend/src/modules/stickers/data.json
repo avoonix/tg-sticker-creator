@@ -2,6 +2,8 @@
   "defaultColors": {
     "ych.primary": "#ebc05b",
     "ych.accent": "#bf8a0f",
+    "ych.diaper": "#bf8a0f",
+    "accessories.diaper.tape": "#70C2EB",
     "eyes.open.left.pupil": "#000000",
     "eyes.open.right.pupil": "#000000"
   }

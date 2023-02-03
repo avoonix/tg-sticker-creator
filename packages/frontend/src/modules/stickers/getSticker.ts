@@ -7,6 +7,7 @@ export const stickers: {
   headpats: () => import("./variants/headpats"),
   popping: () => import("./variants/popping"),
   halloween: () => import("./variants/halloween"),
+  hug: () => import("./variants/hug"),
   attribution: () => import("./variants/attribution"),
   paws: () => import("./variants/paws"),
 };

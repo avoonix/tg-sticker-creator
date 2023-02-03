@@ -21,10 +21,11 @@
     "body": ["body"],
     "torso": ["torso"],
     "held-object": ["held-object.heart"],
-    "exclamation": ["exclamation.a"]
+    "exclamation": ["exclamation.a", "exclamation.e"],
+    "upper-leg": ["upper-leg"]
   },
   "optionalTraits": {
-    "accessories": ["accessories.collar"],
+    "accessories": ["accessories.collar", "accessories.diaper"],
     "effect": [
       "effect.hearts",
       "effect.sparkles",
