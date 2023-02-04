@@ -35,7 +35,7 @@ const SettingsMenu: FC = () => {
       <MenuTrigger>
         <ActionButton>
           <Gears />
-          <Text>Settings</Text>
+          <Text>Character Export</Text>
         </ActionButton>
         <Menu onAction={handleExport}>
           <Item key="import">Import</Item>

@@ -44,7 +44,7 @@ const ExportMenu: FC<Props> = ({ lottie }) => {
       <MenuTrigger>
         <ActionButton>
           <Export />
-          <Text>Export</Text>
+          <Text>Sticker Export</Text>
         </ActionButton>
         <Menu onAction={handleExport}>
           <Item key="tgs">Telegram Sticker</Item>
