@@ -143,6 +143,31 @@ export const base = () =>
         });
       }
 
+      for (const shape of sticker.all(["[head]"], {
+        match: "indexof",
+      })) {
+        const group = shape.cast("GroupShape");
+
+        const rotation = create.value(0);
+        for (let i = 0; i < 7; ++i) {
+          rotation.addKeyframe(
+            sticker.frameAt(0.2 + 0.1 * i),
+            i % 2 ? -3 : 0,
+            "ease",
+          );
+        }
+
+        group.eachImmediateChildShape((shape) => {
+          if (!shape.is("TransformShape")) return;
+          shape
+            .setAnchor(create.value([290, 230]))
+            .setPosition(create.value(290, 230))
+            .setRotation(
+              rotation,
+            );
+        });
+      }
+
       setInitialHidden(sticker);
 
       return sticker;

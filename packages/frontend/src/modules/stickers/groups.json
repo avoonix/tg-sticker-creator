@@ -21,7 +21,7 @@
     "body": ["body"],
     "torso": ["torso"],
     "held-object": ["held-object.heart"],
-    "exclamation": ["exclamation.a", "exclamation.e"],
+    "exclamation": ["exclamation.a", "exclamation.e", "exclamation.heart"],
     "upper-leg": ["upper-leg"]
   },
   "optionalTraits": {
