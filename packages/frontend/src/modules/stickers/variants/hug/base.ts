@@ -162,9 +162,7 @@ export const base = () =>
           shape
             .setAnchor(create.value([290, 230]))
             .setPosition(create.value(290, 230))
-            .setRotation(
-              rotation,
-            );
+            .setRotation(rotation);
         });
       }
 
