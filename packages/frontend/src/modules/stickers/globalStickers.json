@@ -41,6 +41,13 @@
     "settingId": "3e57295b-c4c6-4ee6-8559-6ac119aebfe4"
   },
   {
+    "url": "https://tg-sticker-bot.vercel.app/api/dev/heart/3e57295b-c4c6-4ee6-8559-6ac119aebfe4/sticker.png",
+    "emojis": [{ "name": "heart", "emoji": "❤️" }],
+    "name": "Oliver - Heart",
+    "stickerId": "heart",
+    "settingId": "3e57295b-c4c6-4ee6-8559-6ac119aebfe4"
+  },
+  {
     "url": "https://tg-sticker-bot.vercel.app/api/dev/attribution/3e57295b-c4c6-4ee6-8559-6ac119aebfe4/sticker.png",
     "emojis": [
       { "name": "info", "emoji": "ℹ️" },
@@ -89,6 +96,13 @@
     "emojis": [{ "name": "eyes", "emoji": "👀" }],
     "name": "Blank - Halloween",
     "stickerId": "halloween",
+    "settingId": "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5"
+  },
+  {
+    "url": "https://tg-sticker-bot.vercel.app/api/dev/heart/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/sticker.png",
+    "emojis": [{ "name": "heart", "emoji": "❤️" }],
+    "name": "Blank - Heart",
+    "stickerId": "heart",
     "settingId": "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5"
   },
   {

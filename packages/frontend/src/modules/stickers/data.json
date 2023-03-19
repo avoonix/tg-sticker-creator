@@ -5,6 +5,9 @@
     "ych.diaper": "#bf8a0f",
     "accessories.diaper.tape": "#70C2EB",
     "eyes.open.left.pupil": "#000000",
-    "eyes.open.right.pupil": "#000000"
+    "eyes.open.right.pupil": "#000000",
+    "held-object.egg.base": "#5B89EB",
+    "held-object.egg.stripe": "#0F52BF",
+    "held-object.heart.base": "#cd0031"
   }
 }

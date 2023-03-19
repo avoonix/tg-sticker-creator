@@ -10,6 +10,7 @@ export const stickers: {
   hug: () => import("./variants/hug"),
   attribution: () => import("./variants/attribution"),
   paws: () => import("./variants/paws"),
+  heart: () => import("./variants/heart"),
 };
 
 export const getSticker = async (id: string) => {

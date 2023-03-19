@@ -20,7 +20,7 @@
     ],
     "body": ["body"],
     "torso": ["torso"],
-    "held-object": ["held-object.heart"],
+    "held-object": [ "held-object.heart", "held-object.egg"],
     "exclamation": ["exclamation.a", "exclamation.e", "exclamation.heart"],
     "upper-leg": ["upper-leg"]
   },
