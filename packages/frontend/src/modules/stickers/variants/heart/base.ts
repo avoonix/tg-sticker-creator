@@ -8,8 +8,7 @@ export const base = () =>
     niceness: 0,
     id: "base.heart",
     displayName: "Base",
-    inputs: {
-    },
+    inputs: {},
     async apply(sticker, inputs) {
       sticker.finalFrame = 1.2 * 60;
 
