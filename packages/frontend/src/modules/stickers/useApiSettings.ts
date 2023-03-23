@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { getSetting } from "../export/requests";
 import { paletteAtom } from "../palette/ColorList";
-import { configAtom } from "./useSticker";
+import { configAtom } from "./configAtom";
 import { mergeConfig } from "./utilities/merge";
 
 export const useApiSettings = () => {

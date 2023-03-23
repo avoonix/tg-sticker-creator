@@ -5,7 +5,7 @@ import dropzoneStyles from "./Droppable.module.scss";
 import { classNames } from "@react-spectrum/utils";
 import { DropItem } from "@react-types/shared";
 import { useSetAtom } from "jotai";
-import { configAtom } from "../stickers/useSticker";
+import { configAtom } from "../stickers/configAtom";
 import { mergeConfig } from "../stickers/utilities/merge";
 import { paletteAtom } from "../palette/ColorList";
 

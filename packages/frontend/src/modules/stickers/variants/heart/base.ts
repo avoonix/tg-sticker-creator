@@ -8,9 +8,17 @@ export const base = () =>
     niceness: 0,
     id: "base.heart",
     displayName: "Base",
-    inputs: {},
+    inputs: {
+      frames: {
+        type: "number",
+        default: 60,
+        displayName: "Length (frames)",
+        min: 30,
+        max: 100,
+      },
+    },
     async apply(sticker, inputs) {
-      sticker.finalFrame = 1.2 * 60;
+      sticker.finalFrame = 1.2 * inputs.frames;
 
       sticker.addLayerBack(
         create
@@ -76,6 +84,27 @@ export const base = () =>
               .addKeyframe(sticker.frameAt(1), -2, "easeInOut"),
           );
       });
+
+      const rotation = 2;
+      const animateEar = (pattern: string, x: number, y: number) =>
+        sticker
+          .first([pattern], { match: "indexof" })!
+          .cast("GroupShape")
+          .eachImmediateChildShape((shape) => {
+            if (!shape.is("TransformShape")) return;
+            shape
+              .setPosition(create.value(x, y))
+              .setAnchor(create.value([x, y]))
+              .setRotation(
+                create
+                  .value(-rotation)
+                  .addKeyframe(sticker.frameAt(0.5), rotation, "easeInOut")
+                  .addKeyframe(sticker.frameAt(1), -rotation, "easeInOut"),
+              );
+          });
+
+      animateEar("[left-animated-ear]", 305, 95);
+      animateEar("[right-animated-ear]", 205, 100);
 
       setInitialHidden(sticker);
 

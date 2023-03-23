@@ -1,9 +1,9 @@
 import { Accordion, Item } from "@react-spectrum/accordion";
 import { Grid, repeat } from "@react-spectrum/layout";
 import { useAtom } from "jotai";
-import { FC, useEffect, useMemo, useState } from "react";
+import { FC, useMemo } from "react";
+import { configAtom, getConfigAtom } from "../stickers/configAtom";
 import { Group } from "../stickers/execute";
-import { configAtom, getConfigAtom } from "../stickers/useSticker";
 import StickerStep from "./StickerStep";
 
 interface Props {

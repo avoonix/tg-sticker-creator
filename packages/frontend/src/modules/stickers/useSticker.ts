@@ -3,6 +3,7 @@ import { focusAtom } from "jotai/optics";
 import { useEffect, useState } from "react";
 import { Lottie } from "tg-sticker-creator";
 import { paletteAtom } from "../palette/ColorList";
+import { configAtom } from "./configAtom";
 import { execute, StickerConfig } from "./execute";
 import { getSticker } from "./getSticker";
 import { mergeConfig } from "./utilities/merge";
@@ -17,7 +18,6 @@ export const stickerAtom = atom<Config>({
   emojis: [],
   id: "",
 });
-export const configAtom = atom<StickerConfig>({});
 
 export const useSticker = (id: string) => {
   const [sticker, setSticker] = useAtom(stickerAtom);
@@ -39,9 +39,6 @@ export const useSticker = (id: string) => {
     sticker,
   };
 };
-
-export const getConfigAtom = (stepId: string) =>
-  focusAtom(configAtom, (optic) => optic.prop(stepId));
 
 export const useGeneratedSticker = (
   args: { enable?: string[]; disable?: string[] } = {},

@@ -10,8 +10,9 @@ import {
 import { FC, useState } from "react";
 import { InView } from "react-intersection-observer";
 import ColorButton from "../colors/ColorButton";
+import { configAtom } from "../stickers/configAtom";
 import { Group, StepConfig } from "../stickers/execute";
-import { configAtom, useGeneratedSticker } from "../stickers/useSticker";
+import { useGeneratedSticker } from "../stickers/useSticker";
 import { FilterDefinition } from "../stickers/utilities";
 import { animateAtom } from "./animate";
 import style from "./editor.module.css";

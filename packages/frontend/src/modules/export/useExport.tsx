@@ -2,7 +2,7 @@ import download from "downloadjs";
 import { useAtom } from "jotai";
 import { useCallback } from "react";
 import { paletteAtom } from "../palette/ColorList";
-import { configAtom } from "../stickers/useSticker";
+import { configAtom } from "../stickers/configAtom";
 
 export const useExport = () => {
   const [config] = useAtom(configAtom);
