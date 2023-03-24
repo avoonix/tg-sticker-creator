@@ -13,6 +13,7 @@ export interface NumberInputDefinition extends BaseInputDefinition {
   default: number;
   min: number;
   max: number;
+  step?: number;
 }
 
 export interface BooleanInputDefinition extends BaseInputDefinition {

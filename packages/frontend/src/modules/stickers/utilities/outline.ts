@@ -19,6 +19,7 @@ export const outline = (id: string) =>
         default: 10,
         min: 1,
         max: 25,
+        step: 0.1,
       },
       color: {
         type: "color",

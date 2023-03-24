@@ -48,6 +48,16 @@
     "settingId": "8775b344-5ad5-4d65-99d5-b81f8e679e12"
   },
   {
+    "url": "https://tg-sticker-bot.vercel.app/api/dev/hug/8775b344-5ad5-4d65-99d5-b81f8e679e12/sticker.png",
+    "emojis": [
+      { "name": "hugging", "emoji": "🫂" },
+      { "name": "open hands", "emoji": "🤗" }
+    ],
+    "name": "Oliver - Hug",
+    "stickerId": "hug",
+    "settingId": "8775b344-5ad5-4d65-99d5-b81f8e679e12"
+  },
+  {
     "url": "https://tg-sticker-bot.vercel.app/api/dev/attribution/8775b344-5ad5-4d65-99d5-b81f8e679e12/sticker.png",
     "emojis": [
       { "name": "info", "emoji": "ℹ️" },
@@ -103,6 +113,16 @@
     "emojis": [{ "name": "heart", "emoji": "❤️" }],
     "name": "Blank - Heart",
     "stickerId": "heart",
+    "settingId": "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5"
+  },
+  {
+    "url": "https://tg-sticker-bot.vercel.app/api/dev/hug/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/sticker.png",
+    "emojis": [
+      { "name": "hugging", "emoji": "🫂" },
+      { "name": "open hands", "emoji": "🤗" }
+    ],
+    "name": "Blank - Hug",
+    "stickerId": "hug",
     "settingId": "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5"
   },
   {

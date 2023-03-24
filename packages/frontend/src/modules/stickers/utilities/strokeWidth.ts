@@ -12,8 +12,9 @@ export const strokeWidth = (id: string) =>
         type: "number",
         displayName: "Multiplier",
         default: 2,
-        min: 0.5,
-        max: 4,
+        min: 0,
+        max: 8,
+        step: 0.1,
       },
     },
     async apply(sticker, inputs) {

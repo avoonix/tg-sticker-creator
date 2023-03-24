@@ -11,6 +11,7 @@ const NumberInput: FC<InputProps<number, NumberInputDefinition>> = (props) => {
       onChange={props.onChange}
       minValue={props.definition.min}
       maxValue={props.definition.max}
+      step={props.definition.step ?? 1}
     />
   );
 };
