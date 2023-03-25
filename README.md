@@ -32,6 +32,13 @@ There's also a npm library for creating stickers:
 - Package: https://www.npmjs.com/package/tg-sticker-creator
 - Docs: https://avoonix.github.io/tg-sticker-creator/docs/index.html
 
+# Support
+
+Like the project? Please consider supporting it by filing bug reports, contributing, or donating to help improve it.
+
+[![donation link](https://i.avoonix.com/patreon/avoonix-become-a-patron-button.png)](https://avoonix.com/support)
+
+
 <!-- ## Web App
 
 [here](./packages/frontend)
