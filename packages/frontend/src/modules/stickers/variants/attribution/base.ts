@@ -1,6 +1,7 @@
 import { create, OffsetKeyframe } from "tg-sticker-creator";
 import {
   createFilter,
+  getAveragePathPosition,
   setColor,
   setInitialHidden,
   svgToLottie,
@@ -53,21 +54,13 @@ export const base = () =>
         setColor(item, inputs.secondary, "FillShape");
       }
 
-      let averageCirclePoints: [number, number] = [100, 100];
-
-      for (const item of sticker.all("[attribution.circle]", {
-        match: "indexof",
-      })) {
-        if (!item.is("GroupShape")) continue;
-        item.eachImmediateChildShape((c) => {
-          if (!c.is("PathShape")) return;
-          const vertices = c.vertices.getValue();
-          if (Array.isArray(vertices)) return;
-          averageCirclePoints = vertices.points
-            .reduce(([x, y], cur) => [x + cur[0], y + cur[1]], [0, 0])
-            .map((sum) => sum / vertices.points.length) as [number, number];
-        });
-      }
+      const averageCirclePoints = getAveragePathPosition(
+        sticker
+          .first("[attribution.circle]", {
+            match: "indexof",
+          })!
+          .cast("GroupShape"),
+      );
 
       for (const item of sticker.all("[attribution.rotate]", {
         match: "indexof",

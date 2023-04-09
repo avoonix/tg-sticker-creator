@@ -15,3 +15,4 @@ export * from "./sticker";
 export * from "./strokeWidth";
 export * from "./createFilter";
 export * from "./svg";
+export * from "./averagePosition";
