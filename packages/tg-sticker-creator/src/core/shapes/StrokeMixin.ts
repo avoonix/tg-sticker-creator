@@ -7,7 +7,7 @@ import {
   LineJoin,
   toInstance,
   toPlain,
-  ToPlainOptions
+  ToPlainOptions,
 } from "../internal";
 
 export class Stroke {
@@ -33,8 +33,23 @@ export class Stroke {
     return this;
   }
 
+  setMiterLimit(m: number | undefined) {
+    this.miterLimit = m;
+    return this;
+  }
+
+  setLineJoin(l: LineJoin) {
+    this.lineJoin = l;
+    return this;
+  }
+
   setLineCap(l: LineCap) {
     this.lineCap = l;
+    return this;
+  }
+
+  setBlendMode(b: BlendMode) {
+    this.blendMode = b;
     return this;
   }
 

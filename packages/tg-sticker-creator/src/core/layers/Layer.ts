@@ -15,7 +15,7 @@ import {
   resolveCurrentItemHelper,
   toInstance,
   toPlain,
-  ToPlainOptions
+  ToPlainOptions,
 } from "../internal";
 
 /**
@@ -108,6 +108,16 @@ export class Layer extends LottieItem implements Resolvable {
   hasMasks?: boolean;
 
   masks?: Mask[];
+
+  setMatteTarget(targetLayer: number | undefined) {
+    this.matteTarget = targetLayer;
+    return this;
+  }
+
+  setMatteMode(m: MatteMode | undefined) {
+    this.matteMode = m;
+    return this;
+  }
 
   addMask(mask: Mask) {
     if (!this.masks) {
