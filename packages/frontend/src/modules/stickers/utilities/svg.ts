@@ -1,6 +1,13 @@
 import LRUCache from "lru-cache";
 import * as paper from "paper";
-import { create, enums, GroupShape, TransformShape } from "tg-sticker-creator";
+import {
+  create,
+  enums,
+  GroupShape,
+  LineCap,
+  LineJoin,
+  TransformShape,
+} from "tg-sticker-creator";
 import { handleImport } from "./inkscapeImporter";
 
 const setupPaper = () => {
@@ -61,14 +68,39 @@ const pathToShape = (
 
 const addStyles = (group: GroupShape, p: paper.Item) => {
   if (p.style.strokeColor) {
-    group.addShapeBack(
-      create
-        .stroke()
-        .setColor(paperColorToLottieColor(p.style.strokeColor))
-        // .setWidth(create.value(p.strokeWidth * 5))
-        .setWidth(create.value(p.strokeWidth * 2))
-        .setOpacity(create.value(p.style.strokeColor.alpha * 100)),
-    );
+    const stroke = create
+      .stroke()
+      .setColor(paperColorToLottieColor(p.style.strokeColor))
+      .setWidth(create.value(p.strokeWidth * 2)) // TODO: scaling doesn't work properly
+      .setOpacity(create.value(p.style.strokeColor.alpha * 100))
+      .setMiterLimit(p.style.miterLimit);
+    switch (p.style.strokeCap) {
+      case "butt":
+        stroke.setLineCap(LineCap.flat);
+        break;
+      case "round":
+        stroke.setLineCap(LineCap.round);
+        break;
+      case "square":
+        stroke.setLineCap(LineCap.square);
+        break;
+      default:
+        console.log("unknown strokeCap", p.style.strokeCap);
+    }
+    switch (p.style.strokeJoin) {
+      case "bevel":
+        stroke.setLineJoin(LineJoin.bevel);
+        break;
+      case "miter":
+        stroke.setLineJoin(LineJoin.miter);
+        break;
+      case "round":
+        stroke.setLineJoin(LineJoin.round);
+        break;
+      default:
+        console.log("unknown strokeJoin", p.style.strokeCap);
+    }
+    group.addShapeBack(stroke);
   }
   if (p.style.fillColor) {
     const fill = p.style.fillColor;
