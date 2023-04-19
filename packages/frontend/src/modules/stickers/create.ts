@@ -106,7 +106,9 @@ export async function createStepsNew(
     available.forEach((a) => (usedFeatures[a] = true));
 
     const altPatterns: FilterDefinition[] = activePatterns
-      .filter((pattern) => available.find((a) => pattern.startsWith(a)))
+      .filter((pattern) =>
+        available.find((a) => pattern.startsWith(`${a}.`) || pattern === a),
+      )
       .map((id): FilterDefinition => {
         const parentId = available.find((a) => id.startsWith(a))!; // TODO: duplicate line of code
         usedFeatures[id] = true;

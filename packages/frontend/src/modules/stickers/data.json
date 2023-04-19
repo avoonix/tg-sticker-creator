@@ -8,6 +8,10 @@
     "eyes.open.right.pupil": "#000000",
     "held-object.egg.base": "#5B89EB",
     "held-object.egg.stripe": "#0F52BF",
-    "held-object.heart.base": "#cd0031"
+    "held-object.heart.base": "#cd0031",
+    "plushie.primary": "#ffa31e",
+    "plushie.secondary": "#fff2e1",
+    "plushie.accent": "#703d00",
+    "plushie.eyes": "#9D00FF"
   }
 }
