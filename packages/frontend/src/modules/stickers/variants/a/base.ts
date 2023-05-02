@@ -1,4 +1,4 @@
-import { create, easings, Lottie } from "tg-sticker-creator";
+import { create, easings } from "tg-sticker-creator";
 import { createFilter, setInitialHidden, svgToLottie } from "../../utilities";
 import svg from "./a.svg";
 
@@ -16,11 +16,11 @@ export const base = () =>
         min: 60,
         max: 3 * 60,
       },
-      small: {
-        type: "boolean",
-        default: false,
-        displayName: "Smol",
-      },
+      // small: {
+      //   type: "boolean",
+      //   default: false,
+      //   displayName: "Smol",
+      // },
       animationStyle: {
         type: "select",
         options: [
@@ -35,20 +35,10 @@ export const base = () =>
     async apply(sticker, inputs) {
       sticker.finalFrame = inputs.duration;
 
-      const transform = create.transform();
-
-      if (inputs.small) {
-        transform
-          .setScale(create.value([40, 40]))
-          .setPosition(create.value(50, 512))
-          .setAnchor(create.value([50, 512]));
-      }
-
       sticker.addLayerBack(
         create
           .shapeLayer()
-          .addShapeBack(svgToLottie(svg, { forceAllShapesVisible: true }))
-          .addShapeBack(transform),
+          .addShapeBack(svgToLottie(svg, { forceAllShapesVisible: true })),
       );
 
       const exclamation = sticker
@@ -120,7 +110,7 @@ export const base = () =>
           const vibrateAmount = 5;
           const ease = easings.easeInOut;
           const vibrateEase = easings.easeInOutExpo;
-          const vibrateFrames = 2;
+          const vibrateFrames = 3;
 
           const position = create
             .value(200, 512)
