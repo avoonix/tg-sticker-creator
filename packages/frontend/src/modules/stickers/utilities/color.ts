@@ -198,6 +198,7 @@ export const greyscaleFilter = (id: string) =>
     },
   });
 
+// color mix + saturation + contrast can be used to create nice pastel colors
 export const colorMixFilter = (id: string) =>
   createFilter({
     mandatory: false,
@@ -216,26 +217,50 @@ export const colorMixFilter = (id: string) =>
         default: 10,
         min: 0,
         max: 100,
+        step: 0.1,
+      },
+      mode: {
+        displayName: "Mode",
+        type: "select",
+        default: "sqrt",
+        options: [
+          {
+            name: "tinycolor",
+            value: "tinycolor",
+          },
+          {
+            name: "square root",
+            value: "sqrt",
+          },
+        ],
       },
     },
     async apply(sticker, inputs) {
-      // TODO: different blending methods?
-      // const blendColorValue = (a: number, b: number, t: number) =>
-      //   Math.sqrt(((1 - t) * a) ^ (2 + t * b) ^ 2);
-      // const blendAlphaValue = (a: number, b: number, t: number) =>
-      //   (1 - t) * a + t * b;
-      //   const col1 = tinycolor.mix inputs.color
-      // return applyColorFilter(sticker, (c) => {
-      //   const col0 = c.toPercentageRgb();
-      //   return tinycolor.fromRatio({
-      //     r: col0.r,
-      //     g: col0.g,
-      //     b: col0.b,
-      //     a: col0.a,
-      //   });
-      // });
-      return applyColorFilter(sticker, (c) => {
-        return tinycolor.mix(c, inputs.color, inputs.amount);
-      });
+      console.log("applying color filter")
+      switch (inputs.mode) {
+        case "sqrt":
+          const blend = (a: number, b: number, t: number) =>
+            Math.sqrt((1 - t) * (a / 255) ** 2 + t * (b / 255) ** 2) * 255;
+          const blendAlpha = (a: number, b: number, t: number) =>
+            (1 - t) * a + t * b;
+          const col1 = tinycolor(inputs.color).toRgb(); // 0-255
+
+          return applyColorFilter(sticker, (c) => {
+            const col0 = c.toRgb();
+            return tinycolor({
+              r: blend(col0.r, col1.r, inputs.amount / 100),
+              g: blend(col0.g, col1.g, inputs.amount / 100),
+              b: blend(col0.b, col1.b, inputs.amount / 100),
+              a: blendAlpha(col0.a, col1.a, inputs.amount / 100),
+            });
+          });
+        case "tinycolor":
+          return applyColorFilter(sticker, (c) =>
+            tinycolor.mix(c, inputs.color, inputs.amount),
+          );
+        default:
+          console.error("invalid mode");
+          return sticker;
+      }
     },
   });
