@@ -1,5 +1,5 @@
 import { GroupShape, Lottie } from "tg-sticker-creator";
-import { getEffect } from "./effects";
+import { getCommonEffects, getEffect } from "./effects";
 import { Group, StickerConfig } from "./execute";
 import { complexShape, FilterDefinition, simpleShape } from "./utilities";
 
@@ -102,6 +102,7 @@ export async function createStepsNew(
         ])
       );
     });
+    alts.push(...getCommonEffects()); // always present
 
     available.forEach((a) => (usedFeatures[a] = true));
 
@@ -133,8 +134,6 @@ export async function createStepsNew(
         // }
         return step;
       });
-
-    if (!alts[0]) debugger;
 
     if (t) {
       // only a single selection allowed at a time

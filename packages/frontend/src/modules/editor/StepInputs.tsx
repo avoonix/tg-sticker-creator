@@ -7,6 +7,7 @@ import ColorInput from "./inputs/ColorInput";
 import { InputProps } from "./inputs/InputProps";
 import NumberInput from "./inputs/NumberInput";
 import SelectInput from "./inputs/SelectInput";
+import EasingInput from "./inputs/EasingInput";
 
 interface Props {
   configAtom: WritableAtom<StepConfig, SetStateAction<StepConfig>, void>;
@@ -22,6 +23,7 @@ const StepInputs: FC<Props> = (props) => {
     color: ColorInput,
     number: NumberInput,
     select: SelectInput,
+    easing: EasingInput,
   };
 
   return (

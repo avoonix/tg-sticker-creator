@@ -1,3 +1,5 @@
+import { Easing } from "tg-sticker-creator";
+
 export interface BaseInputDefinition {
   displayName: string;
 }
@@ -31,15 +33,16 @@ export interface SelectInputDefinition extends BaseInputDefinition {
   default: string;
 }
 
-// export interface EasingInputDefinition extends BaseInputDefinition {
-//     type: "easing",
-//     default: Easing;
-// }
+export interface EasingInputDefinition extends BaseInputDefinition {
+  type: "easing";
+  default: Easing;
+}
 
 export type InputDefinition =
   | ColorInputDefinition
   | NumberInputDefinition
   | BooleanInputDefinition
-  | SelectInputDefinition; // | EasingInputDefinition;
+  | SelectInputDefinition
+  | EasingInputDefinition;
 
 export type InputType = InputDefinition["type"];
