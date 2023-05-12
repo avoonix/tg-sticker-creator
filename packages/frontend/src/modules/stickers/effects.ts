@@ -31,6 +31,9 @@ export const getEffect = (
 };
 
 export const getCommonEffects = () => [
+  hypnoEffect2("effect.hypno"),
+  hypnoEffect3("effect.hypno3"),
+
   sepiaFilter("effect.color.sepia"),
   greyscaleFilter("effect.color.greyscale"),
   saturationFilter("effect.color.saturation"),
@@ -38,7 +41,4 @@ export const getCommonEffects = () => [
   contrastFilter("effect.color.contrast"),
   spinFilter("effect.color.spin"),
   colorMixFilter("effect.color.mix"),
-
-  hypnoEffect2("effect.hypno"),
-  hypnoEffect3("effect.hypno3"),
 ];

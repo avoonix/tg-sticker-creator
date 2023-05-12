@@ -236,7 +236,6 @@ export const colorMixFilter = (id: string) =>
       },
     },
     async apply(sticker, inputs) {
-      console.log("applying color filter")
       switch (inputs.mode) {
         case "sqrt":
           const blend = (a: number, b: number, t: number) =>

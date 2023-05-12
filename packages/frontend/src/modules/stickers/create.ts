@@ -102,7 +102,7 @@ export async function createStepsNew(
         ])
       );
     });
-    if(feature === "effect") {
+    if (feature === "effect") {
       alts.push(...getCommonEffects()); // always present
     }
 

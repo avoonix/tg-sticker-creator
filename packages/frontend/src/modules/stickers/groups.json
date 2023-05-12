@@ -26,7 +26,7 @@
     "upper-leg": ["upper-leg"]
   },
   "optionalTraits": {
-    "accessories": ["accessories.collar", "accessories.diaper"],
+    "accessories": ["accessories.collar", "accessories.diaper", "accessories.thigh-highs"],
     "effect": [
       "effect.hearts",
       "effect.sparkles",
