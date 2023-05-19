@@ -82,8 +82,6 @@ export const base = () =>
 
       const easing = easings.linear;
 
-      console.log("---rotations---");
-
       for (const [
         leg,
         {
@@ -126,7 +124,6 @@ export const base = () =>
           if (!shape.is("TransformShape")) return;
           shape.setPosition(create.value(x, y)).setAnchor(create.value([x, y]));
           shape.setRotation(rotation);
-          console.log("rotation", rotation);
         });
       }
 
