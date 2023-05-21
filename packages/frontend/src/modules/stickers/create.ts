@@ -25,8 +25,14 @@ const data = _data as {
 
 const filterTagRegex = /\[(?<name>\S+)\]/;
 
-const prettyName = (id: string, parentId: string) =>
-  id.replace(parentId, "").replaceAll(/[-.]/g, " ");
+const prettyName = (id: string, parentId: string) => {
+  if (parentId.startsWith("accessories.")) {
+    id = id.replace("accessories.", "");
+  } else {
+    id = id.replace(parentId, "");
+  }
+  return id.replaceAll(/[-.]/g, " ");
+};
 
 export async function createStepsNew(
   animation: Lottie,
