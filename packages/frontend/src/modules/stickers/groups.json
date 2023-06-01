@@ -1,10 +1,10 @@
 {
   "mutuallyExclusiveTraits": {
-    "tail": ["tail.canine", "tail.cat", "tail.bird", "tail.none"],
+    "tail": ["tail.canine", "tail.cat", "tail.bird", "tail.umbreon", "tail.none"],
     "feet": ["feet.mammal", "feet.bird"],
-    "face": ["face.muzzle", "face.beak", "face.cat"],
-    "hair": ["hair.fluffy", "hair.none"],
-    "ears": ["ears.canine", "ears.none"],
+    "face": ["face.muzzle", "face.beak", "face.cat", "face.pokemon"],
+    "hair": ["hair.fluffy", "hair.short", "hair.none"],
+    "ears": ["ears.canine", "ears.umbreon", "ears.none"],
     "hands": ["hands.primate"],
     "arms": ["arms.regular"],
     "eyes": ["eyes.open", "eyes.closed"],
@@ -26,7 +26,7 @@
     "upper-leg": ["upper-leg"]
   },
   "optionalTraits": {
-    "accessories": ["accessories.collar", "accessories.diaper", "accessories.thigh-highs"],
+    "accessories": ["accessories.collar", "accessories.diaper", "accessories.thigh-highs","accessories.arm-warmers", "accessories.skirt", "accessories.wings", "accessories.hoodie"],
     "effect": [
       "effect.hearts",
       "effect.sparkles",
