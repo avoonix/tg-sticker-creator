@@ -51,7 +51,7 @@ const AddToSetButton: FC<Props> = (props) => {
         action: props.action,
       });
       if (props.action === "save" || props.action === "saveAndAdd") {
-          router.push(router.asPath.replace(/step\/\d/, "step/4"));
+        router.push(router.asPath.replace(/step\/\d/, "step/4"));
       }
       console.log("response", response);
     } catch (error: any) {

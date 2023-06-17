@@ -1,7 +1,7 @@
 import { View } from "@adobe/react-spectrum";
 import { FC, PropsWithChildren } from "react";
 
-interface Props extends PropsWithChildren {}
+type Props = PropsWithChildren;
 
 const StepToolbarContainer: FC<Props> = (props) => {
   return (
