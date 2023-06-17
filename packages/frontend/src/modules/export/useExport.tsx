@@ -14,7 +14,7 @@ export const useExport = () => {
       "sticker-settings.json",
       "application/json",
     );
-  }, [config]);
+  }, [config, palette]);
 
   return {
     downloadJson,

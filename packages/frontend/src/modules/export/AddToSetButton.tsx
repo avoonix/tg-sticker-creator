@@ -9,7 +9,7 @@ import {
 import Export from "@spectrum-icons/workflow/Export";
 import { useAtom } from "jotai";
 import { useRouter } from "next/router";
-import { FC, useCallback, useState } from "react";
+import { FC, ReactNode, useCallback, useState } from "react";
 import { Lottie, optimizeFilesize } from "tg-sticker-creator";
 import { paletteAtom } from "../palette/ColorList";
 import { configAtom } from "../stickers/configAtom";
@@ -18,8 +18,12 @@ import { authAtom } from "./auth";
 import { gzip } from "./gzip";
 import { saveSticker } from "./requests";
 
+type ActionType = "save" | "add" | "saveAndAdd";
+
 interface Props {
   lottie: Lottie;
+  action: ActionType;
+  children: ReactNode;
 }
 
 const AddToSetButton: FC<Props> = (props) => {
@@ -30,55 +34,43 @@ const AddToSetButton: FC<Props> = (props) => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
 
-  const save = useCallback(
-    async (key: string | number) => {
-      if (!auth.data || !auth.type) throw new Error("missing auth");
-      setLoading(true);
-      try {
-        const file = await gzip(optimizeFilesize(props.lottie.clone()));
-        // TODO: refactor
-        const response = await saveSticker({
-          settings: JSON.stringify(config),
-          palette: JSON.stringify(colors),
-          file,
-          emojis: sticker.emojis.map((e) => e.emoji).join(""),
-          authData: auth.data,
-          authType: auth.type,
-          sticker: sticker.id,
-          action: String(key) as "save" | "add" | "saveAndAdd",
-        });
-        if (key === "save" || key === "saveAndAdd") {
-          router.push("/"); // TODO: close gui if used from within bot?
-        }
-        console.log("response", response);
-      } catch (error: any) {
-        alert(error.message || error); // TODO: proper error handling
-        console.log(error);
-      } finally {
-        setLoading(false);
+  const save = useCallback(async () => {
+    if (!auth.data || !auth.type) throw new Error("missing auth");
+    setLoading(true);
+    try {
+      const file = await gzip(optimizeFilesize(props.lottie.clone()));
+      // TODO: refactor
+      const response = await saveSticker({
+        settings: JSON.stringify(config),
+        palette: JSON.stringify(colors),
+        file,
+        emojis: sticker.emojis.map((e) => e.emoji).join(""),
+        authData: auth.data,
+        authType: auth.type,
+        sticker: sticker.id,
+        action: props.action,
+      });
+      if (props.action === "save" || props.action === "saveAndAdd") {
+          router.push(router.asPath.replace(/step\/\d/, "step/4"));
       }
-    },
-    [config, colors, sticker, auth, router, setLoading],
-  );
+      console.log("response", response);
+    } catch (error: any) {
+      alert(error.message || error); // TODO: proper error handling
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
+  }, [config, colors, sticker, auth, router, setLoading, props]);
 
   return (
-    <div>
-      <MenuTrigger>
-        <Button elementType="a" variant="cta">
-          {loading ? (
-            <ProgressCircle isIndeterminate variant="overBackground" size="S" />
-          ) : (
-            <Export />
-          )}
-          <Text marginStart="size-100">Save/Upload</Text>
-        </Button>
-        <Menu onAction={save}>
-          <Item key="save">Save</Item>
-          <Item key="add">Add to Set</Item>
-          <Item key="saveAndAdd">Save &amp; Add to Set</Item>
-        </Menu>
-      </MenuTrigger>
-    </div>
+    <Button variant="cta" onPress={save}>
+      {loading ? (
+        <ProgressCircle isIndeterminate variant="overBackground" size="S" />
+      ) : (
+        <Export />
+      )}
+      <Text marginStart="size-100">{props.children}</Text>
+    </Button>
   );
 };
 

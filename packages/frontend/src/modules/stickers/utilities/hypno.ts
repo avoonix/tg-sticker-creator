@@ -147,3 +147,40 @@ export const hypnoEffect3 = (id: string) =>
       return sticker;
     },
   });
+
+export const gay = (id: string) =>
+  createFilter({
+    mandatory: false,
+    niceness: 6,
+    id,
+    displayName: "Gay",
+    inputs: {
+      ringDuration: {
+        type: "number",
+        default: 20,
+        displayName: "Ring Expansion Rate (Frames)",
+        max: 50,
+        min: 5,
+      },
+      easing: {
+        type: "easing",
+        default: "easeInCubic",
+        displayName: "Easing",
+      },
+    },
+    async apply(sticker, inputs) {
+      sticker.addLayerBack(
+        create.shapeLayer().addShapeBack(
+          createHypnoShape({
+            colors: ["red", "orange", "yellow", "green", "blue", "purple"],
+            frames: sticker.finalFrame,
+            center: [256, 256],
+            nrOfFramesARingIsVisibleFor: inputs.ringDuration,
+            easing: inputs.easing,
+          }),
+        ),
+      );
+
+      return sticker;
+    },
+  });

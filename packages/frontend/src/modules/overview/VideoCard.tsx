@@ -8,11 +8,14 @@ import {
 } from "@adobe/react-spectrum";
 import { Card } from "@react-spectrum/card";
 import Edit from "@spectrum-icons/workflow/Edit";
+import Export from "@spectrum-icons/workflow/Export";
 import { useRouter } from "next/router";
-import { FC, useCallback } from "react";
+import { FC, PropsWithChildren, useCallback } from "react";
 import EmojiList from "../emojis/EmojiList";
 import style from "./index.module.css";
 import { VideoEntry } from "./VideoEntry";
+import Link from "next/link";
+import SpectrumLink from "../editor/SpectrumLink";
 
 interface Props {
   entry: VideoEntry;
@@ -21,13 +24,10 @@ interface Props {
 const VideoCard: FC<Props> = ({ entry }) => {
   const router = useRouter();
 
-  const handleNavigation = useCallback(() => {
-    router.push(
-      `/edit/${entry.stickerId}?config=${encodeURIComponent(
-        entry.settingId || "",
-      )}`,
-    );
-  }, [entry, router]);
+  const url = (step: number) =>
+    `/edit/${entry.stickerId}/step/${step}?config=${encodeURIComponent(
+      entry.settingId || "",
+    )}`;
 
   return (
     <Card>
@@ -46,14 +46,18 @@ const VideoCard: FC<Props> = ({ entry }) => {
         <Flex direction="column" gap="size-300">
           <EmojiList emojis={entry.emojis} />
           <Flex
-            direction="row"
+            direction="column"
             gap="size-100"
             justifyContent="end"
             width="100%"
           >
-            <Button elementType="a" variant="cta" onPress={handleNavigation}>
+            <Button elementType={SpectrumLink} variant="cta" href={url(1)}>
               <Edit />
               <Text>Customize</Text>
+            </Button>
+            <Button elementType={SpectrumLink} variant="cta" href={url(4)}>
+              <Export />
+              <Text>Export</Text>
             </Button>
           </Flex>
         </Flex>

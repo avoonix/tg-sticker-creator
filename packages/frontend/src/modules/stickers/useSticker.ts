@@ -19,12 +19,12 @@ export const stickerAtom = atom<Config>({
   id: "",
 });
 
-export const useSticker = (id: string) => {
+export const useSticker = (id?: string) => {
   const [sticker, setSticker] = useAtom(stickerAtom);
   const [config, setConfig] = useAtom(configAtom);
 
   useEffect(() => {
-    if (sticker?.id === id) return;
+    if (sticker?.id === id || !id) return;
     (async () => {
       const sticker = await getSticker(id);
       if (!sticker) {

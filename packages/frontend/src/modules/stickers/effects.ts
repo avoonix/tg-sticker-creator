@@ -2,6 +2,7 @@ import {
   brightnessFilter,
   colorMixFilter,
   contrastFilter,
+  gay,
   greyscaleFilter,
   hearts,
   hypnoEffect2,
@@ -33,6 +34,8 @@ export const getEffect = (
 export const getCommonEffects = () => [
   hypnoEffect2("effect.hypno"),
   hypnoEffect3("effect.hypno3"),
+
+  gay("effect.gay"),
 
   sepiaFilter("effect.color.sepia"),
   greyscaleFilter("effect.color.greyscale"),

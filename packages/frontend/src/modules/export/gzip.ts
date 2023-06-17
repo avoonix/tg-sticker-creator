@@ -12,7 +12,7 @@ export const gzip = async (obj: Lottie) => {
   const zipped = pako.gzip(tgsString, { level: 9 });
 
   const blob = new Blob([zipped], {
-    type: "application/gzip",
+    type: "application/octet-stream",
   });
 
   // TODO: warning if blob.size > 64 << 10

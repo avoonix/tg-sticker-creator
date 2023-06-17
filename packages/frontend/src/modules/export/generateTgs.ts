@@ -11,5 +11,5 @@ export const generateTgs = async (props: Props) => {
 
   console.log("size in KiB", blob.size / (1 << 10));
 
-  download(blob, `${props.lottie.name || "sticker"}.tgs`, "application/gzip");
+  download(blob, `${props.lottie.name || "sticker"}.tgs`, "application/octet-stream");
 };

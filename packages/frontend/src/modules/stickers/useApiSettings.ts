@@ -33,7 +33,7 @@ export const useApiSettings = () => {
         console.log(e);
         setUserSettingsLoaded(true);
       });
-  }, [router.query]);
+  }, [router.query.config]);
 
   return {
     userSettings,
