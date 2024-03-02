@@ -39,7 +39,7 @@ export default function Home(props: Props) {
         bottom. You can go back to this step later if you need to.
       </StepDescription>
       <StepToolbarContainer>
-         <ImportButton />
+        <ImportButton />
         <StepTemplateChanger step={step} stickers={props.stickers} />
       </StepToolbarContainer>
       <StickerBreadcrumb stickerName={sticker.displayName} />

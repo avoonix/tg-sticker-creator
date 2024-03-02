@@ -7,7 +7,6 @@ import StepGroups from "@/modules/editor/StepGroups";
 import StepStickerView from "@/modules/editor/StepStickerView";
 import StepTemplateChanger from "@/modules/editor/StepTemplateChanger";
 import StepToolbarContainer from "@/modules/editor/StepToolbarContainer";
-import { authAtom } from "@/modules/export/auth";
 import { getSummary } from "@/modules/stickers";
 import { useGeneratedSticker, useSticker } from "@/modules/stickers/useSticker";
 import { Heading, Switch } from "@adobe/react-spectrum";
@@ -28,7 +27,6 @@ export default function Home(props: Props) {
   const step = Number(router.query.step || 2);
   const { sticker } = useSticker();
   const { lottie } = useGeneratedSticker();
-  const [auth] = useAtom(authAtom);
 
   const [animatePreviews, setAnimatePreviews] = useAtom(animateAtom);
 

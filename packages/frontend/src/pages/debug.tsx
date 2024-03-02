@@ -1,4 +1,3 @@
-import { authAtom } from "@/modules/export/auth";
 import DisableSsr from "@/modules/misc/DisableSsr";
 import { getSticker, getSummary } from "@/modules/stickers";
 import { View } from "@adobe/react-spectrum";
@@ -40,8 +39,6 @@ export default function Home(props: Props) {
     stickers.map((v) => v.tags.includes(tag)),
   );
 
-  const [auth, setAuth] = useAtom(authAtom);
-
   const telegram = (typeof window !== "undefined" ? (window as any) : {})
     ?.Telegram?.WebApp;
 
@@ -54,9 +51,6 @@ export default function Home(props: Props) {
         <Heading level={1}>Debug</Heading>
 
         <Heading level={2}>Auth</Heading>
-        <DisableSsr>
-          {typeof window && <pre>{JSON.stringify(auth, null, 2)}</pre>}
-        </DisableSsr>
 
         <Heading level={2}>Telegram</Heading>
         <DisableSsr>
