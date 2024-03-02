@@ -5,8 +5,6 @@ import { animateAtom } from "@/modules/editor/animate";
 import StepDescription from "@/modules/editor/StepDescription";
 import StepStickerView from "@/modules/editor/StepStickerView";
 import StepToolbarContainer from "@/modules/editor/StepToolbarContainer";
-import AddToSetButton from "@/modules/export/AddToSetButton";
-import { authAtom } from "@/modules/export/auth";
 import ExportButton from "@/modules/export/ExportButton";
 import { getSummary } from "@/modules/stickers";
 import { useGeneratedSticker, useSticker } from "@/modules/stickers/useSticker";
@@ -28,7 +26,6 @@ export default function Home(props: Props) {
   const step = Number(router.query.step || 3);
   const { sticker } = useSticker();
   const { lottie } = useGeneratedSticker();
-  const [auth] = useAtom(authAtom);
 
   return (
     <main>
@@ -39,16 +36,7 @@ export default function Home(props: Props) {
         signed in via the bot.
       </StepDescription>
       <StepToolbarContainer>
-        {auth.type !== "web-app" && <ExportButton />}
-        {lottie && (
-          <>
-            {auth.data && (
-              <AddToSetButton action="save" lottie={lottie}>
-                Save Configuration to Your Account
-              </AddToSetButton>
-            )}
-          </>
-        )}
+        <ExportButton />
       </StepToolbarContainer>
       <StickerBreadcrumb stickerName={sticker.displayName} />
       <StepStickerView lottie={lottie} sticky={false} />

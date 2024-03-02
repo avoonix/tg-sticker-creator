@@ -1,3 +1,6 @@
+> [!NOTE]  
+> I no longer have fun working on this project, and I don't see myself supporting it any longer. Importing and exporting to/from JSON should continue to work, but the telegram bot has been disabled.
+
 <p align="center">
 <a href="https://stickers.avoonix.com/">
 <img width="250" alt="Avoo's Sticker Stash Logo" src="./packages/frontend/public/favicon.svg">
@@ -14,6 +17,9 @@ Use the [web app](https://stickers.avoonix.com/) or try the [telegram bot](https
 
 ## Examples
 
+> [!NOTE]  
+> I no longer have fun working on this project, and I don't see myself supporting it any longer. Importing and exporting to/from JSON should continue to work, but the telegram bot has been disabled.
+
 <p align="center">
 <img width="200" alt="Blue Paws Sticker" src="./examples/furry-telegram-sticker-animated-paws-blue-pastel-beans.gif">
 <img width="200" alt="Petting Pink Fox Sticker" src="./examples/furry-telegram-sticker-animated-petting-petpet-pink-fox.gif">
@@ -26,18 +32,14 @@ Use the [web app](https://stickers.avoonix.com/) or try the [telegram bot](https
 
 ## Library
 
+> [!NOTE]  
+> I no longer have fun working on this project, and I don't see myself supporting it any longer. Importing and exporting to/from JSON should continue to work, but the telegram bot has been disabled.
+
 There's also a npm library for creating stickers:
 
 - Playground: https://sticker-playground.netlify.app/
 - Package: https://www.npmjs.com/package/tg-sticker-creator
 - Docs: https://avoonix.github.io/tg-sticker-creator/docs/index.html
-
-# Support
-
-Like the project? Please consider supporting it by filing bug reports, contributing, or donating to help improve it.
-
-[![donation link](https://i.avoonix.com/patreon/avoonix-become-a-patron-button.png)](https://avoonix.com/support)
-
 
 <!-- ## Web App
 

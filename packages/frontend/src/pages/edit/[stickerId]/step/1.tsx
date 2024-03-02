@@ -5,7 +5,6 @@ import StepDescription from "@/modules/editor/StepDescription";
 import StepStickerView from "@/modules/editor/StepStickerView";
 import StepTemplateChanger from "@/modules/editor/StepTemplateChanger";
 import StepToolbarContainer from "@/modules/editor/StepToolbarContainer";
-import { authAtom } from "@/modules/export/auth";
 import ImportButton from "@/modules/export/ImportButton";
 import ColorList from "@/modules/palette/ColorList";
 import { getSummary } from "@/modules/stickers";
@@ -25,11 +24,9 @@ interface Props {
 
 export default function Home(props: Props) {
   const router = useRouter();
-  const stickerId = String(router.query.stickerId);
   const step = Number(router.query.step || 1);
   const { sticker } = useSticker();
   const { lottie } = useGeneratedSticker();
-  const [auth] = useAtom(authAtom);
 
   return (
     <main>
@@ -42,7 +39,7 @@ export default function Home(props: Props) {
         bottom. You can go back to this step later if you need to.
       </StepDescription>
       <StepToolbarContainer>
-        {auth.type !== "web-app" && <ImportButton />}
+         <ImportButton />
         <StepTemplateChanger step={step} stickers={props.stickers} />
       </StepToolbarContainer>
       <StickerBreadcrumb stickerName={sticker.displayName} />

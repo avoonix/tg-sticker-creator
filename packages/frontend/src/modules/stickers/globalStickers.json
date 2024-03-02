@@ -1,6 +1,6 @@
 [
   {
-    "url": "https://tg-sticker-bot.vercel.app/api/dev/headpats/8775b344-5ad5-4d65-99d5-b81f8e679e12/sticker.png",
+    "url": "/sticker_13.png",
     "emojis": [
       { "name": "waving", "emoji": "👋" },
       { "name": "love", "emoji": "🥰" },
@@ -11,7 +11,7 @@
     "settingId": "8775b344-5ad5-4d65-99d5-b81f8e679e12"
   },
   {
-    "url": "https://tg-sticker-bot.vercel.app/api/dev/popping/8775b344-5ad5-4d65-99d5-b81f8e679e12/sticker.png",
+    "url": "/sticker_12.png",
     "emojis": [
       { "name": "cat", "emoji": "🐱" },
       { "name": "open mouth", "emoji": "😮" },
@@ -24,7 +24,7 @@
     "settingId": "8775b344-5ad5-4d65-99d5-b81f8e679e12"
   },
   {
-    "url": "https://tg-sticker-bot.vercel.app/api/dev/paws/8775b344-5ad5-4d65-99d5-b81f8e679e12/sticker.png",
+    "url": "/sticker_11.png",
     "emojis": [
       { "name": "paws", "emoji": "🐾" },
       { "name": "feet", "emoji": "👣" }
@@ -34,21 +34,21 @@
     "settingId": "8775b344-5ad5-4d65-99d5-b81f8e679e12"
   },
   {
-    "url": "https://tg-sticker-bot.vercel.app/api/dev/halloween/8775b344-5ad5-4d65-99d5-b81f8e679e12/sticker.png",
+    "url": "/sticker_10.png",
     "emojis": [{ "name": "eyes", "emoji": "👀" }],
     "name": "Oliver - Halloween",
     "stickerId": "halloween",
     "settingId": "8775b344-5ad5-4d65-99d5-b81f8e679e12"
   },
   {
-    "url": "https://tg-sticker-bot.vercel.app/api/dev/heart/8775b344-5ad5-4d65-99d5-b81f8e679e12/sticker.png",
+    "url": "/sticker_9.png",
     "emojis": [{ "name": "heart", "emoji": "❤️" }],
     "name": "Oliver - Heart",
     "stickerId": "heart",
     "settingId": "8775b344-5ad5-4d65-99d5-b81f8e679e12"
   },
   {
-    "url": "https://tg-sticker-bot.vercel.app/api/dev/hug/8775b344-5ad5-4d65-99d5-b81f8e679e12/sticker.png",
+    "url": "/sticker_8.png",
     "emojis": [
       { "name": "hugging", "emoji": "🫂" },
       { "name": "open hands", "emoji": "🤗" }
@@ -58,7 +58,7 @@
     "settingId": "8775b344-5ad5-4d65-99d5-b81f8e679e12"
   },
   {
-    "url": "https://tg-sticker-bot.vercel.app/api/dev/attribution/8775b344-5ad5-4d65-99d5-b81f8e679e12/sticker.png",
+    "url": "/sticker_7.png",
     "emojis": [
       { "name": "info", "emoji": "ℹ️" },
       { "name": "writing", "emoji": "✍️" }
@@ -68,7 +68,7 @@
     "settingId": "8775b344-5ad5-4d65-99d5-b81f8e679e12"
   },
   {
-    "url": "https://tg-sticker-bot.vercel.app/api/dev/headpats/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/sticker.png",
+    "url": "/sticker_6.png",
     "emojis": [
       { "name": "waving", "emoji": "👋" },
       { "name": "love", "emoji": "🥰" },
@@ -79,7 +79,7 @@
     "settingId": "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5"
   },
   {
-    "url": "https://tg-sticker-bot.vercel.app/api/dev/popping/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/sticker.png",
+    "url": "/sticker_5.png",
     "emojis": [
       { "name": "cat", "emoji": "🐱" },
       { "name": "open mouth", "emoji": "😮" },
@@ -92,7 +92,7 @@
     "settingId": "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5"
   },
   {
-    "url": "https://tg-sticker-bot.vercel.app/api/dev/paws/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/sticker.png",
+    "url": "/sticker_4.png",
     "emojis": [
       { "name": "paws", "emoji": "🐾" },
       { "name": "feet", "emoji": "👣" }
@@ -102,21 +102,21 @@
     "settingId": "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5"
   },
   {
-    "url": "https://tg-sticker-bot.vercel.app/api/dev/halloween/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/sticker.png",
+    "url": "/sticker_3.png",
     "emojis": [{ "name": "eyes", "emoji": "👀" }],
     "name": "Blank - Halloween",
     "stickerId": "halloween",
     "settingId": "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5"
   },
   {
-    "url": "https://tg-sticker-bot.vercel.app/api/dev/heart/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/sticker.png",
+    "url": "/sticker_2.png",
     "emojis": [{ "name": "heart", "emoji": "❤️" }],
     "name": "Blank - Heart",
     "stickerId": "heart",
     "settingId": "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5"
   },
   {
-    "url": "https://tg-sticker-bot.vercel.app/api/dev/hug/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/sticker.png",
+    "url": "/sticker_1.png",
     "emojis": [
       { "name": "hugging", "emoji": "🫂" },
       { "name": "open hands", "emoji": "🤗" }
@@ -126,7 +126,7 @@
     "settingId": "b28b1f41-10aa-4e37-a0c3-3bcca310cbe5"
   },
   {
-    "url": "https://tg-sticker-bot.vercel.app/api/dev/attribution/b28b1f41-10aa-4e37-a0c3-3bcca310cbe5/sticker.png",
+    "url": "/sticker_0.png",
     "emojis": [
       { "name": "info", "emoji": "ℹ️" },
       { "name": "writing", "emoji": "✍️" }

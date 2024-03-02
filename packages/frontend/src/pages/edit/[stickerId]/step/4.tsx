@@ -7,8 +7,6 @@ import StepGroups from "@/modules/editor/StepGroups";
 import StepStickerView from "@/modules/editor/StepStickerView";
 import StepTemplateChanger from "@/modules/editor/StepTemplateChanger";
 import StepToolbarContainer from "@/modules/editor/StepToolbarContainer";
-import AddToSetButton from "@/modules/export/AddToSetButton";
-import { authAtom } from "@/modules/export/auth";
 import ExportMenu from "@/modules/export/ExportMenu";
 import ColorList from "@/modules/palette/ColorList";
 import { getSummary } from "@/modules/stickers";
@@ -31,7 +29,6 @@ export default function Home(props: Props) {
   const step = Number(router.query.step || 4);
   const { sticker } = useSticker();
   const { lottie } = useGeneratedSticker();
-  const [auth] = useAtom(authAtom);
 
   const [animatePreviews, setAnimatePreviews] = useAtom(animateAtom);
 
@@ -50,17 +47,8 @@ export default function Home(props: Props) {
         <Switch isSelected={animatePreviews} onChange={setAnimatePreviews}>
           Animate Previews
         </Switch>
-        {auth.type !== "web-app" && lottie && <ExportMenu lottie={lottie} />}
+        {lottie && <ExportMenu lottie={lottie} />}
         <StepTemplateChanger step={step} stickers={props.stickers} />
-        {lottie && (
-          <>
-            {auth.data && (
-              <AddToSetButton action="add" lottie={lottie}>
-                Add to Your Set
-              </AddToSetButton>
-            )}
-          </>
-        )}
       </StepToolbarContainer>
       <StickerBreadcrumb stickerName={sticker.displayName} />
       <StepStickerView lottie={lottie} sticky />
